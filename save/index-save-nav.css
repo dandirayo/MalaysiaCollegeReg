@@ -1,0 +1,105 @@
+*,
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: silver;
+    
+}
+
+.nav-container{
+    height: 100vh;
+}
+
+.nav-container{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 8vh;
+
+    /* left: 0;
+    right: 0;
+    top: 0; */
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* width: 20%; */
+    /* height: 100%; */
+    padding: 5px;
+    
+}
+.a-logo{
+    border: 1px solid black;
+}
+.a-text{
+    border: 1px solid black;
+    width: 20%;
+}
+
+.ul-menu{
+    background-color: aqua;
+    display: flex; 
+    /* flex: untuk menyamping */
+    justify-content: center;
+    /* kanan kiri: tengah */
+    align-items: center;
+    /* atas bawah (container/nav) */
+    height: 8vh;
+    /* height mengacu ke align */
+}
+
+.li-menu{
+    /* border: 1px solid black; */
+    list-style-type: none;
+    padding: 5px;
+    color: #242364;
+    /* margin itu gap antara font/box */
+    margin: 10px;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+.li-menu:hover{
+    font-weight: bold;
+    transition: .2s ease-in-out;
+    /* background-color: #f2ab46; */
+    /* transition-delay: 25ms; */
+    /* border-radius: 10px; */
+}
+
+.a-menu{
+    color: #242364;
+    text-decoration: none;
+}
+
+
+.image-container{
+    display: flex;
+    justify-content: left;
+    /* bagian kiri untuk kanan-tengah-kiri */
+    align-items: center;
+}
+
+.col-image{
+    width: 45%;
+    height: 45%;
+}
+
+
+/* tidak memakai fixed karena discroll sampai bawah */
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center; /*width*/
+    background-color: white;
+    height: 6vh;
+}
+
+.p-footer{
+    font-size: 16px;
+}

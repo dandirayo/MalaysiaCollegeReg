@@ -1,0 +1,126 @@
+*,
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: silver;
+    
+}
+.nav-container {
+    display: flex;
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box; 
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.a-text {
+    border: 1px solid black;
+    margin: 0;
+    line-height: normal;
+    padding: 5px;
+    font-size: large;
+}
+
+.ul-menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.li-menu {
+    padding: 5px;
+    color: #242364;
+    margin: 0 10px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+.li-menu:hover {
+    font-weight: bold;
+    transition: .2s ease-in-out;
+}
+
+.a-menu {
+    color: #242364;
+    text-decoration: none;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.bar-search {
+    border: 1px solid black;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.but-search {
+    padding: 5px;
+    background-color: #242364;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.but-search:hover {
+    background-color: #1f1e50;
+}
+
+.but-login {
+    padding: 5px;
+    background-color: #242364;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.but-login:hover {
+    background-color: #1f1e50;
+}
+
+.image-container{
+    display: flex;
+    justify-content: left;
+    /* bagian kiri untuk kanan-tengah-kiri */
+    align-items: center;
+}
+
+.col-image{
+    width: 45%;
+    height: 45%;
+}
+
+
+/* tidak memakai fixed karena discroll sampai bawah */
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center; /*width*/
+    background-color: white;
+    height: 6vh;
+}
+
+.p-footer{
+    font-size: 16px;
+}
