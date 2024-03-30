@@ -1,0 +1,71 @@
+
+
+---INDEX.HTML---
+index container
+	>> nav-container
+		> logo-container
+		> menu-container
+			> ul-menu
+				> a-menu
+			> ul-menu
+				> a-menu
+			> ul-menu
+				> a-menu
+		> search-container
+			> bar-search
+			> but-search
+		> login-button
+	>> img-container
+		> col-image
+	>> fot-container
+		> p-footer
+
+---COLLEGE.HTML---
+college-container
+	>> nav-container
+		> logo-container
+		> menu-container
+			> ul-menu
+				> a-menu
+			> ul-menu
+				> a-menu
+			> ul-menu
+				> a-menu
+		> search-container
+			> bar-search
+			> but-search
+		> login-button	
+	>> col-content
+		> first-college
+		> second-college
+	>> fot-container
+		> p-footer
+		
+---ABOUT.HTML---
+about-container
+	>> nav-container
+		> logo-container
+		> menu-container
+			> ul-menu
+				> a-menu
+			> ul-menu
+				> a-menu
+			> ul-menu
+				> a-menu
+		> search-container
+			> bar-search
+			> but-search
+		> login-button	
+	>> con-container
+		> about-image
+		> about-text
+		> about-socmed
+		> about-thanks
+	>> fot-container
+		> p-footer
+	
+		
+		
+
+		
+		

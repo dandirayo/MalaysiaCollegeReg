@@ -1,0 +1,194 @@
+/* header */
+header {
+    background-color: #333; /* Memberi warna latar belakang header */
+    margin: 10px; /* Memberi jarak luar 10 piksel untuk header */
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed; /* Membuat navigasi tetap berada pada posisi tertentu saat di-scroll */
+    top: 0; /* Menempatkan navigasi di bagian atas halaman */
+    left: 0; /* Menempatkan navigasi di sisi kiri halaman */
+    right: 0; /* Menempatkan navigasi di sisi kanan halaman */
+    display: flex; /* Mengatur tata letak item di dalam navigasi menjadi flexbox */
+    justify-content: space-between; /* Mengatur item di dalam navigasi agar tersebar secara merata */
+    align-items: center; /* Mengatur item di dalam navigasi agar berada di tengah secara vertikal */
+    padding: 0; /* Menghilangkan padding pada navigasi */
+    background-color: #333; /* Memberi warna latar belakang navigasi */
+}
+
+nav ul {
+    list-style-type: none; /* Menghilangkan tanda daftar pada daftar navigasi */
+    padding: 10px; /* Memberi padding 10 piksel untuk daftar navigasi */
+    margin: 0; /* Menghilangkan margin pada daftar navigasi */
+}
+
+nav ul li {
+    display: inline; /* Mengatur item daftar navigasi menjadi tampil secara inline */
+    margin-right: 20px; /* Memberi jarak kanan 20 piksel antara item daftar navigasi */
+}
+
+nav ul li a {
+    color: #fff; /* Mengatur warna teks tautan pada daftar navigasi menjadi putih */
+    text-decoration: none; /* Menghilangkan dekorasi tautan pada daftar navigasi */
+    font-weight: normal; /* Mengatur berat teks tautan pada daftar navigasi menjadi normal */
+}
+
+nav ul li a.active {
+    font-weight: bold; /* Memberi berat teks tautan aktif pada daftar navigasi menjadi tebal */
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex; /* Mengatur tata letak item di dalam kontainer logo menjadi flexbox */
+    align-items: center; /* Mengatur item di dalam kontainer logo agar berada di tengah secara vertikal */
+}
+
+.logo-container img {
+    width: 50px;  /* Mengatur lebar gambar logo menjadi 50 piksel */
+    height: auto; /* Mengatur tinggi gambar logo agar mengikuti proporsi aslinya */
+    margin-right: 10px; /* Memberi jarak kanan 10 piksel antara gambar logo dan teks */
+}
+
+.logo-container span {
+    font-family: 'Arial', sans-serif; /* Mengatur jenis font teks logo */
+    font-weight: bold; /* Memberi berat teks logo menjadi tebal */
+    color: #fff; /* Mengatur warna teks logo menjadi putih */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex; /* Mengatur tata letak item di dalam search bar menjadi flexbox */
+    align-items: center; /* Mengatur item di dalam search bar agar berada di tengah secara vertikal */
+}
+
+.search-bar input[type="text"] {
+    padding: 8px; /* Memberi padding 8 piksel untuk input teks pada search bar */
+    border-radius: 10px; /* Memberi sudut bulat 10 piksel untuk input teks pada search bar */
+    border: 1px solid #ccc; /* Memberi garis tepi 1 piksel solid dengan warna abu-abu pada input teks */
+    margin-right: 5px; /* Memberi jarak kanan 5 piksel antara input teks dan tombol pencarian */
+}
+
+.search-bar button {
+    padding: 8px 16px; /* Memberi padding 8 piksel atas-bawah dan 16 piksel kiri-kanan untuk tombol pencarian */
+    border: none; /* Menghilangkan border pada tombol pencarian */
+    border-radius: 5px; /* Memberi sudut bulat 5 piksel untuk tombol pencarian */
+    background-color: #1E90FF; /* Memberi warna latar belakang biru pada tombol pencarian */
+    color: #fff; /* Mengatur warna teks pada tombol pencarian menjadi putih */
+    cursor: pointer; /* Mengubah kursor mouse menjadi tanda tangan saat di atas tombol pencarian */
+}
+
+.search-bar button:hover {
+    background-color: #4169E1; /* Mengubah warna latar belakang tombol pencarian menjadi biru tua saat dihover */
+}
+
+/* Authentication Buttons */
+.auth-buttons {
+    display: flex; /* Mengatur tata letak item di dalam tombol autentikasi menjadi flexbox */
+}
+
+.buttonlog,
+.buttonreg {
+    margin-left: 10px; /* Memberi jarak kiri 10 piksel antara tombol autentikasi */
+    padding: 10px 20px; /* Memberi padding 10 piksel atas-bawah dan 20 piksel kiri-kanan untuk tombol autentikasi */
+    background-color: #1E90FF; /* Memberi warna latar belakang biru pada tombol autentikasi */
+    color: #fff; /* Mengatur warna teks pada tombol autentikasi menjadi putih */
+    border: none; /* Menghilangkan border pada tombol autentikasi */
+    border-radius: 5px; /* Memberi sudut bulat 5 piksel untuk tombol autentikasi */
+    cursor: pointer; /* Mengubah kursor mouse menjadi tanda tangan saat di atas tombol autentikasi */
+    transition: background-color 0.3s; /* Memberikan efek transisi saat mengubah warna latar belakang tombol autentikasi */
+}
+
+.buttonlog:hover,
+.buttonreg:hover {
+    background-color: #4169E1; /* Mengubah warna latar belakang tombol autentikasi menjadi biru tua saat dihover */
+}
+
+/* Container */
+.container {
+    display: flex; /* Mengatur tata letak kontainer menjadi flexbox */
+    justify-content: space-between; /* Mengatur item di dalam kontainer agar tersebar secara merata */
+    padding: 20px; /* Memberi padding 20 piksel untuk kontainer */
+}
+
+/* Left Content */
+.image-left img {
+    max-width: 700px; /* Mengatur lebar maksimum gambar menjadi 700 piksel */
+    height: auto; /* Mengatur tinggi gambar agar mengikuti proporsi aslinya */
+}
+
+/* Right Content */
+.right-content {
+    flex: 1; /* Mengatur item konten kanan agar mengisi sisa ruang yang tersedia */
+    margin-left: 20px; /* Memberi jarak kiri 20 piksel untuk konten kanan */
+}
+
+.text-right {
+    margin-top: 60px; /* Memberi jarak atas 60 piksel untuk konten teks kanan */
+}
+
+.text-right h1 {
+    font-size: 46px; /* Mengatur ukuran font judul menjadi 46 piksel */
+    margin-bottom: 10px; /* Memberi jarak bawah 10 piksel untuk judul */
+}
+
+.text-right h2 {
+    font-size: 32px; /* Mengatur ukuran font subjudul menjadi 32 piksel */
+    margin-bottom: 5px; /* Memberi jarak bawah 5 piksel untuk subjudul */
+}
+
+.text-right p {
+    font-size: 18px; /* Mengatur ukuran font teks menjadi 18 piksel */
+}
+
+/* Boxes */
+.box-right {
+    display: flex; /* Mengatur tata letak kotak menjadi flexbox */
+    flex-wrap: wrap; /* Mengatur item di dalam kotak agar dapat terlipat ketika ukurannya melebihi kontainer */
+    margin-top: 20px; /* Memberi jarak atas 20 piksel untuk kotak */
+}
+
+.box {
+    width: 150px; /* Mengatur lebar kotak menjadi 150 piksel */
+    height: 150px; /* Mengatur tinggi kotak menjadi 150 piksel */
+    margin-right: 20px; /* Memberi jarak kanan 20 piksel untuk kotak */
+    padding: 10px; /* Memberi padding 10 piksel untuk kotak */
+    display: flex; /* Mengatur tata letak item di dalam kotak menjadi flexbox */
+    flex-direction: column; /* Mengatur item di dalam kotak agar tampil secara vertikal */
+    justify-content: space-between; /* Mengatur item di dalam kotak agar tersebar secara merata */
+    align-items: center; /* Mengatur item di dalam kotak agar berada di tengah secara vertikal */
+    text-align: center; /* Mengatur teks di dalam kotak menjadi rata tengah */
+}
+
+.box img {
+    width: 80px; /* Mengatur lebar gambar dalam kotak menjadi 80 piksel */
+    margin-bottom: 10px; /* Memberi jarak bawah 10 piksel untuk gambar dalam kotak */
+}
+
+/* Box Colors */
+.blue {
+    background-color: blue; /* Memberi warna latar belakang biru untuk kotak */
+}
+
+.yellow {
+    background-color: yellow; /* Memberi warna latar belakang kuning untuk kotak */
+}
+
+.red {
+    background-color: red; /* Memberi warna latar belakang merah untuk kotak */
+}
+
+/* Footer */
+footer {
+    position: fixed; /* Membuat footer tetap berada di posisi tertentu saat di-scroll */
+    bottom: 0; /* Menempatkan footer di bagian bawah halaman */
+    left: 0; /* Menempatkan footer di sisi kiri halaman */
+    right: 0; /* Menempatkan footer di sisi kanan halaman */
+    display: flex; /* Mengatur tata letak item di dalam footer menjadi flexbox */
+    justify-content: center; /* Mengatur item di dalam footer agar berada di tengah secara horizontal */
+    align-items: center; /* Mengatur item di dalam footer agar berada di tengah secara vertikal */
+    padding: 0; /* Menghilangkan padding pada footer */
+    background-color: #333; /* Memberi warna latar belakang footer */
+    color: #fff; /* Mengatur warna teks footer menjadi putih */
+    text-align: center; /* Mengatur teks footer menjadi rata tengah */
+}

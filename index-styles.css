@@ -5,38 +5,42 @@ html{
 }
 
 body{
-    background-color: silver;
-    
+    background-color: rgb(240, 240, 240);
 }
 .nav-container {
     display: flex;
-    height: 100vh;
-    background-color: white;
     width: 100%;
     height: 10vh;
-    justify-content: space-between;
+    background-color: white;
+    
+    /* space-between itu jarak antar left-center-right */
+    justify-content: space-between; 
     align-items: center;
-    padding: 0 20px;
+
+    padding: 20px;
+    /* padding: 0 20px; */
     box-sizing: border-box; 
+    border: 0.4px solid black;
 }
 
+/* Logo dan Teks TopAlumniGlobal */
 .logo-container {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
 .a-text {
-    border: 1px solid black;
-    margin: 0;
-    line-height: normal;
+    margin-left: 20px;
+    /* line-height: normal; */
     padding: 5px;
     font-size: large;
+    text-decoration: none;
 }
 
 .ul-menu {
     display: flex;
     align-items: center;
+    /* delete dot */
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -74,51 +78,177 @@ body{
 }
 
 .but-search {
-    padding: 5px;
-    background-color: #242364;
-    color: white;
+    padding: 8px 16px;
+    background-color: #1E90FF;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .but-search:hover {
     background-color: #1f1e50;
 }
 
-.but-login {
-    padding: 5px;
-    background-color: #242364;
-    color: white;
+.login-button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #1E90FF;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.but-login:hover {
+
+.login-button:hover {
     background-color: #1f1e50;
 }
 
-.image-container{
+.flex-container{
+    margin-top: 30px;
     display: flex;
+    width: fit-content;
+}
+
+.img-content{
     justify-content: left;
     /* bagian kiri untuk kanan-tengah-kiri */
     align-items: center;
+    border: 3px solid black;
 }
 
-.col-image{
-    width: 45%;
-    height: 45%;
+.right-content{
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 3px solid black;
+}
+
+.right-content img {
+    max-width: 100%; /* Maksimum lebar gambar adalah 100% dari lebar kotak */
+    max-height: 100%; /* Maksimum tinggi gambar adalah 100% dari tinggi kotak */
+    object-fit: contain; /* Mengatur gambar agar sesuai dengan kotak */
+}
+
+
+.box-right {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%; /* Mengatur lebar kotak menjadi 100% dari lebar kontainer utama */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Memberi padding 10px untuk kotak */
+    border: 3px solid black; /* Memberi border 3px solid hitam untuk kotak */
+}
+
+.box-blue,
+.box-yellow,
+.box-red {
+    width: calc(33.33% - 20px); /* Mengatur lebar kotak menjadi 33.33% dari lebar kotak-right dikurangi margin-right */
+    height: 150px; /* Mengatur tinggi kotak menjadi 150px */
+    margin-bottom: 10px; /* Memberi margin bawah 10px untuk setiap kotak */
+    padding: 10px; /* Memberi padding 10px untuk setiap kotak */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border: 3px solid black; /* Memberi border 3px solid hitam untuk setiap kotak */
+}
+
+
+
+/* college.html */
+
+.col-content{
+    display: flex;
+}
+
+.col-left{
+    padding: 40px;
+    border: 3px solid orange;
+}
+
+.col-right{
+    padding: 40px;
+    border: 3px solid orange;
+}
+
+
+.col-logo1{
+    justify-content: center;
+    align-items: center;
+    width: 620px;
+    height: 320px;
+    border: 3px solid black;
+}
+
+.col-logo2{
+    justify-content: center;
+    align-items: center;
+    width: 620px;
+    height: 320px;
+    border: 3px solid black;
+}
+
+
+
+/* about.html */
+
+.upper-container{
+    display: flex;
+    justify-content: center;
+    /* bagian kiri untuk kanan-tengah-kiri */
+    padding: 10px;
+    border: 3px solid black;
+}
+
+.about-text{
+    justify-content: right;
+    border: 3px solid red;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.about-text p {
+    font-size: large;
+}
+
+.a-about{
+    justify-content: left;
+    width: 100vh;
+    height: 55vh;
+    border: 3px solid blue;
+    padding: 20px;
+}
+
+.about-socmed{
+    font-size: large;
+    border: 3px solid blue;
+    padding: 20px;
+}
+
+.about-thanks{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    padding: 20px;
 }
 
 
 /* tidak memakai fixed karena discroll sampai bawah */
-.footer-container{
+.fot-container{
     display: flex;
     align-items: center;
     justify-content: center; /*width*/
     background-color: white;
     height: 6vh;
+    border: 3px solid greenyellow;
 }
 
 .p-footer{
