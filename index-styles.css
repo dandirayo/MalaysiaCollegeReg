@@ -5,7 +5,7 @@ html{
 }
 
 body{
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(223, 201, 201);
 }
 .nav-container {
     display: flex;
@@ -20,10 +20,10 @@ body{
     padding: 20px;
     /* padding: 0 20px; */
     box-sizing: border-box; 
-    border: 0.4px solid black;
+    
 }
 
-/* Logo dan Teks TopAlumniGlobal */
+/* Logo dan Teks TopAlumniGlobal (Left)*/
 .logo-container {
     display: flex;
     flex-direction: row;
@@ -37,6 +37,7 @@ body{
     text-decoration: none;
 }
 
+/* 4 Menu (CenterLeft) */
 .ul-menu {
     display: flex;
     align-items: center;
@@ -45,7 +46,6 @@ body{
     margin: 0;
     padding: 0;
 }
-
 .li-menu {
     padding: 5px;
     color: #242364;
@@ -53,30 +53,28 @@ body{
     font-size: 16px;
     border: 1px solid black;
 }
-
 .li-menu:hover {
     font-weight: bold;
     transition: .2s ease-in-out;
 }
-
 .a-menu {
+    font-size: medium;
     color: #242364;
     text-decoration: none;
 }
 
+/* Search Box (CenterRight) */
 .search-container {
     display: flex;
     align-items: center;
-    position: relative;
+    /* position: relative; */
 }
-
 .bar-search {
-    border: 1px solid black;
+    border: 0.6px solid black;
+    border-radius: 5px;
     padding: 5px;
     margin-right: 10px;
-    border-radius: 5px;
 }
-
 .but-search {
     padding: 8px 16px;
     background-color: #1E90FF;
@@ -86,11 +84,11 @@ body{
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 .but-search:hover {
     background-color: #1f1e50;
 }
 
+/* Login (Right) */
 .login-button {
     margin-left: 10px;
     padding: 8px 16px;
@@ -101,64 +99,97 @@ body{
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
-
 .login-button:hover {
     background-color: #1f1e50;
 }
-
 .flex-container{
     margin-top: 30px;
     display: flex;
     width: fit-content;
 }
 
+/* left content */
 .img-content{
     justify-content: left;
     /* bagian kiri untuk kanan-tengah-kiri */
     align-items: center;
-    border: 3px solid black;
+    border: 2px solid black;
 }
 
+/* right content */
 .right-content{
-    align-items: center;
+    /* display: contents; */
+    align-items: right;
     justify-content: center;
     padding: 10px;
-    border: 3px solid black;
+    border: 2px solid red;
+    width: 100%;
+}
+.text-right{        
+    /* box-sizing: border-box;  */
+    padding: 0 20px; 
+    width: 50%; 
+    border: 2px solid blue;
 }
 
-.right-content img {
-    max-width: 100%; /* Maksimum lebar gambar adalah 100% dari lebar kotak */
-    max-height: 100%; /* Maksimum tinggi gambar adalah 100% dari tinggi kotak */
-    object-fit: contain; /* Mengatur gambar agar sesuai dengan kotak */
+.text-right h1{
+    font-size: 3.5em;
+    margin-top: 0;
+    margin-bottom: 2vh;
+    /* line-height: 2.0; */
 }
 
 
 .box-right {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 20px;
-    width: 100%; /* Mengatur lebar kotak menjadi 100% dari lebar kontainer utama */
-    justify-content: space-between;
+    margin: 10px;
+    /* width: 100%; Mengatur lebar kotak menjadi 100% dari lebar kontainer utama */
+    /* justify-content: space-between; */
     align-items: center;
-    padding: 10px; /* Memberi padding 10px untuk kotak */
-    border: 3px solid black; /* Memberi border 3px solid hitam untuk kotak */
+    padding: 10px; 
+    border: 2px solid blue; 
 }
 
 .box-blue,
 .box-yellow,
 .box-red {
-    width: calc(33.33% - 20px); /* Mengatur lebar kotak menjadi 33.33% dari lebar kotak-right dikurangi margin-right */
-    height: 150px; /* Mengatur tinggi kotak menjadi 150px */
-    margin-bottom: 10px; /* Memberi margin bawah 10px untuk setiap kotak */
-    padding: 10px; /* Memberi padding 10px untuk setiap kotak */
+    width: 200px; 
+    height: 150px; 
+    margin-bottom: 10px;
+    padding: 10px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+   
     background-color: white;
-    border: 3px solid black; /* Memberi border 3px solid hitam untuk setiap kotak */
+    border: 3px solid black; 
+}
+
+.box-blue img,
+.box-yellow img,
+.box-red img {
+    max-width: 70%; 
+    max-height: 70%; 
+    /* Mengatur gambar agar sesuai dengan kotak */
+    object-fit: contain; 
+}
+
+.box-blue p,
+.box-yellow p,
+.box-red p{
+    font-size: large;
+    object-fit: contain; 
+    text-align: Center;
+    font-style: bold;
+}
+
+.box-blue img{
+    width: 65%;
+    height: 65%;
+    border: 1px solid black; 
 }
 
 
