@@ -5,13 +5,14 @@ html{
 }
 
 body{
-    background-color: rgb(223, 201, 201);
+    font-family: Arial, sans-serif;
+    background-color: white;
 }
 .nav-container {
     display: flex;
     width: 100%;
     height: 10vh;
-    background-color: white;
+    background-color: rgb(170, 170, 170);
     
     /* space-between itu jarak antar left-center-right */
     justify-content: space-between; 
@@ -119,24 +120,23 @@ body{
 /* right content */
 .right-content{
     /* display: contents; */
-    align-items: right;
-    justify-content: center;
+    align-items: top;
+    justify-content: left;
     padding: 10px;
     border: 2px solid red;
-    width: 100%;
+    width: 115vh;
+
 }
 .text-right{        
     /* box-sizing: border-box;  */
-    padding: 0 20px; 
-    width: 50%; 
+    padding: 0 10px; 
+    width: auto; 
     border: 2px solid blue;
 }
 
 .text-right h1{
     font-size: 3.5em;
-    margin-top: 0;
-    margin-bottom: 2vh;
-    /* line-height: 2.0; */
+    /* margin-bottom: 2vh; */
 }
 
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choose your College!</title>
+    <link rel="stylesheet" href="register-login.css">
     <link rel="stylesheet" href="index-styles.css">
 </head>
 <body>
@@ -39,26 +40,48 @@
                 <input type="text" class="bar-search" placeholder="Search...">
                 <button class="but-search">Search</button>
             </div>
-            <button class="login-button">Login</button>
+            <a href="login.html" class="login-button">Login</a>
         </nav> 
         <!-- Nav Selesai -->
       
-        <div class="col-content">
-            <div class="col-left">
-                <img src="images/college/UTP Logo.png" class="col-logo1">
-                <a class="first-college">
-                    <h1>Universiti Teknologi Petronas Malaysia</h1>
-                    <p>Focuses on providing educational and immigration guidance and assistance to international students who are keen to achieve international undergraduate to postgraduate degree in Malaysia. </p>
-                    <p>Berfokus pada penyediaan jasa bimbingan dan bantuan pendidikan dan imigrasi kepada siswa internasional yang ingin meraih gelar sarjana internasional hingga pascasarjana di Malaysia.</p>
-                </a>
-            </div>
-            <div class="col-right">
-                <img src="images/college/UKM Logo.png" class="col-logo2">
-                <a class="second-college">
-                    <h1>Universiti Kebangsaan Malaysia</h1>
-                    <p>Focuses on providing educational and immigration guidance and assistance to international students who are keen to achieve international undergraduate to postgraduate degree in Malaysia. </p>
-                    <p>Berfokus pada penyediaan jasa bimbingan dan bantuan pendidikan dan imigrasi kepada siswa internasional yang ingin meraih gelar sarjana internasional hingga pascasarjana di Malaysia.</p>
-                </a>
+        <div class="reg-content">
+            <div class="reg-center">
+                <h1>Register</h1>
+                <form action="/register" method="post">
+                    <label for="first-name">First Name:</label><br>
+                    <input type="text" id="first-name" name="first-name" required><br>
+                    <label for="last-name">Last Name:</label><br>
+                    <input type="text" id="last-name" name="last-name" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required><br>
+                    <label for="confirm-password">Confirm Password:</label><br>
+                    <input type="password" id="confirm-password" name="confirm-password" required><br>
+                    <label for="birthdate">Date of Birth:</label><br>
+                    <input type="date" id="birthdate" name="birthdate" required><br>
+                    <label for="gender">Gender:</label><br>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select><br>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" required><br>
+                    <label for="address">Home Address:</label><br>
+                    <input type="text" id="address" name="address" required><br>
+                    <label for="city">City:</label><br>
+                    <input type="text" id="city" name="city" required><br>
+                    <label for="zipcode">Zip Code:</label><br>
+                    <input type="text" id="zipcode" name="zipcode" required><br>
+                    <label for="country">Country:</label><br>
+                    <input type="text" id="country" name="country" required><br>
+                    <label for="nationality">Nationality:</label><br>
+                    <input type="text" id="nationality" name="nationality" required><br><br>
+                    <input type="submit" value="Register">
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p>
             </div>
         </div>
 
