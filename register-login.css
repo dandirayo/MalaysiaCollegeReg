@@ -61,5 +61,30 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    background-color: #ccc;
 }
+
+
+.reg-step{
+    display: flex   ;
+    align-items: center;
+
+}
+
+
+.reg-consul{
+    background-color: #4169E1;
+    border: 1px solid black ;
+}
+
+.img-consul{
+    justify-content: center;
+    width: 80vh;
+    height: 80vh;
+}
+
+.img-barcode{
+    width: 80vh;
+    height: 80vh;
+}
+
