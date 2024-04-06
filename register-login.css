@@ -2,15 +2,49 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 0;          
     padding: 0;
 }
+.full-reg{
+    display: flex;
+}
+
+.upper-reg{
+    display: flex;
+    justify-content: center;
+    height: 25vh;
+    
+}
+
+.reg-consul{
+    background-color: greenyellow;
+    border: 1px solid black ;
+   width: auto;
+}
+
+.img-consul{
+    justify-content: center;
+    width: 20vh;
+    height: 20vh;
+    border: 3px solid black;
+
+}
+
+.img-barcode{
+    width: 20vh;
+    height: 20vh;
+    
+}
+
+/* ini register */
 
 h1 {
+    margin-top: 10vh;
     text-align: center;
 }
 
 form {
+    margin-left: 30vh;  
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
@@ -19,9 +53,11 @@ form {
 }
 
 label {
+    
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    width: 80vh;
 }
 
 input[type="text"],
@@ -53,6 +89,8 @@ input[type="submit"]:hover {
 
 p {
     text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 a {
@@ -71,20 +109,4 @@ a:hover {
 
 }
 
-
-.reg-consul{
-    background-color: #4169E1;
-    border: 1px solid black ;
-}
-
-.img-consul{
-    justify-content: center;
-    width: 80vh;
-    height: 80vh;
-}
-
-.img-barcode{
-    width: 80vh;
-    height: 80vh;
-}
 

@@ -26,16 +26,26 @@ body{
 
 /* Logo dan Teks TopAlumniGlobal (Left)*/
 .logo-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	border: 2px solid black;
+	padding: 10px;
 }
+
+.a-logo {
+	height: max-content;
+    width: max-content;
+}
+
 .a-text {
-    margin-left: 20px;
-    /* line-height: normal; */
-    padding: 5px;
-    font-size: large;
-    text-decoration: none;
+	font-size: large;
+	text-decoration: none;
+	border: 2px solid black;
+    align-items: right;
+    margin-left: 50px;
+	padding: 5px;
 }
 
 /* 4 Menu (CenterLeft) */
