@@ -1,67 +1,78 @@
 
+(rev)
+(so-so)
 
 ---INDEX.HTML---
-index container
-	>> nav-container
+index container (so-so)
+	>> navigation-container(rev)
 		> logo-container
 		> menu-container
 			> ul-menu
-				> a-menu
+				> li-menu
+					> a-menu
 			> ul-menu
-				> a-menu
+				> li-menu
+					> a-menu
 			> ul-menu
-				> a-menu
+				> li-menu
+					> a-menu
 		> search-container
 			> bar-search
-			> but-search
+			> button-search(rev)
 		> login-button
-	>> img-container
+	>> img-container(50)
 		> col-image
-	>> fot-container
+	>> footer-container(rev)
 		> p-footer
 
 ---COLLEGE.HTML---
 college-container
-	>> nav-container
+	>> navigation-container(rev)
 		> logo-container
 		> menu-container
 			> ul-menu
-				> a-menu
+				> li-menu
+					> a-menu
 			> ul-menu
-				> a-menu
+				> li-menu
+					> a-menu
 			> ul-menu
-				> a-menu
+				> li-menu
+					> a-menu
 		> search-container
 			> bar-search
-			> but-search
+			> button-search(rev)
 		> login-button	
 	>> col-content
 		> first-college
 		> second-college
-	>> fot-container
+	>> footer-container(rev)
 		> p-footer
 		
 ---ABOUT.HTML---
 about-container
-	>> nav-container
+	>> navigation-container(rev)
 		> logo-container
 		> menu-container
 			> ul-menu
-				> a-menu
+				> li-menu
+					> a-menu
 			> ul-menu
-				> a-menu
+				> li-menu
+					> a-menu
 			> ul-menu
-				> a-menu
+				> li-menu
+					> a-menu
 		> search-container
-			> bar-search
-			> but-search
+			> bar-search 
+			> button-search(rev)
 		> login-button	
 	>> con-container
 		> about-image
 		> about-text
 		> about-socmed
 		> about-thanks
-	>> fot-container
+	>> footer-container (rev)
 		> p-footer
 	
 		
