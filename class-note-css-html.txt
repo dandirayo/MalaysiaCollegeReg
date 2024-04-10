@@ -48,7 +48,40 @@ college-container
 		> second-college
 	>> footer-container(rev)
 		> p-footer
-		
+
+---REGISTER.HTML---
+register-container
+	>> navigation-container(rev)
+		> logo-container
+		> menu-container
+			> ul-menu
+				> li-menu
+					> a-menu
+			> ul-menu
+				> li-menu
+					> a-menu
+			> ul-menu
+				> li-menu
+					> a-menu
+		> search-container
+			> bar-search 
+			> button-search(rev)
+		> login-button	
+	>> full-registration(rev)
+		> up-registration(rev)
+			> step-registration(rev)
+				> left-step(rev)
+					> image-step(rev)
+			> consultation-registration(rev)
+				> right-consultation(rev)
+					> image-consultation(rev)
+	>> registration-content
+		> registration-center
+	>> footer-container(rev)
+		> p-footer
+	
+				
+
 ---ABOUT.HTML---
 about-container
 	>> navigation-container(rev)
@@ -72,7 +105,7 @@ about-container
 		> about-text
 		> about-socmed
 		> about-thanks
-	>> footer-container (rev)
+	>> footer-container(rev)
 		> p-footer
 	
 		
