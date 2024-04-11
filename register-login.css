@@ -2,8 +2,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;          
-    padding: 0;
 }
 .full-reg{
     display: flex;
@@ -20,6 +18,10 @@ body {
     height: 50vh;
     border: 2px solid black;
     
+}
+
+.reg-content{
+    margin-left: 10vh;
 }
 
 .reg-consul{
@@ -66,7 +68,7 @@ label {
     width: 80vh;
 }
 
-input[type="text"],
+input[type="text"]:not(.bar-search),
 input[type="email"],
 input[type="password"],
 input[type="tel"],
