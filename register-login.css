@@ -3,6 +3,16 @@
 body {
     font-family: Arial, sans-serif;
 }
+
+.register-container{
+    display: flex;
+    justify-content: left;
+    /* bagian kiri untuk kanan-tengah-kiri */
+    padding: 10px;
+    border: 3px solid black;
+
+}
+
 .full-reg{
     display: flex;
     justify-content: left;
