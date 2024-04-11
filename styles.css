@@ -10,117 +10,95 @@ body{
 }
 .navigation-container {
     display: flex;
-    width: 100%;
-    height: 10vh;
-    background-color: rgb(170, 170, 170);
-    
-    /* space-between itu jarak antar left-center-right */
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
-
-    padding: 20px;
-    /* padding: 0 20px; */
-    box-sizing: border-box; 
-    
+    background-color: rgb(170, 170, 170);
+    padding: 10px 20px;
+    box-sizing: border-box;
 }
 
-/* Logo dan Teks TopAlumniGlobal (Left)*/
 .logo-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	border: 2px solid black;
-	padding: 10px;
-}
-
-.a-logo {
-	height: max-content;
-    width: max-content;
+    display: flex;
+    align-items: center;
 }
 
 .a-text {
-	font-size: large;
-	text-decoration: none;
-	border: 2px solid black;
-    align-items: right;
-    margin-left: 50px;
-	padding: 5px;
-}
-
-/* 4 Menu (CenterLeft) */
-.ul-menu {
-    display: flex;
-    align-items: center;
-    /* delete dot */
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.li-menu {
-    padding: 5px;
-    color: #242364;
-    margin: 0 10px;
-    font-size: 16px;
-    border: 1px solid black;
-}
-.li-menu:hover {
-    font-weight: bold;
-    transition: .2s ease-in-out;
-}
-.a-menu {
-    font-size: medium;
+    font-size: 2rem;
     color: #242364;
     text-decoration: none;
+    margin-left: 10px;
 }
 
-/* Search Box (CenterRight) */
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.ul-menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.li-menu {
+    padding: 5px 10px;
+}
+
+.a-menu {
+    font-size: 1.2rem;
+    color: #242364;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
 .search-container {
     display: flex;
     align-items: center;
-    /* position: relative; */
-}
-.bar-search {
-    border: 0.6px solid black;
-    border-radius: 5px;
-    padding: 5px;
-    margin-right: 10px;
-}
-.but-search {
-    padding: 8px 16px;
-    background-color: #1E90FF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-.but-search:hover {
-    background-color: #1f1e50;
+    margin: 0 10px;
 }
 
-/* Login (Right) */
-.login-button {
-    margin-left: 10px;
-    padding: 8px 16px;
-    background-color: #1E90FF;
-    color: #fff;
+.bar-search {
+    border: 1px solid #242364;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.but-search {
     border: none;
+    background-color: #242364;
+    color: #fff;
+    padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
-.login-button:hover {
-    background-color: #1f1e50;
+
+.button-right {
+    display: flex;
+    align-items: center;
 }
-.flex-container{
+
+.login-button,
+.signup-button {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #242364;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+
+.home-container:not(.the-form){
     margin-top: 30px;
     display: flex;
     width: fit-content;
 }
 
 /* left content */
-.img-content{
+.image-college{
     justify-content: left;
     /* bagian kiri untuk kanan-tengah-kiri */
     align-items: center;
@@ -128,7 +106,7 @@ body{
 }
 
 /* right content */
-.right-content{
+.content-right{
     /* display: contents; */
     align-items: top;
     justify-content: left;
@@ -283,7 +261,7 @@ body{
 
 
 /* tidak memakai fixed karena discroll sampai bawah */
-.fot-container{
+.footer-container{
     display: flex;
     align-items: center;
     justify-content: center; /*width*/
