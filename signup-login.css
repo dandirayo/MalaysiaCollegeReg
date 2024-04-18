@@ -13,47 +13,6 @@ body {
 
 }
 
-.full-reg{
-    display: flex;
-    justify-content: left;
-    /* bagian kiri untuk kanan-tengah-kiri */
-    padding: 10px;
-    border: 3px solid black;
-}
-
-.upper-reg{
-    /* display: flex; */
-    align-items: left;
-    width: 100vh; 
-    height: 50vh;
-    border: 2px solid black;
-    
-}
-
-.reg-content{
-    margin-left: 10vh;
-}
-
-.reg-consul{
-    background-color: greenyellow;
-    border: 1px solid black ;
-    /* width: auto; */
-}
-
-.img-step{
-    justify-content: center;
-    width: 20vh;
-    height: 20vh;
-    border: 3px solid black;
-
-}
-
-.img-barcode{
-    width: 20vh;
-    height: 20vh;
-    
-}
-
 /* ini register */
 
 h1 {
