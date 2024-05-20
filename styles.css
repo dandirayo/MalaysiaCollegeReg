@@ -24,7 +24,7 @@ body {
 .logo-container,
 .menu-container,
 .search-container,
-.button-right {
+.button-losin {
     display: flex;
     align-items: center;
 }
@@ -56,7 +56,7 @@ body {
     margin-right: 5px;
 }
 
-.but-search {
+.button-search {
     border: none;
     background-color: #242364;
     color: #fff;
@@ -75,8 +75,8 @@ body {
     text-decoration: none;
 }
 
-.login-button,
-.signup-button
+.button-login,
+.button-signup
  {
     font-size: 0.8rem;
     color: #fff;
@@ -87,8 +87,8 @@ body {
     margin: 10px;
 }
 
-.login-button:hover,
-.signup-button:hover,
+.button-login:hover,
+.button-signup:hover,
 .button-please:hover, 
 .button-form:hover {
     background-color: #0066CC;
@@ -467,15 +467,19 @@ a {
 .upper-container {
     display: flex;
     justify-content: center;
-    padding: 10px;
-    border: 3px solid black;
+    box-shadow: 5px;
+    border-radius: 20px;
 }
 
 .about-text {
     justify-content: right;
-    border: 2px solid red;
+    
     margin-left: 20px;
     padding: 20px;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
 }
 
 .about-text p {
@@ -486,14 +490,20 @@ a {
     justify-content: left;
     width: 100vh;
     height: 55vh;
-    border: 3px solid blue;
+    /* border: 2px solid black; */
     padding: 20px;
+}
+
+.about-text{
+    /* margin-bottom: 50px; */
 }
 
 .about-socmed {
     font-size: large;
-    border: 3px solid blue;
     padding: 20px;
+    border: 2px solid black;
+    border-left: none;
+    border-right: none;
 }
 
 .about-thanks {
@@ -501,6 +511,10 @@ a {
     justify-content: center;
     font-size: large;
     padding: 20px;
+    border: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 .footer-container {
