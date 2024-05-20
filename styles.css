@@ -13,8 +13,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(170, 170, 170);
+    background-color: rgb(210, 210, 210);
     padding: 10px 20px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo-container,
@@ -61,17 +65,35 @@ body {
     cursor: pointer;
 }
 
-.login-button,
-.signup-button,
-.button-form {
-    font-size: 1.2rem;
+.button-form, 
+.button-please{
+    font-size: 1.0rem;
     color: #fff;
     background-color: #242364;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    margin-left: 10px;
 }
+
+.login-button,
+.signup-button
+ {
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #242364;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.login-button:hover,
+.signup-button:hover,
+.button-please:hover, 
+.button-form:hover {
+    background-color: #0066CC;
+}
+
 
 .home-container:not(.the-form) {
     margin-top: 30px;
@@ -82,7 +104,7 @@ body {
 .image-college {
     justify-content: left;
     align-items: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .content-right {
@@ -90,13 +112,13 @@ body {
     justify-content: left;
     padding: 10px;
     width: 115vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .text-right {
     padding: 0 10px;
     width: auto;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .text-right h1 {
@@ -109,7 +131,7 @@ body {
     flex-wrap: wrap;
     margin: 10px;
     padding: 10px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .box-blue,
@@ -124,7 +146,9 @@ body {
     justify-content: center;
     align-items: center;
     background-color: white;
-    border: 3px solid black;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-left: 20px;
 }
 
 .box-blue img,
@@ -150,67 +174,59 @@ body {
 }
 
 .the-please {
-    padding: 10px;
-}
-
-.button-please {
-    align-items: center;
-    padding: 10px;
-    margin-top: 10vh;
-}
-
-.button-form {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #1E90FF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.button-form:hover {
-    background-color: #0066CC;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 5vh;
 }
 
 .ready-container {
     text-align: center;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    /* margin-top: 10vh;
+    margin-bottom: 10vh; */
+    border: 2px solid black;
+    border-left: none;
+    border-right: none;
 }
 
-.areyouready {
+.areyouready, .button-container {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.button-container {
-    margin-bottom: 20px;
-}
 
 .full-stepconsul {
     display: flex;
     justify-content: center;
-    padding: 10px;
-    border: 3px solid black;
+    padding: 20px;
+    border: 2px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
 }
+
+.stepbystep, 
+.whatsapp{
+    padding: 10px;
+}
+
 
 .upper-stepconsul {
     display: flex;
     align-items: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .img-step,
-.img-barcode {
+.img-whatsapp {
     width: 150px;
     height: 150px;
-    border: 3px solid black;
+    /* border: 3px solid black; */
 }
 /* Styling for the entire college container */
+/* General styling for the college container */
 .college-container {
     display: flex;
     justify-content: space-between;
-    align-items: stretch; /* Ensure both columns stretch to the same height */
     padding: 20px;
     background-color: #f8f8f8;
     border-radius: 10px;
@@ -218,59 +234,140 @@ body {
     margin-bottom: 20px;
 }
 
-/* Styling for the left and right columns */
+/* Styling for left and right columns */
 .col-left, .col-right {
     flex: 1;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    margin-left: 30px;
 }
 
-/* Styling for the college logos */
+/* Styling for college logos */
 .col-logo1, .col-logo2 {
-    width: 400px; /* Set a fixed width for consistency */
+    width: 300px;
     height: auto;
     margin-bottom: 20px;
 }
 
-/* Styling for the college descriptions */
+/* Styling for college descriptions */
 .first-college, .second-college {
     text-decoration: none;
     color: #333;
-    display: block;
-    text-align: left;
-    flex-grow: 1; /* Make the descriptions take up available space */
+    text-align: center;
 }
 
 .first-college h1, .second-college h1 {
     font-size: 24px;
     color: #1a73e8;
     margin-bottom: 10px;
+  
 }
 
 .first-college p, .second-college p {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 10px;
-}
-
-/* Styling for the list of details about UTP */
-.about-utp {
-    margin-top: 20px;
-    padding-left: 20px;
     text-align: left;
 }
 
-.about-utp li {
-    margin-bottom: 10px;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
+/* Styling for button container */
+.button-container {
+    margin-top: 20px;
+}
+
+/* Styling for subject buttons */
+.button-subject {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #1E90FF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.button-subject:hover {
+    background-color: #0066CC;
+}
+
+/* Styling for the down-content section */
+.down-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.down-content a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-size: 18px;
+}
+
+.down-content a:hover {
+    color: #0056b3;
+}
+
+.down-content p {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Styling for button container */
+.button-container {
+    margin-top: 20px;
+}
+
+/* Styling for subject buttons */
+.button-subject {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #1E90FF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.button-subject:hover {
+    background-color: #0066CC;
+}
+
+/* Styling for the down-content section */
+.down-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.down-content a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-size: 18px;
+}
+
+.down-content a:hover {
+    color: #0056b3;
+}
+
+.down-content p {
+    margin: 0;
+    font-size: 18px;
 }
 
 /* General link styling */
@@ -412,7 +509,10 @@ a {
     justify-content: center;
     background-color: white;
     height: 6vh;
-    border: 3px solid greenyellow;
+    border: 2x solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 .p-footer {
