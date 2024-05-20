@@ -1,0 +1,13 @@
+- AC Applied Chemistry
+- BM Business Management
+- CE Computer Engineering
+- ChemE Chemical Engineering
+- CS Computer Science
+- CV Civil Engineering
+- EE Electrical and Electronics Engineering
+- IS Information System
+- IT Information Technology 
+- ME Material Engineering
+- PE Petrolium Engineering
+- PG Petrolium GeoScience
+
