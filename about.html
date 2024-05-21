@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>About TopAlumniGlobal!</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Embed Local Video with Thumbnail</title>
 </head>
 
 <body>
@@ -51,11 +52,40 @@
     <!-- ABOUT Content -->
     <div class="about-container">
         <div class="upper-container">
-            <div class="about-image">
-                <a href="#">
-                    <img src="images/about/aboutimage.png" class="a-about">
+            <!-- <div class="about-image">
+                <a href="https://www.youtube.com/V1UXr0CD9Sc" target="_blank">
+                    <img src="images/about/aboutvideo.png" class="a-about" alt="Watch video">
                 </a>
+            </div> -->
+            <!-- <div class="about-video">
+                <div class="video-container">
+                    <iframe class="video-iframe" src="https://www.youtube.com/L8eRzOYhLuw" frameborder="0" allowfullscreen></iframe>
+                    <img src="images/about/aboutvideo.png" class="video-thumbnail" alt="Watch video">
+                </div>
+            </div> -->
+            <div class="about-video">
+                <div class="video-container">
+                    <video class="video-element" controls>
+                        <source src="images/about/video/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button class="video-thumbnail" onclick="playVideo()">
+                        <img src="images/about/aboutvideo.png" alt="Watch video">
+                    </button>
+                </div>
             </div>
+            <script>
+                function playVideo() {
+                    const video = document.querySelector('.video-element');
+                    const thumbnail = document.querySelector('.video-thumbnail');
+                    thumbnail.style.display = 'none';
+                    video.style.opacity = '1';
+                    video.play();
+                    video.volume = 3; // Atur volume video menjadi setengah dari volume penuh
+                }
+            </script>
+            
+            
             <div class="about-text">
                 <h1>About TopAlumniGlobal</h1>
                 <p>In alignment with our company’s vision, Top Alumni Global is committed to becoming the premier educational consultant, dedicated to realizing the dreams and aspirations of international students with professionalism and trustworthiness.</p>

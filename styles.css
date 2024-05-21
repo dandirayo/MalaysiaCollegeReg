@@ -75,7 +75,7 @@ body {
 }
 
 .li-menu:hover {
-    transform: scale(1.1); 
+    /* transform: scale(1.1);  */
     background-color: #f0f0f0; 
     border-radius: 20px;
 }
@@ -169,7 +169,15 @@ body {
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 15px;
+}
+
+.box-blue:hover, 
+.box-yellow:hover, 
+.box-red:hover {
+    transform: scale(1.1); 
+    background-color: #f0f0f0; 
+    border-radius: 20px;
 }
 
 .box-blue,
@@ -187,6 +195,7 @@ body {
     /* border: 2px solid black; */
     border-radius: 20px;
     margin-right: 2vh;
+    text-decoration: none;
 }
 
 .box-blue img,
@@ -400,7 +409,7 @@ body {
     justify-content: right;
     margin-left: 20px;
     padding: 20px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-top: none;
     border-bottom: none;
     border-right: none;
@@ -410,17 +419,97 @@ body {
     font-size: large;
 }
 
-.a-about {
+/* .a-about {
     justify-content: left;
     width: 100vh;
     height: 55vh;
     padding: 20px;
+    border-radius: 10px;
+} */
+
+
+
+/* .video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+} */
+
+/* .video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+} */
+
+/* .video-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    cursor: pointer;
+    border-radius: 10px;
+} */
+
+/* .video-container:hover .video-iframe {
+    opacity: 1;
+} */
+
+.about-video {
+    position: relative;
+    width: 100%;
+    padding-top: 25%; 
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 100vh;
+    max-height: 55vh;
 }
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 55vh;
+}
+
+.video-element {
+    width: 100vh;
+    height: 55vh;
+    border-radius: 10px;
+    object-fit: cover; /* Agar video tetap di dalam kotak */
+}
+
+.video-thumbnail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain; /* Gambar ditampilkan sepenuhnya tanpa memotong */
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    justify-content: center; /* Membuat gambar berada di tengah secara horizontal */
+    align-items: center; /* Membuat gambar berada di tengah secara vertikal */
+}
+
+
+
+
 
 .about-socmed {
     font-size: large;
     padding: 20px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-left: none;
     border-right: none;
 }
@@ -442,7 +531,7 @@ body {
     justify-content: center;
     background-color: #cccccc;
     padding: 2vh;
-    border: 2x solid black;
+    /* border: 2x solid black; */
 }
 
 .p-footer {
