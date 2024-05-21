@@ -1,24 +1,36 @@
+/* -------------------------------------------- */
+/* ------------------------- */
+
+/* align-items: center; vertical */
+/* justify-content: center; horizontal */
+
+/* ALL */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: white;
 }
-
+/* NAVIGATION */
 .navigation-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(210, 210, 210);
     padding: 10px 20px;
+
     border-radius: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(210, 210, 210);
+    /* #FBA834 ORANGE*/
 }
 
 .logo-container,
@@ -27,128 +39,154 @@ body {
 .button-losin {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
+
+.logo-container a{
+    display: flex;
+    align-items: center;
+}
+.logo-container a img{
+    width: 8vh;
+    height: 8vh;
+    margin-right: 2vh;
+}
+
 
 .ul-menu {
     display: flex;
+    font-size: 1.0rem;
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
 }
 
-.a-text,
-.a-menu {
-    font-size: 1.2rem;
-    color: #242364;
-    text-decoration: none;
-    margin: 0 5px;
+.li-menu {
+    margin-right: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 20px;
 }
 
-.a-text {
-    font-size: 2rem;
-    margin-left: 10px;
+.a-menu {
+    color: #242364;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.li-menu:hover {
+    transform: scale(1.1); 
+    background-color: #f0f0f0; 
+    border-radius: 20px;
+}
+
+.a-menu:hover {
+    color: #0066CC;
+    font-weight: bold;
 }
 
 .bar-search {
-    border: 1px solid #242364;
-    border-radius: 5px;
+    font-size: 0.8;
     padding: 5px;
     margin-right: 5px;
+
+    border: none;
+    border-radius: 10px;
+
 }
 
 .button-search {
-    border: none;
-    background-color: #242364;
+    font-size: 0.8;
+    cursor: pointer;
     color: #fff;
     padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
-.button-form, 
-.button-please{
-    font-size: 1.0rem;
-    color: #fff;
-    background-color: #242364;
-    padding: 10px 20px;
     border-radius: 5px;
-    text-decoration: none;
+    border: none;
+    background-color: #387ADF;
 }
 
 .button-login,
 .button-signup
  {
-    font-size: 0.8rem;
-    color: #fff;
-    background-color: #242364;
-    padding: 10px 20px;
-    border-radius: 5px;
+    font-size: 0.9rem;
+    
     text-decoration: none;
-    margin: 10px;
+    color: #fff;
+    margin: 5px;
+    padding: 10px 20px;
+
+    border-radius: 5px;
+    background-color: #387ADF;
 }
 
+.button-search:hover,
 .button-login:hover,
 .button-signup:hover,
 .button-please:hover, 
 .button-form:hover {
-    background-color: #0066CC;
+    background-color: #50C4ED;
+    font-weight: bold;
 }
 
-
+/* HOME */
 .home-container:not(.the-form) {
-    margin-top: 30px;
     display: flex;
     width: fit-content;
 }
 
 .image-college {
     justify-content: left;
-    align-items: center;
-    /* border: 2px solid black; */
+    align-items: flex-end;
+    margin: 0;
 }
 
 .content-right {
-    align-items: top;
+    align-items: flex-start;
     justify-content: left;
     padding: 10px;
-    width: 115vh;
-    /* border: 2px solid red; */
 }
 
 .text-right {
     padding: 0 10px;
-    width: auto;
-    /* border: 2px solid blue; */
 }
 
 .text-right h1 {
     font-size: 3.5em;
 }
 
+.text-right h2 {
+    font-size: 1.8em;
+}
+
+.text-right p{
+    margin-top: 1vh;
+}
+
+/* BOXES */
 .box-right {
     display: flex;
+    justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 10px;
-    padding: 10px;
-    /* border: 2px solid blue; */
 }
 
 .box-blue,
 .box-yellow,
 .box-red {
-    width: 200px;
-    height: 150px;
-    margin-bottom: 10px;
-    padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    background-color: white;
-    border: 2px solid black;
+    width: 25vh;
+    height: 20vh;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #50C4ED;
+    /* border: 2px solid black; */
     border-radius: 20px;
-    margin-left: 20px;
+    margin-right: 2vh;
 }
 
 .box-blue img,
@@ -162,68 +200,68 @@ body {
 .box-blue p,
 .box-yellow p,
 .box-red p {
-    font-size: large;
+    font-size: 1em;
     text-align: center;
-    font-style: bold;
 }
 
 .box-blue img {
-    width: 65%;
-    height: 65%;
-    border: 1px solidblack;
+    width: 68%;
+    height: 68%;
 }
 
 .the-please {
     text-align: left;
     margin-top: 10px;
-    margin-left: 5vh;
 }
 
+.button-form, 
+.button-please{
+    font-size: 1.0rem;
+    color: #fff;
+    background-color: #387ADF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    margin-top: 2vh;
+}
+
+/* READY */
 .ready-container {
     text-align: center;
-    /* margin-top: 10vh;
-    margin-bottom: 10vh; */
-    border: 2px solid black;
-    border-left: none;
-    border-right: none;
+    padding: 5vh;
+    background-color: #cccccc;
 }
-
-.areyouready, .button-container {
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
 
 .full-stepconsul {
     display: flex;
     justify-content: center;
-    padding: 20px;
-    border: 2px solid black;
-    border-left: none;
-    border-right: none;
-    border-top: none;
+    padding: 5vh;
 }
 
 .stepbystep, 
 .whatsapp{
-    padding: 10px;
+    padding: 5vh;
+    justify-content: center;
+    border: 2px #333;
 }
-
-
-.upper-stepconsul {
-    display: flex;
-    align-items: center;
-    /* border: 2px solid black; */
+.stepbystep, 
+.whatsapp h2{
+    text-align: center;
 }
 
 .img-step,
 .img-whatsapp {
-    width: 150px;
-    height: 150px;
-    /* border: 3px solid black; */
+    align-items: center;
+    width: 22vh;
+    height: 22vh;
 }
-/* Styling for the entire college container */
-/* General styling for the college container */
+
+.button-container {
+    margin-top: 20px;
+}
+
+/* COLLEGE */
 .college-container {
     display: flex;
     justify-content: space-between;
@@ -234,28 +272,27 @@ body {
     margin-bottom: 20px;
 }
 
-/* Styling for left and right columns */
 .col-left, .col-right {
-    flex: 1;
     display: flex;
+    flex: 1;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
+    align-items: center; 
+    justify-content: center;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: 30px;
+    margin-left: 2vh;
 }
 
-/* Styling for college logos */
 .col-logo1, .col-logo2 {
-    width: 300px;
-    height: auto;
-    margin-bottom: 20px;
+    justify-content: center;
+    width: 60vh;
+    height: 32vh;
+    max-height: 32vh;
+    margin-bottom: 5vh;
 }
 
-/* Styling for college descriptions */
 .first-college, .second-college {
     text-decoration: none;
     color: #333;
@@ -263,8 +300,13 @@ body {
 }
 
 .first-college h1, .second-college h1 {
-    font-size: 24px;
+    font-size: 1.8em;
     color: #1a73e8;
+    margin-bottom: 10px;
+  
+}
+.first-college h2, .second-college h2 {
+    font-size: 1em;
     margin-bottom: 10px;
   
 }
@@ -276,141 +318,64 @@ body {
     text-align: left;
 }
 
-/* Styling for button container */
-.button-container {
-    margin-top: 20px;
-}
 
-/* Styling for subject buttons */
-.button-subject {
-    display: inline-block;
+.button-prody1, .button-prody2{
+    display: list-item;
     padding: 10px 20px;
-    margin: 5px;
-    background-color: #1E90FF;
     color: #fff;
     text-decoration: none;
+  
+}
+
+.box-prody1, .box-prody2 {
+    display: flex;
+    flex-direction: column; 
+    width: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    max-height: 100vh; 
+}
+
+.button-subject {
+    display: flex; 
+    align-items: center; 
+    padding: 10px;
+    margin: 5px 0; 
+    color: #000000;
+    text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
-    font-size: 0.8rem;
+    background-color: rgb(210, 210, 210);
+    font-size: 1rem;
+    border: none;
+    width: 100%; 
+}
+
+.button-subject img {
+    max-width: 20px; 
+    max-height: 20px; 
+    margin-right: 10px; 
+}
+
+.button-subject span {
+    flex: 1; 
+    text-align: left; 
 }
 
 .button-subject:hover {
-    background-color: #0066CC;
-}
-
-/* Styling for the down-content section */
-.down-content {
-    text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.down-content a {
-    text-decoration: none;
-    color: #1a73e8;
-    font-size: 18px;
-}
-
-.down-content a:hover {
-    color: #0056b3;
-}
-
-.down-content p {
-    margin: 0;
-    font-size: 18px;
-}
-
-/* Styling for button container */
-.button-container {
-    margin-top: 20px;
-}
-
-/* Styling for subject buttons */
-.button-subject {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #1E90FF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+    background-color: #50C4ED;
     font-weight: bold;
-    font-size: 0.8rem;
 }
 
-.button-subject:hover {
-    background-color: #0066CC;
-}
-
-/* Styling for the down-content section */
-.down-content {
-    text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.down-content a {
-    text-decoration: none;
-    color: #1a73e8;
-    font-size: 18px;
-}
-
-.down-content a:hover {
-    color: #0056b3;
-}
-
-.down-content p {
-    margin: 0;
-    font-size: 18px;
-}
-
-/* General link styling */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Hover effects */
 .first-college:hover h1, .second-college:hover h1 {
-    color: #0056b3;
+    color: #50C4ED;
 }
 
 .first-college:hover p, .second-college:hover p, .about-utp li:hover {
     color: #333;
 }
 
-/* Styling for the down-content section */
-.down-content {
-    text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.down-content a {
-    text-decoration: none;
-    color: #1a73e8;
-    font-size: 18px;
-}
-
-.down-content a:hover {
-    color: #0056b3;
-}
-
-.down-content p {
-    margin: 0;
-    font-size: 18px;
-}
-
-/* Styling for the list of details about UTP */
+/* ABOUT */
 .about-utp {
     margin-top: 20px;
     padding-left: 20px;
@@ -424,46 +389,6 @@ a {
     color: #555;
 }
 
-/* General link styling */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Hover effects */
-.first-college:hover h1, .second-college:hover h1 {
-    color: #0056b3;
-}
-
-.first-college:hover p, .second-college:hover p, .about-utp li:hover {
-    color: #333;
-}
-
-/* Styling for the down-content section */
-.down-content {
-    text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.down-content a {
-    text-decoration: none;
-    color: #1a73e8;
-    font-size: 18px;
-}
-
-.down-content a:hover {
-    color: #0056b3;
-}
-
-.down-content p {
-    margin: 0;
-    font-size: 18px;
-}
-
 .upper-container {
     display: flex;
     justify-content: center;
@@ -473,7 +398,6 @@ a {
 
 .about-text {
     justify-content: right;
-    
     margin-left: 20px;
     padding: 20px;
     border: 2px solid black;
@@ -490,12 +414,7 @@ a {
     justify-content: left;
     width: 100vh;
     height: 55vh;
-    /* border: 2px solid black; */
     padding: 20px;
-}
-
-.about-text{
-    /* margin-bottom: 50px; */
 }
 
 .about-socmed {
@@ -521,12 +440,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    height: 6vh;
+    background-color: #cccccc;
+    padding: 2vh;
     border: 2x solid black;
-    border-top: none;
-    border-left: none;
-    border-right: none;
 }
 
 .p-footer {
