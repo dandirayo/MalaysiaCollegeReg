@@ -542,19 +542,45 @@ body {
 
 /* ABOUT */
 .about-socmed {
-    font-size: large;
     padding: 20px;
-    /* border: 2px solid black; */
-    border-left: none;
-    border-right: none;
 }
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust gap between social media items as needed */
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adjust gap between icon and text */
+}
+
+.social-media a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; /* Ensures text color follows parent */
+}
+
+.social-media img {
+    width: 3vh; /* Adjust as needed */
+    height: 3vh; /* Adjust as needed */
+}
+
+.a-text {
+    font-size: large;
+    margin: 0;
+}
+
 
 .about-thanks {
     display: flex;
     justify-content: center;
     font-size: large;
     padding: 20px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-top: none;
     border-left: none;
     border-right: none;
@@ -568,7 +594,7 @@ body {
     justify-content: center;
     background-color: #cccccc;
     padding: 2vh;
-    /* border: 2x solid black; */
+    
 }
 
 .p-footer {
