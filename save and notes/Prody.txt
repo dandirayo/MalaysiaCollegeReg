@@ -1,0 +1,23 @@
+[Logo]
+University Teknologi Petronas Malaysia
+"Unlocking True Potential""#UTPinMe"
+[Video 1]
+
+
+
+- AC Applied Chemistry
+- BM Business Management
+- CE Computer Engineering
+- ChemE Chemical Engineering
+- CS Computer Science
+- CV Civil Engineering
+- EE Electrical and Electronics Engineering
+- IS Information System
+- IT Information Technology 
+- ME Material Engineering
+- PE Petrolium Engineering
+- PG Petrolium GeoScience
+
+
+UTP-> about utp (Video x,y,z) -> fakultas(Video x)
+

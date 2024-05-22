@@ -49,7 +49,7 @@ body {
 .logo-container a img{
     width: 8vh;
     height: 8vh;
-    margin-right: 2vh;
+    margin-right: 1.2vh;
 }
 
 
@@ -314,18 +314,68 @@ body {
     margin-bottom: 10px;
   
 }
+
+
+.college-video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh; 
+    overflow: hidden;
+    width: 100%;
+    max-width: 100vh;
+    max-height: 55vh;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.intro-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.intro-element {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+.video-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+
 .first-college h2, .second-college h2 {
     font-size: 1em;
     margin-bottom: 10px;
-  
+    
 }
 
 .first-college p, .second-college p {
+    margin-top: 1vh;
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 10px;
     text-align: left;
 }
+
 
 
 .button-prody1, .button-prody2{
@@ -337,13 +387,15 @@ body {
 }
 
 .box-prody1, .box-prody2 {
+    
     display: flex;
     flex-direction: column; 
     width: auto;
-    padding: 10px;
+    padding: 20px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     max-height: 100vh; 
+    margin-top: 5vh;
 }
 
 .button-subject {
@@ -416,48 +468,51 @@ body {
 }
 
 .about-text p {
+    margin-top: 2vh;
     font-size: large;
 }
-
-
 .about-video {
     position: relative;
-    width: 100%;
-    padding-top: 25%; 
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh; 
     overflow: hidden;
+    width: 100%;
     max-width: 100vh;
     max-height: 55vh;
+    margin: auto;
+    border-radius: 10px;
 }
 
 .video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vh;
-    height: 55vh;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .video-element {
-    width: 100vh;
-    height: 55vh;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
-    object-fit: cover; /* Agar video tetap di dalam kotak */
+    object-fit: cover;
 }
 
 .video-thumbnail {
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
-    object-fit: contain; /* Gambar ditampilkan sepenuhnya tanpa memotong */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     cursor: pointer;
     border-radius: 10px;
     z-index: 2;
     display: flex;
-    justify-content: center; /* Membuat gambar berada di tengah secara horizontal */
-    align-items: center; /* Membuat gambar berada di tengah secara vertikal */
+    justify-content: center;
+    align-items: center;
 }
 
 

@@ -1,0 +1,40 @@
+
+.college-video11 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 5vh; 
+    overflow: hidden;
+
+    width: 100vh;
+    height: 55vh;
+    border-radius: 10px;
+}
+
+.intro-container11 {
+    width: 100vh;
+    height: 55vh;
+    width: fit-content;
+    height: fit-content;
+    position: center;
+}
+
+.vintro-element11 {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+.video-thumbnail11 {
+    position: center;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}

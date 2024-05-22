@@ -6,6 +6,7 @@
     <title>Choose your College!</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <title>Embed Local Video with Thumbnail</title>
 </head>
 
 <body>
@@ -56,10 +57,33 @@
             <div class="first-college">
                 <h1>Universiti Teknologi Petronas Malaysia</h1>
                 <h2><i>"Unlocking True Potential""#UTPinMe"</i></h2>
+                <div class="college-video">
+                    <div class="intro-container">
+                        <video class="intro-element" controls>
+                            <source src="images/about/video/video1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <button class="video-thumbnail" onclick="playVideo(this)">
+                            <img src="images/about/aboutvideo.png" alt="Watch video">
+                        </button>
+                    </div>
+                </div>
                 <p>Universiti Teknologi PETRONAS (UTP) was established on 10 January 1997 and is the best private university in Malaysia. </p>
                 <p>UTP offers a wide range of industry-rele​vant engineering, science and technology programmes at undergraduate and postgraduate levels.  It aims to produce well-rounded graduates with excellent leadership qualities and communication abilities. </p>
                 <p>The university conducts extensive research activities in collaboration with PETRONAS and other institutions and industries, locally and abroad, on six research focus and niche areas.  They are self-sustainable building, transport infrastructure, health analytics, hydrocarbon recovery, contaminant management and autonomous system.</p>
                 <p>UTP has produced more than 24,000 graduates. It currently has an enrolment of above 1000 foundation students, more than 4,000 undergraduates and over 1,000 postgraduates from more than 50 countries around the world.</p>
+                
+                <div class="college-video">
+                    <div class="intro-container">
+                        <video class="intro-element" controls>
+                            <source src="images/about/video/video2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <button class="video-thumbnail" onclick="playVideo(this)">
+                            <img src="images/about/aboutvideo.png" alt="Watch video">
+                        </button>
+                    </div>
+                </div>
                 <div class="box-prody1">
                     <a href="login.html" class="button-subject">
                         <img src="images/11.png" alt="Prody1" />
@@ -120,10 +144,32 @@
                 <div class="second-college">
                     <h1>Universiti Kebangsaan Malaysia</h1>
                     <h2><i>"Unlocking True Potential""#UTPinMe"</i></h2>
+                    <div class="college-video">
+                        <div class="intro-container">
+                            <video class="intro-element" controls>
+                                <source src="images/about/video/video1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <button class="video-thumbnail" onclick="playVideo(this)">
+                                <img src="images/about/aboutvideo.png" alt="Watch video">
+                            </button>
+                        </div>
+                    </div>
                     <p>Since its establishment on May 18, 1970, Universiti Kebangsaan Malaysia (UKM) has not only fulfilled the vision of its founding fathers to accord Bahasa Melayu as the language of learning and scholarship but has also successfully produced intellectuals and scholars who are among the nation’s pride. </p>
                     <p>Starting out with only three faculties, it has since grown into 13 faculties, 2 educational center, 13 research institutes of excellence and two commercial entities, UKM Holdings Sdn. Bhd. and UKM Technology Sdn. Bhd. It has thus grown not just in size, but also stature, becoming a research institute in various fields of study including operating various research centres</p>
                     <p>Aware of the changes taking place in the academic landscape, UKM is taking steps to address them. One is through e-Learning to prepare students through innovative teaching and forward–looking curriculum to meet demands of the new economic needs. It nurtures research to provide solutions to pressing problems while also engaging with the community and industry, to strive for sustainable development both at the national and international levels.</p>
-                    <div class="box-prody1">
+                    <div class="college-video">
+                        <div class="intro-container">
+                            <video class="intro-element" controls>
+                                <source src="images/about/video/video2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <button class="video-thumbnail" onclick="playVideo(this)">
+                                <img src="images/about/aboutvideo.png" alt="Watch video">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="box-prody2">
                         <a href="login.html" class="button-subject">
                             <img src="images/11.png" alt="Prody1" />
                             <span>Applied Chemistry</span>
@@ -174,6 +220,7 @@
                         </a>
                     </div>
                 </div>
+                <script src="scripts.js"></script>
         </div>
     </div>
     <!-- COLLEGE Content -->
