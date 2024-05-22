@@ -133,13 +133,28 @@ body {
 .home-container:not(.the-form) {
     display: flex;
     width: fit-content;
+    position: relative; 
 }
 
 .image-college {
-    justify-content: left;
+    position: relative; 
     align-items: flex-end;
     margin: 0;
+    width: 100%; 
+    height: 100%; 
+    background-image: url(images/backstudent.png); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
+
+.image-college img {
+    position: relative; 
+    z-index: 1; 
+    max-width: 100%; 
+    height: auto; 
+}
+
 
 .content-right {
     align-items: flex-start;
@@ -458,10 +473,10 @@ body {
 }
 
 .about-text {
+    font-size: 1.6em;
     justify-content: right;
     margin-left: 20px;
     padding: 20px;
-    /* border: 2px solid black; */
     border-top: none;
     border-bottom: none;
     border-right: none;
@@ -471,7 +486,13 @@ body {
     margin-top: 2vh;
     font-size: large;
 }
+
+.about-text p:nth-of-type(1) {
+    font-weight: bold;
+}
+
 .about-video {
+    margin-left: 3vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -486,6 +507,7 @@ body {
 }
 
 .video-container {
+    margin-left: 3vh;
     position: relative;
     width: 100%;
     height: auto;
@@ -494,6 +516,7 @@ body {
 }
 
 .video-element {
+    margin-left: 3vh;
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -501,6 +524,7 @@ body {
 }
 
 .video-thumbnail {
+    margin-left: 3vh;
     position: absolute;
     top: 0;
     left: 0;
