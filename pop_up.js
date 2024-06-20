@@ -1,60 +1,37 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    // Popup 1
-    const missionBox = document.getElementById('mission-box');
-    const missionPopup = document.getElementById('mission-popup');
-    const closeBtn1 = missionPopup.querySelector('.close-btn');
+document.addEventListener('DOMContentLoaded', () => {
+    const popupMap = {
+        'mission-box1': 'popup-text1',
+        'mission-box2': 'popup-text2',
+        'mission-box3': 'popup-text3'
+    };
 
-    missionBox.addEventListener('click', () => {
-        missionPopup.style.display = 'block';
+    // Function to toggle popup visibility
+    const togglePopup = (popupElement) => {
+        popupElement.style.display = popupElement.style.display === 'block' ? 'none' : 'block';
+    };
+
+    // Add event listeners for each box and its corresponding popup
+    Object.keys(popupMap).forEach(boxId => {
+        const boxElement = document.getElementById(boxId);
+        const popupId = popupMap[boxId];
+        const popupElement = document.getElementById(popupId);
+        const closeBtn = popupElement.querySelector('.close-btn');
+
+        // Toggle popup when box is clicked
+        boxElement.addEventListener('click', () => {
+            togglePopup(popupElement);
+        });
+
+        // Toggle popup when close button is clicked
+        closeBtn.addEventListener('click', () => {
+            togglePopup(popupElement);
+        });
+
+        // Close popup when clicking outside of it
+        window.addEventListener('mousedown', (event) => {
+            if (event.target === popupElement) {
+                togglePopup(popupElement);
+            }
+        });
     });
-
-    closeBtn1.addEventListener('click', () => {
-        missionPopup.style.display = 'none';
-    });
-
-    window.addEventListener('click', (event) => {
-        if (event.target === missionPopup) {
-            missionPopup.style.display = 'none';
-        }
-    });
-
-    // Popup 2
-    const missionBox2 = document.getElementById('mission-box2');
-    const missionPopup2 = document.getElementById('mission-popup2');
-    const closeBtn2 = missionPopup2.querySelector('.close-btn');
-
-    missionBox2.addEventListener('click', () => {
-        missionPopup2.style.display = 'block';
-    });
-
-    closeBtn2.addEventListener('click', () => {
-        missionPopup2.style.display = 'none';
-    });
-
-    window.addEventListener('click', (event) => {
-        if (event.target === missionPopup2) {
-            missionPopup2.style.display = 'none';
-        }
-    });
-
-
-    // Popup 3
-    const missionBox3 = document.getElementById('mission-box3');
-    const missionPopup3 = document.getElementById('mission-popup3');
-    const closeBtn3 = missionPopup3.querySelector('.close-btn');
-
-    missionBox3.addEventListener('click', () => {
-        missionPopup3.style.display = 'block';
-    });
-
-    closeBtn3.addEventListener('click', () => {
-        missionPopup3.style.display = 'none';
-    });
-
-    window.addEventListener('click', (event) => {
-        if (event.target === missionPopup3) {
-            missionPopup3.style.display = 'none';
-        }
-    });
-    
 });
