@@ -18,7 +18,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: white;
 }
-/* NAVIGATION */
+/* Navigation-Bar */
 .navigation-container {
     display: flex;
     justify-content: space-between;
@@ -51,7 +51,6 @@ body {
     height: 8vh;
     margin-right: 1.2vh;
 }
-
 
 .ul-menu {
     display: flex;
@@ -89,10 +88,8 @@ body {
     font-size: 0.8;
     padding: 5px;
     margin-right: 5px;
-
     border: none;
     border-radius: 10px;
-
 }
 
 .button-search {
@@ -100,7 +97,6 @@ body {
     cursor: pointer;
     color: #fff;
     padding: 5px 10px;
-
     border-radius: 5px;
     border: none;
     background-color: #387ADF;
@@ -110,12 +106,10 @@ body {
 .button-signup
  {
     font-size: 0.9rem;
-    
     text-decoration: none;
     color: #fff;
     margin: 5px;
     padding: 10px 20px;
-
     border-radius: 5px;
     background-color: #387ADF;
 }
@@ -225,7 +219,7 @@ body {
 .box-blue p,
 .box-yellow p,
 .box-red p {
-    font-size: 1em;
+    font-size: 0.8em;
     text-align: center;
     text-decoration: none;
 }
@@ -296,8 +290,7 @@ body {
     border: none;
     margin-top: 2vh;
 }
-
-/* READY */
+/* Ready Container */
 .ready-container {
     text-align: center;
     padding: 5vh;
@@ -307,33 +300,54 @@ body {
 .full-stepconsul {
     display: flex;
     justify-content: center;
+    gap: 2vh; /* Add some space between the two menus */
     padding: 5vh;
-}
-
-.full-stepconsul h2 {
-   text-align: center;
+    background-color: #f0f0f0; /* Optional: Background color for visual separation */
+    align-items: center; /* Center the items vertically */
 }
 
 .stepbystep, 
-.whatsapp{
-    padding: 5vh;
-    justify-content: center;
-    border: 2px #333;
+.whatsapp {
+    flex: 1; /* Allow items to grow equally */
+    padding: 2vh; /* Adjusted padding for a more consistent look */
+    border: 2px solid #333;
+    text-align: center; /* Center the content inside each box */
+    background-color: #fff; /* Optional: Background color for each box */
+    margin: 1vh; /* Optional: Margin around each box */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for a subtle effect */
 }
-.stepbystep, 
-.whatsapp h2{
+
+.stepbystep h2, 
+.whatsapp h2 {
     text-align: center;
 }
 
 .img-step,
 .img-whatsapp {
-    align-items: center;
+    display: block;
+    margin: 0 auto; /* Center the images horizontally */
     width: 22vh;
     height: 22vh;
 }
 
 .button-container {
     margin-top: 20px;
+    text-align: center; /* Center the button container */
+}
+
+.button-form {
+    display: inline-block; /* Make the button inline-block for better control */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button-form:hover {
+    background-color: #0056b3;
 }
 
 /* COLLEGE */

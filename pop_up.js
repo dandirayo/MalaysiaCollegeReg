@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const popupMap = {
         'mission-box1': 'popup-text1',
         'mission-box2': 'popup-text2',
-        'mission-box3': 'popup-text3'
+        'mission-box3': 'popup-text3',
+        'event-button': 'popup-event'
     };
 
     // Function to toggle popup visibility
