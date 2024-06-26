@@ -1,3 +1,4 @@
+/* -------------------------------------------- */
 /* ------------------------- */
 
 /* align-items: center; vertical */
@@ -35,12 +36,11 @@ body {
 .logo-container,
 .menu-container,
 .search-container,
-.button-signlogin {
+.button-losin {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 .logo-container a{
     display: flex;
@@ -109,17 +109,9 @@ body {
     text-decoration: none;
     color: #fff;
     margin: 5px;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border-radius: 5px;
     background-color: #387ADF;
-}
-
-.button-signlogin a{
-    padding: 5px;
-}
-
-.button-signlogin button{
-    padding: 5px;
 }
 
 .button-search:hover,
@@ -127,6 +119,7 @@ body {
 .button-signup:hover,
 .button-please:hover, 
 .button-form:hover {
+    background-color: #50C4ED;
     font-weight: bold;
 }
 

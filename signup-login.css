@@ -1,23 +1,23 @@
-/* ------------------------- */
-/* SIGNUP-LOGIN STYLE */
+/* Styles for Register Form */
+
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: white;
+    font-family: Arial, sans-serif;
 }
 
 .register-container{
     display: flex;
     justify-content: left;
+    /* bagian kiri untuk kanan-tengah-kiri */
     padding: 10px;
     border: 3px solid black;
 
 }
 
-/* SIGNUP */
+/* ini register */
+
 h1 {
     margin-top: 10vh;
     text-align: center;
-    padding: 10px;
 }
 
 form {
@@ -59,10 +59,10 @@ input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
 }
-/* 
+
 input[type="submit"]:hover {
     background-color: #4169E1;
-} */
+}
 
 p {
     text-align: center;
@@ -75,11 +75,15 @@ a {
     text-decoration: none;
 }
 
-
-.sign-step{
-    display: flex   ;
-    align-items: center;
+a:hover {
+    background-color: #ccc;
 }
 
-/* LOGIN */
+
+.reg-step{
+    display: flex   ;
+    align-items: center;
+
+}
+
 
