@@ -182,17 +182,19 @@ body {
     margin: 15px;
 }
 
-.box-blue:hover, 
-.box-yellow:hover, 
-.box-red:hover {
+.box1:hover, 
+.box2:hover, 
+.box3:hover,
+.box4:hover {
     transform: scale(1.1); 
     background-color: #f0f0f0; 
     border-radius: 20px;
 }
 
-.box-blue,
-.box-yellow,
-.box-red {
+.box1,
+.box2,
+.box3,
+.box4 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -208,23 +210,25 @@ body {
     text-decoration: none;
 }
 
-.box-blue img,
-.box-yellow img,
-.box-red img {
+.box1 img,
+.box2 img,
+.box3 img,
+.box4 img {
     max-width: 70%;
     max-height: 70%;
     object-fit: contain;
 }
 
-.box-blue p,
-.box-yellow p,
-.box-red p {
+.box1 p,
+.box2 p,
+.box3 p,
+.box4 p {
     font-size: 0.8em;
     text-align: center;
     text-decoration: none;
 }
 
-.box-blue img {
+.box1 img {
     width: 68%;
     height: 68%;
 }
@@ -297,47 +301,77 @@ body {
     background-color: #cccccc;
 }
 
-.full-stepconsul {
+.full-consultation {
+    position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+}
+
+.back-consul {
+    position: absolute;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.fill-stepconsul {
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
     justify-content: center;
-    gap: 2vh; /* Add some space between the two menus */
+    align-items: center;
     padding: 5vh;
-    background-color: #f0f0f0; /* Optional: Background color for visual separation */
-    align-items: center; /* Center the items vertically */
+    background-color: rgba(240, 240, 240, 0.3);
+    z-index: 1;
 }
 
-.stepbystep, 
+.stepbystep,
 .whatsapp {
-    flex: 1; /* Allow items to grow equally */
-    padding: 2vh; /* Adjusted padding for a more consistent look */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    text-align: center;
+    background-color: #fff;
+    padding: 2vh;
+    margin: 1vh;
     border: 2px solid #333;
-    text-align: center; /* Center the content inside each box */
-    background-color: #fff; /* Optional: Background color for each box */
-    margin: 1vh; /* Optional: Margin around each box */
-    border-radius: 10px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for a subtle effect */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.stepbystep h2, 
+.stepbystep h2,
 .whatsapp h2 {
     text-align: center;
+}
+
+.stepbystep {
+    /* flex-direction: row-reverse; Arrange items horizontally with reverse order */
+}
+
+.whatsapp {
+    margin-top: 2vh; /* Optional: Add space between stepbystep and whatsapp */
 }
 
 .img-step,
 .img-whatsapp {
     display: block;
-    margin: 0 auto; /* Center the images horizontally */
+    margin: 0 auto;
     width: 22vh;
     height: 22vh;
 }
 
 .button-container {
     margin-top: 20px;
-    text-align: center; /* Center the button container */
+    text-align: center;
 }
 
 .button-form {
-    display: inline-block; /* Make the button inline-block for better control */
+    display: inline-block;
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
@@ -349,6 +383,7 @@ body {
 .button-form:hover {
     background-color: #0056b3;
 }
+
 
 /* COLLEGE */
 .college-container {
