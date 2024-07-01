@@ -86,59 +86,61 @@
                         </button>
                     </div>
                 </div>
-                <div class="box-prody1">
-                    <a href="login.html" class="button-subject">
-                        <img src="images/11.png" alt="Prody1" />
-                        <span>Applied Chemistry</span>
-                    </a>
-                    <a href="login.html" class="button-subject">
-                        <img src="images/11.png" alt="Prody2" />
-                        <span>Business Management</span>
-                    </a>
-                    <a href="login.html" class="button-subject">
-                        <img src="images/11.png" alt="Prody3" />
-                        <span>Computer Engineering</span>
-                    </a>
-                    <a href="login.html" class="button-subject">
-                        <img src="images/11.png" alt="Prody4" />
-                        <span>Chemical Engineering</span>
-                    </a>
-                    <a href="login.html" class="button-subject">
-                        <img src="images/11.png" alt="Prody5" />
-                        <span>Computer Science</span>
-                    </a>
-                    <a href="login.html" class="button-subject">
-                        <img src="images/11.png" alt="Prody6" />
-                        <span>Civil Engineering</span>
-                    </a>
-                    <a href="login.html" class="button-subject">
-                        <img src="images/11.png" alt="Prody7" />
-                        <span>Electrical and Electronics Engineering</span>
-                    </a>
-                    <a href="login.html" class="button-subject">
-                        <img src="images/11.png" alt="Prody8" />
-                        <span>Information System</span>
-                    </a>
-                    <a href="login.html" class="button-subject">
-                        <img src="images/11.png" alt="Prody9" />
-                        <span>Information Technology</span>
-                    </a>
-                    <a href="login.html" class="button-subject">
-                        <img src="images/11.png" alt="Prody10" />
-                        <span>Material Engineering</span>
-                    </a>
-                    <a href="login.html" class="button-subject">
-                        <img src="images/11.png" alt="Prody11" />
-                        <span>Petroleum Engineering</span>
-                    </a>
-                    <a href="login.html" class="button-subject">
-                        <img src="images/11.png" alt="Prody12" />
-                        <span>Petroleum Geoscience</span>
-                    </a>
+                
+            <!-- College Popup Structure -->
+            <div class="college-popup" id="collegePopup">
+                <div class="college-popup-content">
+                    <span class="college-close" onclick="closeCollegePopup()">&times;</span>
+                    <h2 id="facultyTitle">Faculty Title</h2>
+                    <div class="college-content">
+                        <img id="facultyImage" src="images/faculty-photo.jpg" alt="Faculty Photo">
+                        <p id="facultyDescription">About Faculty text goes here...</p>
+                        <iframe id="facultyVideo" width="560" height="315" src="https://www.youtube.com/embed/video_id" frameborder="0" allowfullscreen></iframe>
+                        <p id="additionalInfo">Additional information about faculty...</p>
+                    </div>
                 </div>
-                </a>
             </div>
-        </div>
+
+            <!-- Buttons to open the popups -->
+            <div class="faculty-buttons">
+                <button class="button-subject openCollegePopup" data-faculty="Applied Chemistry">
+                    <img src="images/icon-applied-chemistry.png" alt="Applied Chemistry Icon"><span>Applied Chemistry</span>
+                </button>
+                <button class="button-subject openCollegePopup" data-faculty="Business Management">
+                    <img src="images/icon-business-management.png" alt="Business Management Icon"><span>Business Management</span>
+                </button>
+                <button class="button-subject openCollegePopup" data-faculty="Computer Engineering">
+                    <img src="images/icon-computer-engineering.png" alt="Computer Engineering Icon"><span>Computer Engineering</span>
+                </button>
+                <button class="button-subject openCollegePopup" data-faculty="Chemical Engineering">
+                    <img src="images/icon-chemical-engineering.png" alt="Chemical Engineering Icon"><span>Chemical Engineering</span>
+                </button>
+                <button class="button-subject openCollegePopup" data-faculty="Computer Science">
+                    <img src="images/icon-computer-science.png" alt="Computer Science Icon"><span>Computer Science</span>
+                </button>
+                <button class="button-subject openCollegePopup" data-faculty="Civil Engineering">
+                    <img src="images/icon-civil-engineering.png" alt="Civil Engineering Icon"><span>Civil Engineering</span>
+                </button>
+                <button class="button-subject openCollegePopup" data-faculty="Electrical and Electronics Engineering">
+                    <img src="images/icon-electrical-engineering.png" alt="Electrical and Electronics Engineering Icon"><span>Electrical and Electronics Engineering</span>
+                </button>
+                <button class="button-subject openCollegePopup" data-faculty="Information System">
+                    <img src="images/icon-information-system.png" alt="Information System Icon"><span>Information System</span>
+                </button>
+                <button class="button-subject openCollegePopup" data-faculty="Information Technology">
+                    <img src="images/icon-information-technology.png" alt="Information Technology Icon"><span>Information Technology</span>
+                </button>
+                <button class="button-subject openCollegePopup" data-faculty="Material Engineering">
+                    <img src="images/icon-material-engineering.png" alt="Material Engineering Icon"><span>Material Engineering</span>
+                </button>
+                <button class="button-subject openCollegePopup" data-faculty="Petroleum Engineering">
+                    <img src="images/icon-petroleum-engineering.png" alt="Petroleum Engineering Icon"><span>Petroleum Engineering</span>
+                </button>
+                <button class="button-subject openCollegePopup" data-faculty="Petroleum GeoScience">
+                    <img src="images/icon-petroleum-geoscience.png" alt="Petroleum GeoScience Icon"><span>Petroleum GeoScience</span>
+                </button>
+            </div>
+
         <div class="col-right">
             <a href="https://www.ukm.my/portalukm/">
                 <img src="images/college/UKM Logo.png" class="col-logo2">

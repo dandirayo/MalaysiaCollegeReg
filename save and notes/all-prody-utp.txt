@@ -11,3 +11,18 @@
 - PE Petrolium Engineering
 - PG Petrolium GeoScience
 
+- Applied Chemistry
+- Business Management
+- Computer Engineering
+- Chemical Engineering
+- Computer Science
+- Civil Engineering
+- Electrical and Electronics Engineering
+- Information System
+- Information Technology 
+- Material Engineering
+- Petrolium Engineering
+- Petrolium GeoScience
+
+
+
