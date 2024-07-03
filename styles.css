@@ -1,10 +1,12 @@
-/* -------------------------------------------- */
-/* ------------------------- */
 
 /* align-items: center; vertical */
 /* justify-content: center; horizontal */
+/* .ho-container:not(.the-form) */
+/* space-between (rata kanan kiri) */
 
-/* ALL */
+/* #FBA834 Orange*/
+/* #262163 Blue  */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,38 +20,47 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: white;
 }
-/* Navigation-Bar */
-.navigation-container {
+
+/* NAVIGATION */
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: rgb(210, 210, 210);
-    /* #FBA834 ORANGE*/
+    background-color: #262163;
+    
 }
 
-.logo-container,
-.menu-container,
-.search-container,
-.button-losin {
+.lo-container h1{
+    text-decoration: none;
+    color: white;
+}
+
+.lo-container,
+.me-container,
+.register-now {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.logo-container a{
+.lo-container a{
     display: flex;
     align-items: center;
 }
-.logo-container a img{
+.lo-container a img{
     width: 8vh;
     height: 8vh;
     margin-right: 1.2vh;
+    background-color: white;
+    border-radius: 50%;
+    /* padding: 2px; */
+    display: inline-block;
 }
 
 .ul-menu {
@@ -58,6 +69,7 @@ body {
     list-style-type: none;
     padding: 10px;
     margin: 0;
+    font-style: bold;
 }
 
 .li-menu {
@@ -67,14 +79,13 @@ body {
 }
 
 .a-menu {
-    color: #242364;
+    color: white;
     text-decoration: none;
     padding: 5px 10px;
     display: block;
 }
 
 .li-menu:hover {
-    /* transform: scale(1.1);  */
     background-color: #f0f0f0; 
     border-radius: 20px;
 }
@@ -84,47 +95,27 @@ body {
     font-weight: bold;
 }
 
-.bar-search {
-    font-size: 0.8;
-    padding: 5px;
-    margin-right: 5px;
-    border: none;
-    border-radius: 10px;
-}
-
-.button-search {
-    font-size: 0.8;
-    cursor: pointer;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #387ADF;
-}
-
-.button-login,
-.button-signup
- {
-    font-size: 0.9rem;
+/* Register Now */
+.regnow-but{
+    display: inline-block;
+    background-color: #FBAE42;
+    color: #262163;
     text-decoration: none;
-    color: #fff;
-    margin: 5px;
     padding: 10px 20px;
+    text-decoration: none;
     border-radius: 5px;
-    background-color: #387ADF;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
-.button-search:hover,
-.button-login:hover,
-.button-signup:hover,
-.button-please:hover, 
+.regnow-but:hover,
 .button-form:hover {
-    background-color: #50C4ED;
+    background-color: #ffffff;
     font-weight: bold;
 }
 
 /* HOME */
-.home-container:not(.the-form) {
+.ho-container:not(.the-form) {
     display: flex;
     width: fit-content;
     position: relative; 
@@ -138,19 +129,19 @@ body {
     width: 60%; 
     height: 60%; 
     background-image: url(images/backstudent.png); 
+    
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
 }
 
 .image-college img {
-    position: relative; 
     z-index: 1; 
-    max-width: 100%; 
-    height: 100%; 
+    width: 100%; 
+    bottom: 0;
 }
 
-
+/* Text-Right */
 .content-right {
     align-items: flex-start;
     justify-content: left;
@@ -162,6 +153,7 @@ body {
 }
 
 .text-right h1 {
+    color: #262163;
     font-size: 3.5em;
 }
 
@@ -173,20 +165,64 @@ body {
     margin-top: 1vh;
 }
 
-/* BOXES */
-.box-right {
+/* event */
+.event-expo {
+    text-align: center;
+    padding: 10px;
+}
+
+.event-expo h2 {
+    margin-bottom: 5vh;
+}
+
+.event-flex {
     display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 10vh;
+    margin-bottom: 15px;
+}
+
+.event-flex .event1,
+.event-flex .event2,
+.event-flex .event3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-flex img {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.button-expo {
+    padding: 10px 20px;
+    background-color: #262163;
+    color: #FBAE42;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* BOXES */
+.box-mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 15px;
+    gap: 5vh;
+    margin-top: 5vh;
+    /* justify-content: space-between; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
 }
 
 .box1:hover, 
 .box2:hover, 
 .box3:hover,
 .box4:hover {
-    transform: scale(1.1); 
+    transform: scale(1.25); 
     background-color: #f0f0f0; 
     border-radius: 20px;
 }
@@ -197,15 +233,15 @@ body {
 .box4 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     width: 22vh;
     height: 18vh;
     margin-bottom: 5px;
     padding: 10px;
-    background-color: #50C4ED;
+    background-color: white;
     /* border: 2px solid black; */
-    border-radius: 20px;
+    border-radius: 10px;
     margin-right: 2vh;
     text-decoration: none;
 }
@@ -223,6 +259,8 @@ body {
 .box2 p,
 .box3 p,
 .box4 p {
+    font-style: bold;
+    color: #262163 ;
     font-size: 0.8em;
     text-align: center;
     text-decoration: none;
@@ -233,9 +271,9 @@ body {
     height: 68%;
 }
 
-/* POP */
+/* PopUp Boxes*/
 .popup {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -244,6 +282,12 @@ body {
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+.popup p, 
+.popup h2,
+.popup ol{
+    padding: 2.5vh;
 }
 
 .popup-content {
@@ -260,221 +304,36 @@ body {
     text-align: center;
 }
 
-/* College Popup CSS */
-.college-popup {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5);
-}
-
-.college-popup-content {
-    background-color: #fefefe;
-    margin: 10% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 700px;
-    position: relative;
-    border-radius: 10px;
-}
-
-.college-close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.college-close:hover,
-.college-close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.college-content {
-    text-align: center;
-}
-
-.college-content img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.college-content iframe {
-    width: 100%;
-    max-width: 560px;
-    height: 315px;
-}
-
-/* Faculty Button CSS */
-.button-subject {
-    display: flex; 
-    align-items: center; 
-    padding: 10px;
-    margin: 5px 0; 
-    color: #000000;
-    text-decoration: none;
-    border-radius: 5px;
-    background-color: rgb(210, 210, 210);
-    font-size: 1rem;
-    border: none;
-    width: 100%; 
-}
-
-.button-subject img {
-    max-width: 20px; 
-    max-height: 20px; 
-    margin-right: 10px; 
-}
-
-.button-subject span {
-    flex: 1; 
-    text-align: left; 
-}
-
-.button-subject:hover {
-    background-color: #50C4ED;
-    font-weight: bold;
-}
-
-.first-college:hover h1, .second-college:hover h1 {
-    color: #50C4ED;
-}
-
-.first-college:hover p, .second-college:hover p, .about-utp li:hover {
-    color: #333;
-}
+/* Image and Button Event Expo */
 
 
-.close-btn {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close-btn:hover,
-.close-btn:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-/* ----------------------- */
-
-.the-please {
-    text-align: left;
-    margin-top: 10px;
-}
-
-.button-form, 
-.button-please{
-    font-size: 1.0rem;
-    color: #fff;
-    background-color: #387ADF;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    border: none;
-    margin-top: 2vh;
-}
 /* Ready Container */
-.ready-container {
+.why-container {
     text-align: center;
     padding: 5vh;
-    background-color: #cccccc;
+    background-color: #262163;
 }
 
-.full-consultation {
-    position: relative;
+.whychooseus{
     display: flex;
     align-items: center;
-    justify-content: center; /* Center horizontally */
-}
-
-.back-consul {
-    position: absolute;
-    align-items: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.7;
-    z-index: -1;
-}
-
-.fill-stepconsul {
-    position: relative;
-    display: flex;
-    /* flex-direction: column; */
     justify-content: center;
-    align-items: center;
-    padding: 5vh;
-    background-color: rgba(240, 240, 240, 0.3);
-    z-index: 1;
+    gap: 2vh;
 }
 
-.stepbystep,
-.whatsapp {
-    display: flex;
-    align-items: center; /* Center items vertically */
-    text-align: center;
-    background-color: #fff;
-    padding: 2vh;
-    margin: 1vh;
-    border: 2px solid #333;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.stepbystep h2,
-.whatsapp h2 {
-    text-align: center;
-}
-
-.stepbystep {
-    /* flex-direction: row-reverse; Arrange items horizontally with reverse order */
-}
-
-.whatsapp {
-    margin-top: 2vh; /* Optional: Add space between stepbystep and whatsapp */
-}
-
-.img-step,
-.img-whatsapp {
-    display: block;
-    margin: 0 auto;
-    width: 22vh;
-    height: 22vh;
-}
-
-.button-container {
-    margin-top: 20px;
-    text-align: center;
+.whychooseus h1{
+    color: white;
 }
 
 .button-form {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    background-color: #FBAE42;
+    color: #262163;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-}
-
-.button-form:hover {
-    background-color: #0056b3;
+    font-weight: bold;
 }
 
 
@@ -492,7 +351,7 @@ body {
 .col-left, .col-right {
     display: flex;
     flex: 1;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center; 
     justify-content: center;
     padding: 20px;
@@ -635,14 +494,307 @@ body {
 }
 
 .first-college:hover h1, .second-college:hover h1 {
-    color: #50C4ED;
+    color: white;
+}
+
+.first-college:hover p, .second-college:hover p, .about-utp li:hover {
+    color: #333;
+}
+/* College Popup CSS */
+.college-popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.college-popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.college-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.college-close:hover,
+.college-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.college-content {
+    text-align: center;
+}
+
+.college-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.college-content iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+}
+
+/* Faculty Button CSS */
+.button-subject {
+    display: flex; 
+    align-items: center; 
+    padding: 10px;
+    margin: 5px 0; 
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: rgb(210, 210, 210);
+    font-size: 1rem;
+    border: none;
+    width: 100%; 
+}
+
+.button-subject img {
+    max-width: 20px; 
+    max-height: 20px; 
+    margin-right: 10px; 
+}
+
+.button-subject span {
+    flex: 1; 
+    text-align: left; 
+}
+
+.button-subject:hover {
+    background-color: white;
+    font-weight: bold;
+}
+
+.first-college:hover h1, .second-college:hover h1 {
+    color: white;
 }
 
 .first-college:hover p, .second-college:hover p, .about-utp li:hover {
     color: #333;
 }
 
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Our Service */
+
+.service-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+}
+
+.our-services {
+    flex-basis: 65%;
+    display: flex;
+    flex-direction: row; 
+    margin-bottom: 3vh;
+    background-size: cover;
+    /* background-color: #262163; */
+    justify-content: center;
+    align-items: center;
+    padding: 10vh
+}
+
+.activity {
+    text-align: center; 
+    color: #262163;
+    /* margin-bottom: 20px; */
+}
+.our-services img {
+    width: 46%; 
+    height: 300px; 
+    /* flex-basis: 80%; */
+    align-items: center; 
+    justify-content: space-between
+    
+}
+
+/* Consultation */
+.consultation {
+    flex-basis: 35%; 
+    align-items: center; 
+    text-align: center;
+    justify-content: space-between;
+    background-color: #262163;
+    padding: 20px; 
+}
+
+.consultation h1 {
+    margin-top: 1vh;
+    text-align: center;
+}
+.consultation form {
+    margin-left: 30vh;  
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.consultation form {
+    margin-left: 30vh;  
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.our-services a {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Consultation */
+.form-register {
+    max-width: 400px;
+    margin: 0 auto;
+    /* padding: 20px; */
+}
+.form-register label{
+    color: white;
+    text-align: left;
+    margin-bottom: -2vh;
+    display: block;
+    font-weight: bold;
+    width: 50vh;
+}
+
+.form-register button[type="submit"]{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FBAE42;
+    color: #262163;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.form-register button[type="submit"]:hover{
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.form-register h1{
+    color: white;
+}
+
+.consultation input[type="text"]:not(.bar-search),
+.consultation input[type="email"],
+.consultation input[type="password"],
+.consultation input[type="telephone"],
+.consultation select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 2vh;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.consultation input[type="submit"] {
+    width: 100%;
+    /* padding: 10px; */
+    background-color: #1E90FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.consultation input[type="submit"]:hover {
+    background-color: #4169E1;
+}
+
+.consultation p {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.consultation a:hover {
+    background-color: #ccc;
+}
+
 /* ABOUT */
+.about-socmed {
+    /* display: flex; */
+    padding: 20px;
+}
+
+.social-icons {
+    margin-left: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh; 
+}
+
+.social-media {
+    
+    display: flex;
+    align-items: center;
+    gap: 5vh; 
+}
+
+.social-media a {
+    margin-left: 2vh;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; 
+}
+
+.social-media img {
+    width: 5vh; 
+    height: 5vh; 
+}
+
+.about-thanks {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    padding: 20px;
+    /* border: 2px solid black; */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+/* ABOUT UTP*/
 .about-utp {
     margin-top: 20px;
     padding-left: 20px;
@@ -730,58 +882,6 @@ body {
     align-items: center;
 }
 
-
-/* ABOUT */
-.about-socmed {
-    /* display: flex; */
-    padding: 20px;
-    
-}
-
-.social-icons {
-    margin-left: 5vh;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2vh; /* Adjust gap between social media items as needed */
-}
-
-.social-media {
-    
-    display: flex;
-    align-items: center;
-    gap: 5vh; /* Adjust gap between icon and text */
-}
-
-.social-media a {
-    margin-left: 2vh;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: inherit; /* Ensures text color follows parent */
-}
-
-.social-media img {
-
-    width: 5vh; /* Adjust as needed */
-    height: 5vh; /* Adjust as needed */
-}
-
-.a-text {
-    font-size: large;
-    margin: 0;
-}
-
-
-.about-thanks {
-    display: flex;
-    justify-content: center;
-    font-size: large;
-    padding: 20px;
-    /* border: 2px solid black; */
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
 
 /* FOOTER */
 

@@ -12,7 +12,7 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navigation-container">
-        <!-- Left bar-->
+        <!-- Left bar -->
         <div class="logo-container">
             <a href="index.html">
                 <img src="images/topalumniglobal.png" class="a-logo"/>
@@ -20,7 +20,7 @@
             </a>
         </div>
 
-        <!-- Mid Bar-->
+        <!-- Mid Bar -->
         <div class="menu-container">
             <ul class="ul-menu">
                 <li class="li-menu">
@@ -29,14 +29,13 @@
                 <li class="li-menu">
                     <a href="college.html" class="a-menu">College</a>
                 </li>
-                
                 <li class="li-menu">
                     <a href="about.html" class="a-menu">About Us</a>
                 </li>
             </ul>
         </div>
 
-        <!-- Right Bar-->
+        <!-- Right Bar -->
         <div class="search-container">
             <input type="text" class="bar-search" placeholder="Search...">
             <button class="button-search">Search</button>
@@ -48,191 +47,80 @@
             <a href="signup.html" class="button-signup">Sign Up</a>
         </div>
     </nav> 
-    <!-- Navigation Bar Close-->
+    <!-- Navigation Bar Close -->
 
     <!-- COLLEGE Content -->
     <div class="college-container">
         <div class="col-left">
-            <a href="https://www.utp.edu.my/Pages/Home.aspx">
-                <img src="images/college/UTP Logo.png" class="col-logo1">
-            </a>
+            <!-- https://www.utp.edu.my/Pages/Home.aspx -->
             <div class="first-college">
+                <img src="images/college/UTP Logo.png" class="col-logo1">
                 <h1>Universiti Teknologi Petronas Malaysia</h1>
                 <h2><i>"Unlocking True Potential""#UTPinMe"</i></h2>
+                <!-- Video 1 -->
                 <div class="college-video">
                     <div class="intro-container">
                         <video class="intro-element" controls>
                             <source src="images/about/video/video1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
+                            <!-- Your browser does not support the video tag. -->
                         </video>
                         <button class="video-thumbnail" onclick="playVideo(this)">
                             <img src="images/about/aboutvideo.png" alt="Watch video">
                         </button>
                     </div>
                 </div>
-                <p>Universiti Teknologi PETRONAS (UTP) was established on 10 January 1997 and is the best private university in Malaysia. </p>
-                <p>UTP offers a wide range of industry-rele​vant engineering, science and technology programmes at undergraduate and postgraduate levels.  It aims to produce well-rounded graduates with excellent leadership qualities and communication abilities. </p>
-                <p>The university conducts extensive research activities in collaboration with PETRONAS and other institutions and industries, locally and abroad, on six research focus and niche areas.  They are self-sustainable building, transport infrastructure, health analytics, hydrocarbon recovery, contaminant management and autonomous system.</p>
-                <p>UTP has produced more than 24,000 graduates. It currently has an enrolment of above 1000 foundation students, more than 4,000 undergraduates and over 1,000 postgraduates from more than 50 countries around the world.</p>
-                
+                <a>
+                    <p>Universiti Teknologi PETRONAS (UTP) was established on 10 January 1997 and is the best private university in Malaysia. </p>
+                    <p>UTP offers a wide range of industry-rele​vant engineering, science and technology programmes at undergraduate and postgraduate levels. It aims to produce well-rounded graduates with excellent leadership qualities and communication abilities. </p>
+                    <p>The university conducts extensive research activities in collaboration with PETRONAS and other institutions and industries, locally and abroad, on six research focus and niche areas. They are self-sustainable building, transport infrastructure, health analytics, hydrocarbon recovery, contaminant management and autonomous system.</p>
+                    <p>UTP has produced more than 24,000 graduates. It currently has an enrolment of above 1000 foundation students, more than 4,000 undergraduates and over 1,000 postgraduates from more than 50 countries around the world.</p>
+                </a>
+
+                <!-- Video 2 -->
                 <div class="college-video">
                     <div class="intro-container">
                         <video class="intro-element" controls>
                             <source src="images/about/video/video2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
+                            <!-- Your browser does not support the video tag. -->
                         </video>
+
                         <button class="video-thumbnail" onclick="playVideo(this)">
-                            <img src="images/about/aboutvideo.png" alt="Watch video">
-                        </button>
+                        <img src="images/about/aboutvideo.png" alt="Watch video">
+                    </button>
                     </div>
                 </div>
-                
-            <!-- College Popup Structure -->
-            <div class="college-popup" id="collegePopup">
-                <div class="college-popup-content">
-                    <span class="college-close" onclick="closeCollegePopup()">&times;</span>
-                    <h2 id="facultyTitle">Faculty Title</h2>
-                    <div class="college-content">
-                        <img id="facultyImage" src="images/faculty-photo.jpg" alt="Faculty Photo">
-                        <p id="facultyDescription">About Faculty text goes here...</p>
-                        <iframe id="facultyVideo" width="560" height="315" src="https://www.youtube.com/embed/video_id" frameborder="0" allowfullscreen></iframe>
-                        <p id="additionalInfo">Additional information about faculty...</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Buttons to open the popups -->
-            <div class="faculty-buttons">
-                <button class="button-subject openCollegePopup" data-faculty="Applied Chemistry">
-                    <img src="images/icon-applied-chemistry.png" alt="Applied Chemistry Icon"><span>Applied Chemistry</span>
-                </button>
-                <button class="button-subject openCollegePopup" data-faculty="Business Management">
-                    <img src="images/icon-business-management.png" alt="Business Management Icon"><span>Business Management</span>
-                </button>
-                <button class="button-subject openCollegePopup" data-faculty="Computer Engineering">
-                    <img src="images/icon-computer-engineering.png" alt="Computer Engineering Icon"><span>Computer Engineering</span>
-                </button>
-                <button class="button-subject openCollegePopup" data-faculty="Chemical Engineering">
-                    <img src="images/icon-chemical-engineering.png" alt="Chemical Engineering Icon"><span>Chemical Engineering</span>
-                </button>
-                <button class="button-subject openCollegePopup" data-faculty="Computer Science">
-                    <img src="images/icon-computer-science.png" alt="Computer Science Icon"><span>Computer Science</span>
-                </button>
-                <button class="button-subject openCollegePopup" data-faculty="Civil Engineering">
-                    <img src="images/icon-civil-engineering.png" alt="Civil Engineering Icon"><span>Civil Engineering</span>
-                </button>
-                <button class="button-subject openCollegePopup" data-faculty="Electrical and Electronics Engineering">
-                    <img src="images/icon-electrical-engineering.png" alt="Electrical and Electronics Engineering Icon"><span>Electrical and Electronics Engineering</span>
-                </button>
-                <button class="button-subject openCollegePopup" data-faculty="Information System">
-                    <img src="images/icon-information-system.png" alt="Information System Icon"><span>Information System</span>
-                </button>
-                <button class="button-subject openCollegePopup" data-faculty="Information Technology">
-                    <img src="images/icon-information-technology.png" alt="Information Technology Icon"><span>Information Technology</span>
-                </button>
-                <button class="button-subject openCollegePopup" data-faculty="Material Engineering">
-                    <img src="images/icon-material-engineering.png" alt="Material Engineering Icon"><span>Material Engineering</span>
-                </button>
-                <button class="button-subject openCollegePopup" data-faculty="Petroleum Engineering">
-                    <img src="images/icon-petroleum-engineering.png" alt="Petroleum Engineering Icon"><span>Petroleum Engineering</span>
-                </button>
-                <button class="button-subject openCollegePopup" data-faculty="Petroleum GeoScience">
-                    <img src="images/icon-petroleum-geoscience.png" alt="Petroleum GeoScience Icon"><span>Petroleum GeoScience</span>
-                </button>
-            </div>
-
-        <div class="col-right">
-            <a href="https://www.ukm.my/portalukm/">
-                <img src="images/college/UKM Logo.png" class="col-logo2">
-                </a>
-                <div class="second-college">
-                    <h1>Universiti Kebangsaan Malaysia</h1>
-                    <h2><i>"Unlocking True Potential""#UTPinMe"</i></h2>
-                    <div class="college-video">
-                        <div class="intro-container">
-                            <video class="intro-element" controls>
-                                <source src="images/about/video/video1.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <button class="video-thumbnail" onclick="playVideo(this)">
-                                <img src="images/about/aboutvideo.png" alt="Watch video">
-                            </button>
+                <!-- College Popup Structure -->
+                <div class="college-popup" id="collegePopup">
+                    <div class="college-popup-content">
+                        <span class="college-close" onclick="closeCollegePopup()">&times;</span>
+                        <h2 id="facultyTitle">Faculty Title</h2>
+                        <div class="college-content">
+                            <img id="facultyImage" src="images/faculty-photo.jpg" alt="Faculty Photo">
+                            <p id="facultyDescription">About Faculty text goes here...</p>
+                            <iframe id="facultyVideo" width="560" height="315" src="https://www.youtube.com/embed/video_id" frameborder="0" allowfullscreen></iframe>
+                            <p id="additionalInfo">Additional information about faculty...</p>
                         </div>
                     </div>
-                    <p>Since its establishment on May 18, 1970, Universiti Kebangsaan Malaysia (UKM) has not only fulfilled the vision of its founding fathers to accord Bahasa Melayu as the language of learning and scholarship but has also successfully produced intellectuals and scholars who are among the nation’s pride. </p>
-                    <p>Starting out with only three faculties, it has since grown into 13 faculties, 2 educational center, 13 research institutes of excellence and two commercial entities, UKM Holdings Sdn. Bhd. and UKM Technology Sdn. Bhd. It has thus grown not just in size, but also stature, becoming a research institute in various fields of study including operating various research centres</p>
-                    <p>Aware of the changes taking place in the academic landscape, UKM is taking steps to address them. One is through e-Learning to prepare students through innovative teaching and forward–looking curriculum to meet demands of the new economic needs. It nurtures research to provide solutions to pressing problems while also engaging with the community and industry, to strive for sustainable development both at the national and international levels.</p>
-                    <div class="college-video">
-                        <div class="intro-container">
-                            <video class="intro-element" controls>
-                                <source src="images/about/video/video2.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <button class="video-thumbnail" onclick="playVideo(this)">
-                                <img src="images/about/aboutvideo.png" alt="Watch video">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="box-prody2">
-                        <a href="login.html" class="button-subject">
-                            <img src="images/11.png" alt="Prody1" />
-                            <span>Applied Chemistry</span>
-                        </a>
-                        <a href="login.html" class="button-subject">
-                            <img src="images/11.png" alt="Prody2" />
-                            <span>Business Management</span>
-                        </a>
-                        <a href="login.html" class="button-subject">
-                            <img src="images/11.png" alt="Prody3" />
-                            <span>Computer Engineering</span>
-                        </a>
-                        <a href="login.html" class="button-subject">
-                            <img src="images/11.png" alt="Prody4" />
-                            <span>Chemical Engineering</span>
-                        </a>
-                        <a href="login.html" class="button-subject">
-                            <img src="images/11.png" alt="Prody5" />
-                            <span>Computer Science</span>
-                        </a>
-                        <a href="login.html" class="button-subject">
-                            <img src="images/11.png" alt="Prody6" />
-                            <span>Civil Engineering</span>
-                        </a>
-                        <a href="login.html" class="button-subject">
-                            <img src="images/11.png" alt="Prody7" />
-                            <span>Electrical and Electronics Engineering</span>
-                        </a>
-                        <a href="login.html" class="button-subject">
-                            <img src="images/11.png" alt="Prody8" />
-                            <span>Information System</span>
-                        </a>
-                        <a href="login.html" class="button-subject">
-                            <img src="images/11.png" alt="Prody9" />
-                            <span>Information Technology</span>
-                        </a>
-                        <a href="login.html" class="button-subject">
-                            <img src="images/11.png" alt="Prody10" />
-                            <span>Material Engineering</span>
-                        </a>
-                        <a href="login.html" class="button-subject">
-                            <img src="images/11.png" alt="Prody11" />
-                            <span>Petroleum Engineering</span>
-                        </a>
-                        <a href="login.html" class="button-subject">
-                            <img src="images/11.png" alt="Prody12" />
-                            <span>Petroleum Geoscience</span>
-                        </a>
-                    </div>
                 </div>
-                <script src="scripts.js"></script>
+                <!-- Buttons to open the popups -->
+                <div class="faculty-buttons">
+                    <button class="button-subject openCollegePopup" data-faculty="Applied Chemistry">
+                        <img src="images/icon-applied-chemistry.png" alt="Applied Chemistry Icon"><span>Applied Chemistry</span>
+                    </button>
+                    <button class="button-subject openCollegePopup" data-faculty="Business Management">
+                        <img src="images/icon-business-management.png" alt="Business Management Icon"><span>Business Management</span>
+                    </button>            
+                </div>
+            <script src="scripts.js"></script>
         </div>
     </div>
-    <!-- COLLEGE Content -->
-
+    <!-- COLLEGE Content Close -->
+    
     <!-- Footer -->
     <div class="footer-container">
-        <p class="p-footer">2024. TopAlumniGlobal. All rights reserved.</p>
+            <p class="p-footer">2024. TopAlumniGlobal. All rights reserved.</p>
     </div>
-    <!-- Footer Close-->
+    <!-- Footer Close -->
 </body>
 </html>

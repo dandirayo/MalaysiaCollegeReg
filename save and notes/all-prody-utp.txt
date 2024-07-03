@@ -24,5 +24,17 @@
 - Petrolium Engineering
 - Petrolium GeoScience
 
+Color Palete
+#262163 Blue
+#FBAE42 Orange
+
+Revision:
+[1]
+- "Visitor" yang Klik CONSULT NOW!
+- Our Service dan Free Consultation (Flex Kanan-Kiri)
+- Are you Ready to study in Malaysia? (Poster)
+[2]
+- Why Choose Us? (Boxes Pop-Up[Our Mission])
+
 
 
