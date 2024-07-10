@@ -147,13 +147,16 @@ body {
     justify-content: left;
     padding: 10px;
 }
+.blue-text{
+    color: #262163;
+}
 
 .text-right {
     padding: 0 10px;
 }
 
 .text-right h1 {
-    color: #262163;
+    color: black;
     font-size: 3.5em;
 }
 
@@ -173,6 +176,7 @@ body {
 
 .event-expo h2 {
     margin-bottom: 5vh;
+    color: #262163;
 }
 
 .event-flex {
@@ -216,6 +220,7 @@ body {
     /* justify-content: space-between; */
     /* flex-direction: row; */
     /* flex-wrap: wrap; */
+    font-size: 1.1em;
 }
 
 .box1:hover, 
@@ -341,47 +346,44 @@ body {
 .college-container {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    
+}
+.left-up{
+    display: flex;
+    justify-content: center;
+}
+.left-utp h1{
+    text-decoration: none;
+    color: #262163;
 }
 
-.col-left, .col-right {
+.col-left{
     display: flex;
-    flex: 1;
+    /* flex: 1; */
     /* flex-direction: column; */
     align-items: center; 
     justify-content: center;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-left: 2vh;
 }
 
-.col-logo1, .col-logo2 {
+.col-logo1{
     justify-content: center;
-    width: 60vh;
+    width: 82vh;
     height: 32vh;
     max-height: 32vh;
     margin-bottom: 5vh;
 }
 
-.first-college, .second-college {
+.first-college{
     text-decoration: none;
     color: #333;
     text-align: center;
 }
 
-.first-college h1, .second-college h1 {
-    font-size: 1.8em;
-    color: #1a73e8;
-    margin-bottom: 10px;
-  
+.utp-video1{
+    display: flex;
 }
-
 
 .college-video {
     position: relative;
@@ -427,13 +429,13 @@ body {
     align-items: center; 
 }
 
-.first-college h2, .second-college h2 {
+.first-college h2 {
     font-size: 1em;
     margin-bottom: 10px;
     
 }
 
-.first-college p, .second-college p {
+.first-college p{
     margin-top: 1vh;
     font-size: 16px;
     line-height: 1.6;
@@ -443,7 +445,7 @@ body {
 
 
 
-.button-prody1, .button-prody2{
+.button-prody1{
     display: list-item;
     padding: 10px 20px;
     color: #fff;
@@ -489,28 +491,14 @@ body {
 }
 
 .button-subject:hover {
-    background-color: #50C4ED;
+    background-color: #262163;
     font-weight: bold;
 }
 
-.first-college:hover h1, .second-college:hover h1 {
-    color: white;
-}
-
-.first-college:hover p, .second-college:hover p, .about-utp li:hover {
-    color: #333;
-}
 /* College Popup CSS */
 .college-popup {
     display: none;
     position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5);
 }
 
 .college-popup-content {
@@ -555,6 +543,11 @@ body {
 }
 
 /* Faculty Button CSS */
+.faculty-buttons{
+    display: flex;
+    background-color: #262163;
+}
+
 .button-subject {
     display: flex; 
     align-items: center; 
@@ -576,8 +569,7 @@ body {
 }
 
 .button-subject span {
-    flex: 1; 
-    text-align: left; 
+    text-align: center; 
 }
 
 .button-subject:hover {
@@ -585,14 +577,10 @@ body {
     font-weight: bold;
 }
 
-.first-college:hover h1, .second-college:hover h1 {
-    color: white;
-}
-
-.first-college:hover p, .second-college:hover p, .about-utp li:hover {
+.first-college:hover p,
+.about-utp li:hover {
     color: #333;
 }
-
 
 .close-btn {
     color: #aaa;
@@ -616,13 +604,15 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2vh;
+    margin-top: 5vh;
+    margin-bottom: -2vh;
 }
 
 .our-services {
     flex-basis: 65%;
     display: flex;
     flex-direction: row; 
-    margin-bottom: 3vh;
+    /* margin-bottom: 3vh; */
     background-size: cover;
     /* background-color: #262163; */
     justify-content: center;
@@ -655,7 +645,7 @@ body {
 }
 
 .consultation h1 {
-    margin-top: 1vh;
+    /* margin-top: 1vh; */
     text-align: center;
 }
 .consultation form {
@@ -683,6 +673,12 @@ body {
     margin: 0 auto;
     /* padding: 20px; */
 }
+
+.green-text {
+    font-style: bold;
+    color: greenyellow; 
+}
+
 .form-register label{
     color: white;
     text-align: left;
@@ -750,27 +746,40 @@ body {
 }
 
 /* ABOUT */
+
+.about-container{
+    background-color: #262163;
+    padding: 4vh;
+}
 .about-socmed {
-    /* display: flex; */
-    padding: 20px;
+    padding: 2vh;
+    color: #262163;
 }
 
-.social-icons {
+/* :not(.social-media) */
+.about-socmed  {
     margin-left: 5vh;
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 2vh; 
 }
 
+.big-text{
+    font-size: 2em;
+    margin-bottom: -2vh;
+}
+
 .social-media {
-    
     display: flex;
-    align-items: center;
-    gap: 5vh; 
+    align-items: left;
+    gap: 1.8vh; 
+}
+
+.social-media img{
+    margin-left: -2vh;
+    margin-right: 0.8vh;
 }
 
 .social-media a {
-    margin-left: 2vh;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -791,6 +800,12 @@ body {
     border-top: none;
     border-left: none;
     border-right: none;
+}
+
+.social-icons{
+    display: flex;
+    gap: 2vh;
+    justify-content: space-between ;
 }
 
 
@@ -823,6 +838,8 @@ body {
     border-top: none;
     border-bottom: none;
     border-right: none;
+    color: white;
+    border: 5px red ;
 }
 
 .about-text p {
