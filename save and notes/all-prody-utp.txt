@@ -17,7 +17,7 @@
 - Chemical Engineering
 - Computer Science
 - Civil Engineering
-- Electrical and Electronics Engineering
+- Electronics Engineering
 - Information System
 - Information Technology 
 - Material Engineering
@@ -36,5 +36,8 @@ Revision:
 [2]
 - Why Choose Us? (Boxes Pop-Up[Our Mission])
 
+- background foto full
+- form kiri kanan
 
+- about us nya background biru
 

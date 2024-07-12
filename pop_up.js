@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'openCollegePopup': 'collegePopup'
     };
 
+document.addEventListener('DOMContentLoaded', () => {   
     const facultyData = {
         'Applied Chemistry': {
             title: 'Applied Chemistry',
@@ -50,12 +51,12 @@ document.addEventListener('DOMContentLoaded', () => {
             video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
             additionalInfo: 'Additional information about Civil Engineering...'
         },
-        'Electrical and Electronics Engineering': {
-            title: 'Electrical and Electronics Engineering',
-            image: 'images/faculty-electrical-engineering.jpg',
-            description: 'About Electrical and Electronics Engineering...',
+        'Electronics Engineering': {
+            title: 'Electronics Engineering',
+            image: 'images/faculty-electronics-engineering.jpg',
+            description: 'About Electronics Engineering...',
             video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
-            additionalInfo: 'Additional information about Electrical and Electronics Engineering...'
+            additionalInfo: 'Additional information about Electronics Engineering...'
         },
         'Information System': {
             title: 'Information System',
@@ -86,13 +87,37 @@ document.addEventListener('DOMContentLoaded', () => {
             additionalInfo: 'Additional information about Petroleum Engineering...'
         },
         'Petroleum GeoScience': {
-            title: 'Petroleum GeoScience',
-            image: 'images/faculty-petroleum-geoscience.jpg',
-            description: 'About Petroleum GeoScience...',
-            video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
-            additionalInfo: 'Additional information about Petroleum GeoScience...'
+        title: 'Petroleum GeoScience',
+        image: 'images/faculty-petroleum-geoscience.jpg',
+        description: 'About'
         }
-    };
+};
+      
+        // Function to open faculty popup with data
+        const openFacultyPopup = (faculty) => {
+          const data = facultyData[faculty];
+          if (data) {
+            document.getElementById('facultyTitle').innerText = data.title;
+            document.getElementById('facultyImage').src = data.image;
+            document.getElementById('facultyDescription').innerText = data.description;
+            document.getElementById('facultyVideo').src = data.video;
+            document.getElementById('additionalInfo').innerText = data.additionalInfo;
+            document.getElementById('collegePopup').style.display = 'block';
+          }
+        };
+      
+        // Add event listeners for faculty buttons
+        document.querySelectorAll('.faculty-button').forEach(button => {
+          button.addEventListener('click', () => {
+            openFacultyPopup(button.getAttribute('data-faculty'));
+          });
+        });
+      });
+      
+      // Function to close the college popup
+      function closeCollegePopup() {
+        document.getElementById("collegePopup").style.display = "none";
+      }
 
     // Function to toggle popup visibility
     const togglePopup = (popupElement) => {
@@ -152,4 +177,49 @@ document.addEventListener('DOMContentLoaded', () => {
 // Function to close the college popup
 function closeCollegePopup() {
     document.getElementById("collegePopup").style.display = "none";
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const facultyData = {
+    'Applied Chemistry': {
+      title: 'Applied Chemistry',
+      image: 'images/faculty-applied-chemistry.jpg',
+      description: 'About Applied Chemistry...',
+      video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+      additionalInfo: 'Additional information about Applied Chemistry...'
+    },
+    // ...
+    'Petroleum GeoScience': {
+      title: 'Petroleum GeoScience',
+      image: 'images/faculty-petroleum-geoscience.jpg',
+      description: 'About Petroleum GeoScience...',
+      video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+      additionalInfo: 'Additional information about Petroleum GeoScience...'
+    }
+  };
+
+  // Function to open faculty popup with data
+  const openFacultyPopup = (faculty) => {
+    const data = facultyData[faculty];
+    if (data) {
+      document.getElementById('facultyTitle').innerText = data.title;
+      document.getElementById('facultyImage').src = data.image;
+      document.getElementById('facultyDescription').innerText = data.description;
+      document.getElementById('facultyVideo').src = data.video;
+      document.getElementById('additionalInfo').innerText = data.additionalInfo;
+      document.getElementById('collegePopup').style.display = 'block';
+    }
+  };
+
+  // Add event listeners for faculty buttons
+  document.querySelectorAll('.faculty-button').forEach(button => {
+    button.addEventListener('click', () => {
+      openFacultyPopup(button.getAttribute('data-faculty'));
+    });
+  });
+});
+
+// Function to close the college popup
+function closeCollegePopup() {
+  document.getElementById("collegePopup").style.display = "none";
 }
