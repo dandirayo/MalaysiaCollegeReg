@@ -494,98 +494,105 @@ body {
     background-color: #262163;
     font-weight: bold;
 }
-    .faculty-buttons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        background-color: #262163;
-        padding: 20px;
-        margin: 20px;
-      }
+
+.faculty-textmid {
+    text-align: center;
+    padding: 5vh;
+    font-size: 1rem;
+}
+
+.faculty-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #262163;
+    padding: 20px;
+    margin: 20px;
+}
       
-      .faculty-button {
-        display: flex;
-        align-items: center;
-        padding: 10px;
-        margin: 5px;
-        color: #000000;
-        text-decoration: none;
-        border-radius: 5px;
-        background-color: rgb(210, 210, 210);
-        font-size: 1rem;
-        border: none;
-        width: calc(25% - 10px);
-      }
+.faculty-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: rgb(210, 210, 210);
+    font-size: 1rem;
+    border: none;
+    width: calc(25% - 10px);
+}
       
-      .faculty-button img {
-        max-width: 20px;
-        max-height: 20px;
-        margin-right: 10px;
-      }
+.faculty-button img {
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: 10px;
+}
       
-      .faculty-button span {
-        text-align: center;
-      }
+.faculty-button span {
+    text-align: center;
+}
       
-      .faculty-button:hover {
-        background-color: white;
-        font-weight: bold;
-      }
+.faculty-button:hover {
+    background-color: white;
+    font-weight: bold;
+}
       
-      .college-popup {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 1;
-      }
+.college-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     z-index: 1;
+}
       
-      .college-popup-content{
-        background-color: #fefefe;
-        margin: 10% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-        max-width: 700px;
-        position: relative;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      }
+.college-popup-content{
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
       
-      .college-close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-        cursor: pointer;
-      }
+.college-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
       
-      .college-close:hover,
-      .college-close:focus {
-        color: black;
-        text-decoration: none;
-      }
+.college-close:hover,
+.college-close:focus {
+    color: black;
+    text-decoration: none;
+}
       
-      .college-content {
-        text-align: center;
-      }
+.college-content {
+    text-align: center;
+}
       
-      .college-content img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-        border-radius: 10px;
-      }
+.college-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
       
-      .college-content iframe {
-        width: 100%;
-        max-width: 560px;
-        height: 315px;
-        margin-bottom: 10px;
-      }
+.college-content iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    margin-bottom: 10px;
+}
 /* Our Service */
 
 .service-text{
