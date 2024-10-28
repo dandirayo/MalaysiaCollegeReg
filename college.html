@@ -81,78 +81,47 @@
             </div>
                 
            <!-- Faculty Buttons -->
-            <div class="faculty-textmid"> 
-                <h1> All of the FACULTY in UNIVERSITY TEKNOLOGI PETRONAS</h1>
-                <h2> Your Career start here!</h2>
+            <div class="faculty-textmid">
+                <h1>All of the FACULTY in UNIVERSITY TEKNOLOGI PETRONAS</h1>
+                <h2>Your Career starts here!</h2>
                 <p>
-                    Before you register in Top Alumni Global you must prepare yourself,
-                    Start making your dream job by choosing the right faculty. Your future,
-                    depends on choosing your faculty. Thank you! 
+                    Before you register in Top Alumni Global you must prepare yourself. Start making your dream job by choosing the right faculty. Thank you!
                 </p>
             </div>
+            <!-- All of the Faculty -->
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Faculty Popups</title>
+                <link rel="stylesheet" href="styles.css"> <!-- Ganti dengan path CSS Anda -->
+            </head>
+            <body>
+            
             <div class="faculty-buttons">
-                <button class="faculty-button" data-faculty="Applied Chemistry">
-                    <img src="images/faculty/f1.png" alt="Applied Chemistry Icon">
-                    <span>Applied Chemistry</span>
-                </button>
-                <button class="faculty-button" data-faculty="Business Management">
-                    <img src="images/faculty/f1.png" alt="Business Management Icon">
-                    <span>Business Management</span>
-                </button>
-                <button class="faculty-button" data-faculty="Computer Engineering">
-                    <img src="images/faculty/f1.png" alt="Computer Engineering Icon">
-                    <span>Computer Engineering</span>
-                </button>
-                <button class="faculty-button" data-faculty="Chemical Engineering">
-                    <img src="images/faculty/f1.png" alt="Chemical Engineering Icon">
-                    <span>Chemical Engineering</span>
-                </button>
-                <button class="faculty-button" data-faculty="Computer Science">
-                    <img src="images/faculty/f1.png" alt="Computer Science Icon">
-                    <span>Computer Science</span>
-                </button>
-                <button class="faculty-button" data-faculty="Civil Engineering">
-                    <img src="images/faculty/f1.png" alt="Civil Engineering Icon">
-                    <span>Civil Engineering</span>
-                </button>
-                <button class="faculty-button" data-faculty="Electronics Engineering">
-                    <img src="images/faculty/f1.png" alt="Electronics Engineering Icon">
-                    <span>Electronics Engineering</span>
-                </button>
-                <button class="faculty-button" data-faculty="Information System">
-                    <img src="images/faculty/f1.png" alt="Information System Icon">
-                    <span>Information System</span>
-                </button>
-                <button class="faculty-button" data-faculty="Information Technology">
-                    <img src="images/faculty/f1.png" alt="Information Technology Icon">
-                    <span>Information Technology</span>
-                </button>
-                <button class="faculty-button" data-faculty="Material Engineering">
-                    <img src="images/faculty/f1.png" alt="Material Engineering Icon">
-                    <span>Material Engineering</span>
-                </button>
-                <button class="faculty-button" data-faculty="Petroleum Engineering">
-                    <img src="images/faculty/f1.png" alt="Petroleum Engineering Icon">
-                    <span>Petroleum Engineering</span>
-                </button>
-                <button class="faculty-button" data-faculty="Petroleum GeoScience">
-                    <img src="images/faculty/f1.png" alt="Petroleum GeoScience Icon">
-                    <span>Petrolium GeoScience</span>
-                </button>
+                <button class="faculty-button" data-faculty="Applied Chemistry">Applied Chemistry</button>
+                <button class="faculty-button" data-faculty="Business Management">Business Management</button>
+                <button class="faculty-button" data-faculty="Computer Engineering">Computer Engineering</button>
+                <button class="faculty-button" data-faculty="Chemical Engineering">Chemical Engineering</button>
+                <button class="faculty-button" data-faculty="Computer Science">Computer Science</button>
+                <button class="faculty-button" data-faculty="Civil Engineering">Civil Engineering</button>
+                <button class="faculty-button" data-faculty="Electronics Engineering">Electronics Engineering</button>
+                <button class="faculty-button" data-faculty="Information System">Information System</button>
+                <button class="faculty-button" data-faculty="Information Technology">Information Technology</button>
+                <button class="faculty-button" data-faculty="Material Engineering">Material Engineering</button>
+                <button class="faculty-button" data-faculty="Petroleum Engineering">Petroleum Engineering</button>
+                <button class="faculty-button" data-faculty="Petroleum GeoScience">Petroleum GeoScience</button>
             </div>
             
-           <!-- PopUp Box1 -->
-           <div id="popup-content1" class="popup">
+            <!-- Popup for Faculty -->
+            <div id="collegePopup" class="popup">
                 <div class="popup-content">
-                    <span class="close-btn">&times;</span>
-                    <h2>Our Mission</h2>
-                    <ol>
-                        <li>To share information regarding educational institutions in Malaysia broadly.</li>
-                        <li>To assist in enlarging access and convince the quality of pursuing education in Malaysia to international students.</li>
-                        <li>To build cooperation with any related parties globally to improve the quality of education.</li>
-                        <li>To assist and provide admission into all universities for international students with their chosen courses and programs.</li>
-                        <li>To ensure the successful applicants travel to their universities to pursue their program of study, as smoothly as possible without facing any inconveniences.</li>
-                    </ol>
+                    <span id="collegeClose" class="close-btn">&times;</span>
+                    <h2 id="facultyTitle"></h2>
+                    <img id="facultyImage" src="" alt="Faculty Image">
+                    <p id="facultyDescription"></p>
+                    <iframe id="facultyVideo" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
             <script src="scripts.js"></script>

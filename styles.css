@@ -28,7 +28,6 @@ body {
     align-items: center;
     padding: 10px 20px;
 
-    /* border-radius: 10px; */
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -59,7 +58,6 @@ body {
     margin-right: 1.2vh;
     background-color: white;
     border-radius: 50%;
-    /* padding: 2px; */
     display: inline-block;
 }
 
@@ -95,7 +93,7 @@ body {
     font-weight: bold;
 }
 
-/* Register Now */
+/* REGISTER NOW (Kanan Atas -> Website Form) */
 .regnow-but{
     display: inline-block;
     background-color: #FBAE42;
@@ -115,6 +113,7 @@ body {
 }
 
 /* HOME */
+/* Container-Home */
 .ho-container:not(.the-form) {
     display: flex;
     width: fit-content;
@@ -231,7 +230,41 @@ body {
     transform: scale(1.1);
 }
 
+
+/* Why Choose Us? */
+.why-container {
+    text-align: center;
+    padding: 5vh;
+    background-color: #262163;
+}
+
+.whychooseus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.whychooseus h1{
+    color: white;
+}
+
+.button-form {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FBAE42;
+    color: #262163;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
 /* BOXES */
+/* justify-content: space-between; */
+/* flex-direction: row; */
+/* flex-wrap: wrap; */
+
 .box-mid {
     display: flex;
     align-items: center;
@@ -239,16 +272,12 @@ body {
     margin: 15px;
     gap: 5vh;
     margin-top: 5vh;
-    /* justify-content: space-between; */
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
     font-size: 1.1em;
 }
 
 .box1:hover, 
 .box2:hover, 
-.box3:hover,
-.box4:hover {
+.box3:hover{
     transform: scale(1.25); 
     background-color: #f0f0f0; 
     border-radius: 20px;
@@ -256,8 +285,7 @@ body {
 
 .box1,
 .box2,
-.box3,
-.box4 {
+.box3{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -275,8 +303,7 @@ body {
 
 .box1 img,
 .box2 img,
-.box3 img,
-.box4 img {
+.box3 img {
     max-width: 70%;
     max-height: 70%;
     object-fit: contain;
@@ -284,8 +311,7 @@ body {
 
 .box1 p,
 .box2 p,
-.box3 p,
-.box4 p {
+.box3 p{
     font-style: bold;
     color: #262163 ;
     font-size: 0.8em;
@@ -331,40 +357,9 @@ body {
     text-align: center;
 }
 
-/* Image and Button Event Expo */
-
-
-/* Ready Container */
-.why-container {
-    text-align: center;
-    padding: 5vh;
-    background-color: #262163;
-}
-
-.whychooseus{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2vh;
-}
-
-.whychooseus h1{
-    color: white;
-}
-
-.button-form {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #FBAE42;
-    color: #262163;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    font-weight: bold;
-}
-
-
 /* COLLEGE */
+ /* flex: 1; */
+/* flex-direction: column; */
 .college-container {
     display: flex;
     justify-content: space-between;
@@ -381,8 +376,6 @@ body {
 
 .col-left{
     display: flex;
-    /* flex: 1; */
-    /* flex-direction: column; */
     align-items: center; 
     justify-content: center;
     padding: 20px;
@@ -465,158 +458,182 @@ body {
     text-align: left;
 }
 
-
-
-.button-prody1{
-    display: list-item;
-    padding: 10px 20px;
-    color: #fff;
-    text-decoration: none;
-  
-}
-
-.box-prody1, .box-prody2 {
-    
-    display: flex;
-    flex-direction: column; 
-    width: auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    max-height: 100vh; 
-    margin-top: 5vh;
-}
-
-.button-subject {
-    display: flex; 
-    align-items: center; 
-    padding: 10px;
-    margin: 5px 0; 
-    color: #000000;
-    text-decoration: none;
-    border-radius: 5px;
-    background-color: rgb(210, 210, 210);
-    font-size: 1rem;
-    border: none;
-    width: 100%; 
-}
-
-.button-subject img {
-    max-width: 20px; 
-    max-height: 20px; 
-    margin-right: 10px; 
-}
-
-.button-subject span {
-    flex: 1; 
-    text-align: left; 
-}
-
-.button-subject:hover {
-    background-color: #262163;
-    font-weight: bold;
-}
-
+/* button faculty? */
 .faculty-textmid {
     text-align: center;
     padding: 5vh;
-    font-size: 1rem;
-}
-
-.faculty-buttons {
+  }
+  
+  .faculty-buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: #262163;
     padding: 20px;
-    margin: 20px;
-}
-      
-.faculty-button {
+  }
+  
+  .faculty-button {
     display: flex;
     align-items: center;
     padding: 10px;
     margin: 5px;
-    color: #000000;
-    text-decoration: none;
+    color: #000;
     border-radius: 5px;
     background-color: rgb(210, 210, 210);
-    font-size: 1rem;
-    border: none;
     width: calc(25% - 10px);
-}
-      
-.faculty-button img {
-    max-width: 20px;
-    max-height: 20px;
-    margin-right: 10px;
-}
-      
-.faculty-button span {
     text-align: center;
-}
-      
-.faculty-button:hover {
+  }
+  
+  .faculty-button img {
+    max-width: 20px;
+    margin-right: 10px;
+  }
+  
+  .faculty-button:hover {
     background-color: white;
     font-weight: bold;
+  }
+  .faculty-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 }
-      
-.college-popup {
+
+.faculty-button {
+    background-color: #4CAF50; 
+    border: none; 
+    border-radius: 8px; 
+    color: white; 
+    cursor: pointer; 
+    display: flex; 
+    align-items: center; 
+    padding: 15px 20px; 
+    margin: 10px; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.faculty-button img {
+    width: 24px; 
+    height: 24px; 
+    margin-right: 10px; 
+}
+
+.faculty-button:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+.faculty-button:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
+}
+
+  /* COLLEGE POPUP!------------- */
+  .college-popup {
     display: none;
     position: fixed;
     top: 0;
     left: 0;
-     width: 100%;
-     height: 100%;
-     background-color: rgba(0, 0, 0, 0.5);
-     z-index: 1;
-}
-      
-.college-popup-content{
-    background-color: #fefefe;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .college-popup-content {
+    background-color: #fff;
     margin: 10% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border-radius: 10px;
     width: 80%;
     max-width: 700px;
-    position: relative;
-    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-      
-.college-close {
+    text-align: center;
+  }
+  
+  .college-close {
     color: #aaa;
-    float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-}
-      
-.college-close:hover,
-.college-close:focus {
+  }
+  
+  .college-close:hover {
     color: black;
-    text-decoration: none;
-}
-      
-.college-content {
-    text-align: center;
-}
-      
-.college-content img {
+  }
+  
+  .college-popup-content img {
     max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
     border-radius: 10px;
-}
-      
-.college-content iframe {
+    margin-bottom: 10px;
+  }
+  
+  .college-popup-content iframe {
     width: 100%;
     max-width: 560px;
     height: 315px;
     margin-bottom: 10px;
-}
-/* Our Service */
+  }
 
+  /* Style untuk Popup */
+.college-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    padding: 20px;
+    z-index: 1000;
+    display: none; /* Popup akan disembunyikan secara default */
+}
+
+.college-popup-content {
+    position: relative;
+    text-align: center;
+}
+
+.college-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popup-image {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.popup-video {
+    width: 100%;
+    height: 315px; /* Sesuaikan tinggi video */
+    margin: 10px 0;
+}
+
+.blurred-background {
+    filter: blur(5px);
+    overflow: hidden;
+}
+
+body.blurred-background::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+  
+/* OUR SERVICE */
 .service-text{
     display: flex;
     justify-content: center;

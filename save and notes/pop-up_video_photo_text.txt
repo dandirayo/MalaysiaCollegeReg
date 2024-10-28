@@ -1,0 +1,607 @@
+JAVASCRIPT
+document.addEventListener('DOMContentLoaded', () => {   
+  const facultyData = {
+    'Applied Chemistry': {
+        title: 'Applied Chemistry',
+        image: 'images/faculty-applied-chemistry.jpg',
+        description: 'About Applied Chemistry...',
+        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+        additionalInfo: 'Additional information about Applied Chemistry...'
+    },
+    'Business Management': {
+        title: 'Business Management',
+        image: 'images/faculty-business-management.jpg',
+        description: 'About Business Management...',
+        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+        additionalInfo: 'Additional information about Business Management...'
+    },
+    'Computer Engineering': {
+        title: 'Computer Engineering',
+        image: 'images/faculty-computer-engineering.jpg',
+        description: 'About Computer Engineering...',
+        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+        additionalInfo: 'Additional information about Computer Engineering...'
+    },
+    'Chemical Engineering': {
+        title: 'Chemical Engineering',
+        image: 'images/faculty-chemical-engineering.jpg',
+        description: 'About Chemical Engineering...',
+        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+        additionalInfo: 'Additional information about Chemical Engineering...'
+    },
+    'Computer Science': {
+        title: 'Computer Science',
+        image: 'images/faculty-computer-science.jpg',
+        description: 'About Computer Science...',
+        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+        additionalInfo: 'Additional information about Computer Science...'
+    },
+    'Civil Engineering': {
+        title: 'Civil Engineering',
+        image: 'images/faculty-civil-engineering.jpg',
+        description: 'About Civil Engineering...',
+        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+        additionalInfo: 'Additional information about Civil Engineering...'
+    },
+    'Electronics Engineering': {
+        title: 'Electronics Engineering',
+        image: 'images/faculty-electronics-engineering.jpg',
+        description: 'About Electronics Engineering...',
+        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+        additionalInfo: 'Additional information about Electronics Engineering...'
+    },
+    'Information System': {
+        title: 'Information System',
+        image: 'images/faculty-information-system.jpg',
+        description: 'About Information System...',
+        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+        additionalInfo: 'Additional information about Information System...'
+    },
+    'Information Technology': {
+        title: 'Information Technology',
+        image: 'images/faculty-information-technology.jpg',
+        description: 'About Information Technology...',
+        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+        additionalInfo: 'Additional information about Information Technology...'
+    },
+    'Material Engineering': {
+        title: 'Material Engineering',
+        image: 'images/faculty-material-engineering.jpg',
+        description: 'About Material Engineering...',
+        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+        additionalInfo: 'Additional information about Material Engineering...'
+    },
+    'Petroleum Engineering': {
+        title: 'Petroleum Engineering',
+        image: 'images/faculty-petroleum-engineering.jpg',
+        description: 'About Petroleum Engineering...',
+        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+        additionalInfo: 'Additional information about Petroleum Engineering...'
+    },
+    'Petroleum GeoScience': {
+    title: 'Petroleum GeoScience',
+    image: 'images/faculty-petroleum-geoscience.jpg',
+    description: 'About'
+    }
+};
+      
+        // Function to open faculty popup with data
+        const openFacultyPopup = (faculty) => {
+          const data = facultyData[faculty];
+          if (data) {
+            document.getElementById('facultyTitle').innerText = data.title;
+            document.getElementById('facultyImage').src = data.image;
+            document.getElementById('facultyDescription').innerText = data.description;
+            document.getElementById('facultyVideo').src = data.video;
+            document.getElementById('additionalInfo').innerText = data.additionalInfo;
+            document.getElementById('collegePopup').style.display = 'block';
+          }
+        };
+      
+        // Add event listeners for faculty buttons
+        document.querySelectorAll('.faculty-button').forEach(button => {
+          button.addEventListener('click', () => {
+            openFacultyPopup(button.getAttribute('data-faculty'));
+          });
+        });
+      });
+      
+      // Function to close the college popup
+      function closeCollegePopup() {
+        document.getElementById("collegePopup").style.display = "none";
+      }
+
+    // Function to toggle popup visibility
+    const togglePopup = (popupElement) => {
+        popupElement.style.display = popupElement.style.display === 'block' ? 'none' : 'block';
+    };
+
+    // Function to open faculty popup with data
+    const openFacultyPopup = (faculty) => {
+        const data = facultyData[faculty];
+        if (data) {
+            document.getElementById('facultyTitle').innerText = data.title;
+            document.getElementById('facultyImage').src = data.image;
+            document.getElementById('facultyDescription').innerText = data.description;
+            document.getElementById('facultyVideo').src = data.video;
+            document.getElementById('additionalInfo').innerText = data.additionalInfo;
+            document.getElementById('collegePopup').style.display = 'block';
+        }
+    };
+
+    // Add event listeners for each box and its corresponding popup
+    Object.keys(popupMap).forEach(boxId => {
+        const boxElement = document.getElementById(boxId);
+        const popupId = popupMap[boxId];
+        const popupElement = document.getElementById(popupId);
+        const closeBtn = popupElement.querySelector('.close-btn') || popupElement.querySelector('.college-close');
+
+        // Toggle popup when box is clicked
+        if (boxElement) {
+            boxElement.addEventListener('click', () => {
+                togglePopup(popupElement);
+            });
+        }
+
+        // Toggle popup when close button is clicked
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
+                togglePopup(popupElement);
+            });
+        }
+
+        // Close popup when clicking outside of it
+        window.addEventListener('mousedown', (event) => {
+            if (event.target === popupElement) {
+                togglePopup(popupElement);
+            }
+        });
+    });
+
+    // Add event listeners for faculty buttons
+    document.querySelectorAll('.openCollegePopup').forEach(button => {
+        button.addEventListener('click', () => {
+            openFacultyPopup(button.getAttribute('data-faculty'));
+        });
+    });
+});
+
+// Function to close the college popup
+function closeCollegePopup() {
+    document.getElementById("collegePopup").style.display = "none";
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const facultyData = {
+    'Applied Chemistry': {
+      title: 'Applied Chemistry',
+      image: 'images/faculty-applied-chemistry.jpg',
+      description: 'About Applied Chemistry...',
+      video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+      additionalInfo: 'Additional information about Applied Chemistry...'
+    },
+    // ...
+    'Petroleum GeoScience': {
+      title: 'Petroleum GeoScience',
+      image: 'images/faculty-petroleum-geoscience.jpg',
+      description: 'About Petroleum GeoScience...',
+      video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+      additionalInfo: 'Additional information about Petroleum GeoScience...'
+    }
+  };
+
+  // Function to open faculty popup with data
+  const openFacultyPopup = (faculty) => {
+    const data = facultyData[faculty];
+    if (data) {
+      document.getElementById('facultyTitle').innerText = data.title;
+      document.getElementById('facultyImage').src = data.image;
+      document.getElementById('facultyDescription').innerText = data.description;
+      document.getElementById('facultyVideo').src = data.video;
+      document.getElementById('additionalInfo').innerText = data.additionalInfo;
+      document.getElementById('collegePopup').style.display = 'block';
+    }
+  };
+
+  // Add event listeners for faculty buttons
+  document.querySelectorAll('.faculty-button').forEach(button => {
+    button.addEventListener('click', () => {
+      openFacultyPopup(button.getAttribute('data-faculty'));
+    });
+  });
+});
+
+----------------------------------------------------
+HTML
+ <!-- Faculty Buttons -->
+	<div class="faculty-textmid"> 
+	    <h1> All of the FACULTY in UNIVERSITY TEKNOLOGI PETRONAS</h1>
+	    <h2> Your Career start here!</h2>
+	    <p>
+	        Before you register in Top Alumni Global you must prepare yourself,
+	        Start making your dream job by choosing the right faculty. Your future,
+	        depends on choosing your faculty. Thank you! 
+	    </p>
+	</div>
+	<div class="faculty-buttons">
+	    <button class="faculty-button" data-faculty="Applied Chemistry">
+	        <img src="images/faculty/f1.png" alt="Applied Chemistry Icon">
+	        <span>Applied Chemistry</span>
+	    </button>
+	    <button class="faculty-button" data-faculty="Business Management">
+	        <img src="images/faculty/f1.png" alt="Business Management Icon">
+	        <span>Business Management</span>
+	    </button>
+	    <button class="faculty-button" data-faculty="Computer Engineering">
+	        <img src="images/faculty/f1.png" alt="Computer Engineering Icon">
+	        <span>Computer Engineering</span>
+	    </button>
+	    <button class="faculty-button" data-faculty="Chemical Engineering">
+	        <img src="images/faculty/f1.png" alt="Chemical Engineering Icon">
+	        <span>Chemical Engineering</span>
+	    </button>
+	    <button class="faculty-button" data-faculty="Computer Science">
+	        <img src="images/faculty/f1.png" alt="Computer Science Icon">
+	        <span>Computer Science</span>
+	    </button>
+	    <button class="faculty-button" data-faculty="Civil Engineering">
+	        <img src="images/faculty/f1.png" alt="Civil Engineering Icon">
+	        <span>Civil Engineering</span>
+	    </button>
+	    <button class="faculty-button" data-faculty="Electronics Engineering">
+	        <img src="images/faculty/f1.png" alt="Electronics Engineering Icon">
+	        <span>Electronics Engineering</span>
+	    </button>
+	    <button class="faculty-button" data-faculty="Information System">
+	        <img src="images/faculty/f1.png" alt="Information System Icon">
+	        <span>Information System</span>
+	    </button>
+	    <button class="faculty-button" data-faculty="Information Technology">
+	        <img src="images/faculty/f1.png" alt="Information Technology Icon">
+	        <span>Information Technology</span>
+	    </button>
+	    <button class="faculty-button" data-faculty="Material Engineering">
+	        <img src="images/faculty/f1.png" alt="Material Engineering Icon">
+	        <span>Material Engineering</span>
+	    </button>
+	    <button class="faculty-button" data-faculty="Petroleum Engineering">
+	        <img src="images/faculty/f1.png" alt="Petroleum Engineering Icon">
+	        <span>Petroleum Engineering</span>
+	    </button>
+	    <button class="faculty-button" data-faculty="Petroleum GeoScience">
+	        <img src="images/faculty/f1.png" alt="Petroleum GeoScience Icon">
+	        <span>Petrolium GeoScience</span>
+	    </button>
+	</div>
+	
+	<!-- PopUp Box1 -->
+	<div id="popup-content1" class="popup">
+	    <div class="popup-content">
+	        <span class="close-btn">&times;</span>
+	        <h2>Our Mission</h2>
+	        <ol>
+	            <li>To share information regarding educational institutions in Malaysia broadly.</li>
+	            <li>To assist in enlarging access and convince the quality of pursuing education in Malaysia to international students.</li>
+	            <li>To build cooperation with any related parties globally to improve the quality of education.</li>
+	            <li>To assist and provide admission into all universities for international students with their chosen courses and programs.</li>
+	            <li>To ensure the successful applicants travel to their universities to pursue their program of study, as smoothly as possible without facing any inconveniences.</li>
+	        </ol>
+	    </div>
+	</div>
+----------------------------------------------------
+CSS
+
+.button-prody1{
+    display: list-item;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+  
+}
+
+.box-prody1, .box-prody2 {
+    display: flex;
+    flex-direction: column; 
+    width: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    max-height: 100vh; 
+    margin-top: 5vh;
+}
+
+.button-subject {
+    display: flex; 
+    align-items: center; 
+    padding: 10px;
+    margin: 5px 0; 
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: rgb(210, 210, 210);
+    font-size: 1rem;
+    border: none;
+    width: 100%; 
+}
+
+.button-subject img {
+    max-width: 20px; 
+    max-height: 20px; 
+    margin-right: 10px; 
+}
+
+.button-subject span {
+    flex: 1; 
+    text-align: left; 
+}
+
+.button-subject:hover {
+    background-color: #262163;
+    font-weight: bold;
+}
+
+.faculty-textmid {
+    text-align: center;
+    padding: 5vh;
+    font-size: 1rem;
+}
+
+.faculty-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #262163;
+    padding: 20px;
+    margin: 20px;
+}
+      
+.faculty-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: rgb(210, 210, 210);
+    font-size: 1rem;
+    border: none;
+    width: calc(25% - 10px);
+}
+      
+.faculty-button img {
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: 10px;
+}
+      
+.faculty-button span {
+    text-align: center;
+}
+      
+.faculty-button:hover {
+    background-color: white;
+    font-weight: bold;
+}
+      
+.college-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     z-index: 1;
+}
+      
+.college-popup-content{
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+      
+.college-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+      
+.college-close:hover,
+.college-close:focus {
+    color: black;
+    text-decoration: none;
+}
+      
+.college-content {
+    text-align: center;
+}
+      
+.college-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+      
+.college-content iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    margin-bottom: 10px;
+}
+
+Tolong semua code diringkas, di rapihkan dan dibuat pop up yang isinya judul faculty, foto dan video faculty, lalu bawahnya penjelasan dari facultynya
+lalu informasikan saya jika ada salah atau ada yang double atau syntax yang tidak terpakai, 
+itu di hapus saja, Terima kasih.
+
+========================================
+	document.addEventListener('DOMContentLoaded', () => {
+		 const facultyData = {
+	    'Applied Chemistry': {
+	        title: 'Applied Chemistry',
+	        image: 'images/faculty-applied-chemistry.jpg',
+	        description: 'About Applied Chemistry...',
+	        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+	        additionalInfo: 'Additional information about Applied Chemistry...'
+	    },
+	    'Business Management': {
+	        title: 'Business Management',
+	        image: 'images/faculty-business-management.jpg',
+	        description: 'About Business Management...',
+	        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+	        additionalInfo: 'Additional information about Business Management...'
+	    },
+	    'Computer Engineering': {
+	        title: 'Computer Engineering',
+	        image: 'images/faculty-computer-engineering.jpg',
+	        description: 'About Computer Engineering...',
+	        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+	        additionalInfo: 'Additional information about Computer Engineering...'
+	    },
+	    'Chemical Engineering': {
+	        title: 'Chemical Engineering',
+	        image: 'images/faculty-chemical-engineering.jpg',
+	        description: 'About Chemical Engineering...',
+	        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+	        additionalInfo: 'Additional information about Chemical Engineering...'
+	    },
+	    'Computer Science': {
+	        title: 'Computer Science',
+	        image: 'images/faculty-computer-science.jpg',
+	        description: 'About Computer Science...',
+	        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+	        additionalInfo: 'Additional information about Computer Science...'
+	    },
+	    'Civil Engineering': {
+	        title: 'Civil Engineering',
+	        image: 'images/faculty-civil-engineering.jpg',
+	        description: 'About Civil Engineering...',
+	        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+	        additionalInfo: 'Additional information about Civil Engineering...'
+	    },
+	    'Electronics Engineering': {
+	        title: 'Electronics Engineering',
+	        image: 'images/faculty-electronics-engineering.jpg',
+	        description: 'About Electronics Engineering...',
+	        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+	        additionalInfo: 'Additional information about Electronics Engineering...'
+	    },
+	    'Information System': {
+	        title: 'Information System',
+	        image: 'images/faculty-information-system.jpg',
+	        description: 'About Information System...',
+	        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+	        additionalInfo: 'Additional information about Information System...'
+	    },
+	    'Information Technology': {
+	        title: 'Information Technology',
+	        image: 'images/faculty-information-technology.jpg',
+	        description: 'About Information Technology...',
+	        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+	        additionalInfo: 'Additional information about Information Technology...'
+	    },
+		'Material Engineering': {
+	        title: 'Material Engineering',
+	        image: 'images/faculty-material-engineering.jpg',
+	        description: 'About Material Engineering...',
+	        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+	        additionalInfo: 'Additional information about Material Engineering...'
+	    },
+		'Petroleum Engineering': {
+	        title: 'Petroleum Engineering',
+	        image: 'images/faculty-petroleum-engineering.jpg',
+	        description: 'About Petroleum Engineering...',
+	        video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+	        additionalInfo: 'Additional information about Petroleum Engineering...'
+	    },
+	    'Petroleum GeoScience': {
+	    title: 'Petroleum GeoScience',
+	    image: 'images/faculty-petroleum-geoscience.jpg',
+	    description: 'About'
+	    }
+	  };
+	
+	  // Function to open faculty popup with data
+	  const openFacultyPopup = (faculty) => {
+	    const data = facultyData[faculty];
+	    if (data) {
+	      document.getElementById('facultyTitle').innerText = data.title;
+	      document.getElementById('facultyImage').src = data.image;
+	      document.getElementById('facultyDescription').innerText = data.description;
+	      document.getElementById('facultyVideo').src = data.video;
+	      document.getElementById('additionalInfo').innerText = data.additionalInfo;
+	      document.getElementById('collegePopup').style.display = 'block';
+	    }
+	  };
+	
+	  // Function to toggle popup visibility
+	  const togglePopup = (popupElement) => {
+	    popupElement.style.display = popupElement.style.display === 'block' ? 'none' : 'block';
+	  };
+	
+	  // Add event listeners for faculty buttons
+	  document.querySelectorAll('.faculty-button').forEach(button => {
+	    button.addEventListener('click', () => {
+	      openFacultyPopup(button.getAttribute('data-faculty'));
+	    });
+	  });
+	
+	  // Add event listeners for each box and its corresponding popup
+	  Object.keys(popupMap).forEach(boxId => {
+	    const boxElement = document.getElementById(boxId);
+	    const popupId = popupMap[boxId];
+	    const popupElement = document.getElementById(popupId);
+	    const closeBtn = popupElement.querySelector('.close-btn') || popupElement.querySelector('.college-close');
+	
+	    // Toggle popup when box is clicked
+	    if (boxElement) {
+	      boxElement.addEventListener('click', () => {
+	        togglePopup(popupElement);
+	      });
+	    }
+	
+	    // Toggle popup when close button is clicked
+	    if (closeBtn) {
+	      closeBtn.addEventListener('click', () => {
+	        togglePopup(popupElement);
+	      });
+	    }
+	
+	    // Close popup when clicking outside of it
+	    window.addEventListener('mousedown', (event) => {
+	      if (event.target === popupElement) {
+	        togglePopup(popupElement);
+	      }
+	    });
+	  });
+	
+	  // Function to close the college popup
+	  window.closeCollegePopup = () => {
+	    document.getElementById("collegePopup").style.display = "none";
+	  };
+	});
+
+
+<!-- PopUp Box1 -->
+           <!-- <div id="popup-content1" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Our Mission</h2>
+                    <ol>
+                        <li>To share information regarding educational institutions in Malaysia broadly.</li>
+                        <li>To assist in enlarging access and convince the quality of pursuing education in Malaysia to international students.</li>
+                        <li>To build cooperation with any related parties globally to improve the quality of education.</li>
+                        <li>To assist and provide admission into all universities for international students with their chosen courses and programs.</li>
+                        <li>To ensure the successful applicants travel to their universities to pursue their program of study, as smoothly as possible without facing any inconveniences.</li>
+                    </ol>
+                </div>
+            </div> -->
