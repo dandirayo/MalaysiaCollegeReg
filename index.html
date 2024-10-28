@@ -48,72 +48,41 @@
                 <p>Free online consultations via WhatsApp, Ensuring applicants, Assisting you in achieving your dream campus, Providing services to help you turn your dreams into reality!</p>
             </a>
         
-             <!-- Event and Expo -->
-             <div class="event-expo">
-                <h2>Event, Webinar and Expo</h2>
-                <div class="event-flex">
-                    <div class="event1">
-                        <img src="images/event/event1.png" width="230px" height="230px">
-                        <p>Webinar 1</p>
-                    </div>
-                    <div class="event2">
-                        <img src="images/event/event2.png" width="230px" height="230px">
-                        <p>Event 1</p>
-                    </div>
-                    <div class="event3">
-                        <img src="images/event/event3.png" width="230px" height="230px">
-                        <p>Expo 1</p>
-                    </div>
+        <!-- Event and Expo -->
+        <div class="event-expo">
+            <h2>Event, Webinar and Expo</h2>
+            <div class="event-flex">
+                <div class="event1">
+                    <img src="images/event/event1.png" width="230px" height="230px" data-src="images/event/event1.png" onclick="openImage(this)">
+                    <p>Webinar 1</p>
+                </div>
+                <div class="event2">
+                    <img src="images/event/event2.png" width="230px" height="230px" data-src="images/event/event2.png" onclick="openImage(this)">
+                    <p>Event 1</p>
+                </div>
+                <div class="event3">
+                    <img src="images/event/event3.png" width="230px" height="230px" data-src="images/event/event3.png" onclick="openImage(this)">
+                    <p>Expo 1</p>
                 </div>
             </div>
+        </div>
 
-            <!-- PopUp Box1 -->
-            <div id="popup-content1" class="popup">
-                <div class="popup-content">
-                    <span class="close-btn">&times;</span>
-                    <h2>Our Mission</h2>
-                    <ol>
-                        <li>To share information regarding educational institutions in Malaysia broadly.</li>
-                        <li>To assist in enlarging access and convince the quality of pursuing education in Malaysia to international students.</li>
-                        <li>To build cooperation with any related parties globally to improve the quality of education.</li>
-                        <li>To assist and provide admission into all universities for international students with their chosen courses and programs.</li>
-                        <li>To ensure the successful applicants travel to their universities to pursue their program of study, as smoothly as possible without facing any inconveniences.</li>
-                    </ol>
-                </div>
-            </div>
+<!-- Modal untuk View Image -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeImage()">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
 
-            <!-- PopUp Box2 -->
-            <div id="popup-content2" class="popup">
-                <div class="popup-content">
-                    <span class="close-btn">&times;</span>
-                    <h2>Background</h2>
-                        <p> Top Alumni Global is a consultancy firm that focuses on providing educational and immigration guidance and assistance to international students who are keen to achieve international undergraduate or postgraduate degree in Malaysia.Top Alumni Global was initiated in the end of 2021 in Indonesia, with a purpose to help international students for university admission and guidance. The majority of staff members within our company are the alumni and current students in 
-                            National University of Malaysia. From that experience, it was established to introduce educational institutions in Malaysia to international students and provide an initial consultation to apply for admissions and the after assistance of enrolment. 
-                            Vision Top Alumni Global will strive to be the most professional and trusted educational consultant that can realize the dreams and aspirations of international students.
-                        </p>
-                </div>
-            </div>
-
-            <!-- PopUp Box3 -->
-            <div id="popup-content3" class="popup">
-                <div class="popup-content">
-                    <span class="close-btn">&times;</span>
-                    <h2>Our Target</h2>
-                    <p>
-                        Top Alumni Global aims to provide assistance and guidance's for final year students at high schools, university students/lecturers, staffs, alumni of higher learning institute, and government servants.
-                    </p>
-                </div>
-            </div>
-           
-            <!-- PopUp Event -->
-            <div id="popup-content4" class="popup">
-                <div class="popup-content">
-                    <span class="close-btn">&times;</span>
-                    <h2>Event and Expo</h2>
-                    <p>
-                        Top Alumni Global aims to provide assistance and guidance's for final year students at high schools, university students/lecturers, staffs, alumni of higher learning institute, and government servants.
-                    </p>
-                </div>
+        </div>
+       
+        <!-- PopUp Event -->
+        <div id="popup-content4" class="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <h2>Event and Expo</h2>
+                <p>
+                    Top Alumni Global aims to provide assistance and guidance's for final year students at high schools, university students/lecturers, staffs, alumni of higher learning institute, and government servants.
+                </p>
             </div>
         </div>
 
@@ -121,14 +90,14 @@
         <script src="pop_up.js"></script>
     </div>
 
-    <!-- Registration Form Link -->
+    <!-- Why Choose Us? Be our Student -->
     <div class="why-container">
         <div class="whychooseus">
             <h1 class="why-txt">Why Choose us?</h1>
             <a class="button-form" href="https://formfacade.com/sm/eRTlpTzhE">Full Form Registration</a>
         </div>
 
-        <!-- Boxes -->
+        <!-- Boxes and Pop Up -->
         <div class="box-mid">
             <div id="box1" class="box1">
                 <img src="images/boxes/11.png" alt="Logo1">
@@ -145,6 +114,44 @@
             <div id="box4" class="box4">
                 <img src="images/boxes/44.png" alt="Logo4">
                 <p>View Event and Expo</p>
+            </div>
+        </div>
+        <!-- Content 3-->
+        <!-- PopUp Box1 -->
+        <div id="popup-content1" class="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <h2>Our Mission</h2>
+                <ol>
+                    <li>To share information regarding educational institutions in Malaysia broadly.</li>
+                    <li>To assist in enlarging access and convince the quality of pursuing education in Malaysia to international students.</li>
+                    <li>To build cooperation with any related parties globally to improve the quality of education.</li>
+                    <li>To assist and provide admission into all universities for international students with their chosen courses and programs.</li>
+                    <li>To ensure the successful applicants travel to their universities to pursue their program of study, as smoothly as possible without facing any inconveniences.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- PopUp Box2 -->
+        <div id="popup-content2" class="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <h2>Background</h2>
+                    <p> Top Alumni Global is a consultancy firm that focuses on providing educational and immigration guidance and assistance to international students who are keen to achieve international undergraduate or postgraduate degree in Malaysia.Top Alumni Global was initiated in the end of 2021 in Indonesia, with a purpose to help international students for university admission and guidance. The majority of staff members within our company are the alumni and current students in 
+                        National University of Malaysia. From that experience, it was established to introduce educational institutions in Malaysia to international students and provide an initial consultation to apply for admissions and the after assistance of enrolment. 
+                        Vision Top Alumni Global will strive to be the most professional and trusted educational consultant that can realize the dreams and aspirations of international students.
+                    </p>
+            </div>
+        </div>
+
+        <!-- PopUp Box3 -->
+        <div id="popup-content3" class="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <h2>Our Target</h2>
+                <p>
+                    Top Alumni Global aims to provide assistance and guidance's for final year students at high schools, university students/lecturers, staffs, alumni of higher learning institute, and government servants.
+                </p>
             </div>
         </div>
     </div>

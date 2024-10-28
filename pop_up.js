@@ -223,3 +223,16 @@ document.addEventListener('DOMContentLoaded', () => {
 function closeCollegePopup() {
   document.getElementById("collegePopup").style.display = "none";
 }
+
+
+function openImage(element) {
+  var modal = document.getElementById("imageModal");
+  var modalImg = document.getElementById("modalImage");
+  modal.style.display = "block";
+  modalImg.src = element.getAttribute("data-src");
+}
+
+function closeImage() {
+  var modal = document.getElementById("imageModal");
+  modal.style.display = "none";
+}
