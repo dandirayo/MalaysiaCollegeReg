@@ -470,6 +470,7 @@ body {
     justify-content: center;
     background-color: #262163;
     padding: 20px;
+    
   }
   
   .faculty-button {
@@ -481,12 +482,13 @@ body {
     border-radius: 5px;
     background-color: rgb(210, 210, 210);
     width: calc(25% - 10px);
-    text-align: center;
+    
   }
   
   .faculty-button img {
     max-width: 20px;
     margin-right: 10px;
+    text-align: center;
   }
   
   .faculty-button:hover {
@@ -498,19 +500,22 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
+    font-size: 5em;
+    text-align: center;
 }
 
 .faculty-button {
-    background-color: #4CAF50; 
+    background-color: #FBAE42; 
     border: none; 
     border-radius: 8px; 
-    color: white; 
+    color: #262163; 
     cursor: pointer; 
     display: flex; 
     align-items: center; 
     padding: 15px 20px; 
     margin: 10px; 
     transition: background-color 0.3s, transform 0.2s; 
+    text-align: center;
 }
 
 .faculty-button img {
@@ -520,7 +525,7 @@ body {
 }
 
 .faculty-button:hover {
-    background-color: #45a049; 
+    background-color: white; 
     transform: scale(1.05); 
 }
 

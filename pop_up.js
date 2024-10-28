@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
-// --------------------------------- PopUp Box Halaman 1 ------
+// ------ PopUp Box Halaman 1 ------
 
 // Function to close popup
 const closePopup = (popupElement) => {
