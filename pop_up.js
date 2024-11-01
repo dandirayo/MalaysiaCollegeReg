@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
           title: 'Applied Chemistry',
           image: ' images/faculty-applied-chemistry.jpg',
           description: 'About Applied Chemistry...',
-          video: 'https://www.youtube.com/watch?v=FWyWH27-La8',
+          video: 'C:\Users\dandi\OneDrive\Pictures\Source Website Maker\TopAlumniGlobal\Video\Testing28Sep',
           additionalInfo: 'Additional information about Applied Chemistry...'
       },
       'Business Management': {
@@ -148,9 +148,19 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   };
 
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.faculty-button').forEach(button => {
+        button.addEventListener('click', () => {
+            openFacultyPopup(button.getAttribute('data-faculty'));
+        });
+    });
+});
+
   const openFacultyPopup = (faculty) => {
       const data = facultyData[faculty];
+      console.log('Opening popup for:', faculty);
       if (data) {
+          console.log('Popup data:', data);
           document.getElementById('facultyTitle').innerText = data.title;
           document.getElementById('facultyImage').src = data.image;
           document.getElementById('facultyVideo').src = data.video;
@@ -160,22 +170,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   };
 
-  document.querySelectorAll('.faculty-button').forEach(button => {
-      button.addEventListener('click', () => {
-          openFacultyPopup(button.getAttribute('data-faculty'));
-      });
-  });
-
   const closePopup = () => {
       document.getElementById('collegePopup').style.display = 'none';
       document.body.classList.remove('blurred-background');
   };
 
   document.getElementById('collegeClose').addEventListener('click', closePopup);
-
   window.addEventListener('click', (event) => {
-      const popupElement = document.getElementById('collegePopup');
-      if (event.target === popupElement) {
+      if (event.target === document.getElementById('collegePopup')) {
           closePopup();
       }
   });
