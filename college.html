@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choose your College!</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Embed Local Video with Thumbnail</title>
+    <title>Embeded Local Video with Thumbnail</title>
 </head>
 
 <body>
@@ -15,20 +16,25 @@
     <!-- Left bar -->
     <div class="lo-container">
         <a href="index.html">
-            <img src="images/topalumniglobal.png" class="a-logo"/>
+            <img src="images/topalumniglobal.png" class="a-logo" alt="Logo"/>
             <h1 class="top-text">TopAlumniGlobal</h1>
         </a>
     </div>
 
+    <!-- Toggle Button for Mobile -->
+    <div class="toggle-button" onclick="toggleMenu()">
+        &#9776; <!-- Hamburger Icon -->
+    </div>
+
     <!-- Mid Bar -->
-    <div class="me-container">
+    <div class="me-container" id="menu">
         <ul class="ul-menu">
             <li class="li-menu"><a href="index.html" class="a-menu">Home</a></li>
-            <li class="li-menu"><a href="college.html" class="a-menu">Universitas Tekniknologi Petronas</a></li>
-            <!-- <li class="li-menu"><a href="about.html" class="a-menu">About Us</a></li> -->
+            <li class="li-menu"><a href="college.html" class="a-menu">Universitas Teknologi Petronas</a></li>
         </ul>
     </div>
-    <!-- <a href="login.html" class="button-login">Login</a> -->
+
+    <!-- Register Button -->
     <a href="https://formfacade.com/sm/eRTlpTzhE" class="regnow-but">Register Now</a>
 </nav>
 <!-- Navigation Bar Close -->
