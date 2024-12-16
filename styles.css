@@ -98,34 +98,6 @@ body {
     z-index: 10; /* Ensure it’s clickable */
 }
 
-/* Responsive Menu Visibility */
-@media (max-width: 768px) {
-    .toggle-button {
-        display: block; /* Show toggle button */
-        
-    }
-
-    .me-container {
-        display: none; /* Hide menu by default */
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #262163;
-        width: 100%;
-        z-index: 9; /* Ensure it’s clickable */
-        padding: 1.2vh;
-    }
-
-    .me-container.active {
-        display: block; /* Show menu when active */
-    }
-    
-    .li-menu {
-        display: block;
-        text-align: center;
-        margin: 10px 0; /* Berikan jarak antar item menu */
-    }
-}
 
 /* REGISTER NOW (Kanan Atas -> Website Form) */
 .regnow-but{
@@ -149,14 +121,16 @@ body {
 /* HOME */
 /* Container-Home */
 /* HOME Container */
-.ho-container:not(.the-form) {
+.imgc-container:not(.the-form) {
     display: flex;
     width: 100%;
     position: relative;
-    justify-content: space-between; /* Spasi antara gambar dan konten */
+    /* justify-content: space-between;  */
     align-items: center;
     gap: 20px;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
+    /* padding: 10px; */
 }
 
 /* Image College (Hero Image) */
@@ -170,44 +144,7 @@ body {
 }
 
 /* Responsive Layout for Smartphone */
-@media (max-width: 768px) {
-    .ho-container:not(.the-form) {
-        flex-direction: column; /* Elemen ditumpuk secara vertikal */
-        text-align: center; /* Rata tengah konten */
-    }
 
-    .image-college {
-        order: -1; /* Menggeser gambar ke atas */
-    }
-
-    .content-right {
-        order: 1; /* Konten teks tetap di bawah */
-        text-align: center; /* Rata tengah teks */
-    }
-
-    .text-right h1 {
-        font-size: 2rem; /* Ukuran teks lebih kecil */
-    }
-
-    .text-right h2 {
-        font-size: 1.2rem;
-    }
-
-    .text-right p {
-        font-size: 1rem; /* Ukuran teks paragraf lebih kecil */
-        /* margin: 10px 0; */
-        padding-bottom: 1vh;
-    }
-
-    .event-flex {
-        flex-direction: column; /* Event di-stack vertikal */
-        gap: 15px; /* Spasi antar gambar */
-    }
-
-    .event-flex img {
-        max-width: 80%; /* Batasi ukuran gambar */
-    }
-}
 
 /* CONTENT Text-Right */
 .content-right {
@@ -228,7 +165,7 @@ body {
 }
 
 .text-right p {
-    margin-top: 10px;
+    margin-top: 1vh;
     font-size: 1.2rem;
     line-height: 1.6;
 }
@@ -331,13 +268,6 @@ body {
     color: white;
     cursor: pointer;
     z-index: 1;
-}
-
-@media (max-width: 768px) {
-    .modal-content {
-        max-width: 95%;
-        max-height: 70vh;
-    }
 }
 
 

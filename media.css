@@ -1,0 +1,125 @@
+@media (max-width: 768px) {
+    /* Navigation Toggle */
+    .toggle-button {
+        display: block; /* Show toggle button */
+    }
+
+    .me-container {
+        display: none; /* Hide menu by default */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #262163;
+        width: 100%;
+        z-index: 9;
+        padding: 1.2vh;
+    }
+
+    .me-container.active {
+        display: block; /* Show menu when active */
+    }
+
+    .li-menu {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    /* Layout Home Container */
+    .imgc-container:not(.the-form) {
+        flex-direction: column;
+        text-align: center;
+        gap: 0; /* Menghapus gap yang berlebih */
+        padding-bottom: 0; /* Hilangkan padding tambahan */
+    }
+
+    .image-college {
+        order: -1; /* Geser gambar ke atas */
+        display: block;
+        width: 100%;
+        margin-bottom: 0; /* Hilangkan margin bawah */
+    }
+
+    .image-college img {
+        display: none; /* Gambar menghilang di tampilan HP */
+    }
+
+    .content-right {
+        order: 1; /* Konten teks tetap di bawah */
+        text-align: center;
+        margin-top: 0; /* Hilangkan jarak ekstra */
+    }
+
+    .text-right h1 {
+        font-size: 2rem;
+        margin: 0; /* Hilangkan margin ekstra */
+    }
+
+    .text-right h2 {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .text-right p {
+        font-size: 1rem;
+        padding-bottom: 1vh;
+        margin: 0;
+    }
+
+    /* Event Section */
+    .event-flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .event-flex img {
+        max-width: 80%;
+    }
+
+    /* Modal */
+    .modal-content {
+        max-width: 95%;
+        max-height: 70vh;
+    }
+}
+
+/* BOX */
+@media (max-width: 768px) {
+    /* Mid Box Responsif */
+    .box-mid {
+        flex-direction: column; /* Elemen ditumpuk secara vertikal */
+        gap: 2vh; /* Spasi antar box */
+        margin: 10px;
+    }
+
+    .box1, .box2, .box3 {
+        width: 70%; /* Lebar box menyesuaikan layar */
+        height: auto;
+        padding: 15px;
+        margin: 10px auto; /* Box ditengah */
+    }
+
+    .box1 img, .box2 img, .box3 img {
+        max-width: 60%;
+        max-height: 60%;
+    }
+
+    .box1 p, .box2 p, .box3 p {
+        font-size: 1em; /* Teks lebih besar di HP */
+    }
+
+    /* PopUp Responsif */
+    .popup-content {
+        width: 90%; /* Lebar popup lebih kecil */
+        margin: 30% auto; /* Posisi popup di tengah */
+        padding: 15px;
+    }
+
+    .popup-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .popup-content p, .popup-content ol {
+        font-size: 1rem;
+    }
+}
