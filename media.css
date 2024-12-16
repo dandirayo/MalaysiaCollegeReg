@@ -1,3 +1,12 @@
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
 @media (max-width: 768px) {
     /* Navigation Toggle */
     .toggle-button {
@@ -89,19 +98,17 @@
     .box-mid {
         flex-direction: column; /* Elemen ditumpuk secara vertikal */
         gap: 2vh; /* Spasi antar box */
-        margin: 10px;
     }
 
     .box1, .box2, .box3 {
-        width: 70%; /* Lebar box menyesuaikan layar */
+        width: auto; /* Lebar box menyesuaikan layar */
         height: auto;
-        padding: 15px;
-        margin: 10px auto; /* Box ditengah */
+        
     }
 
     .box1 img, .box2 img, .box3 img {
-        max-width: 60%;
-        max-height: 60%;
+        max-width: 70%;
+        max-height: 70%;
     }
 
     .box1 p, .box2 p, .box3 p {
