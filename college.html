@@ -96,17 +96,8 @@
                     Before you register in Top Alumni Global you must prepare yourself. Start making your dream job by choosing the right faculty. Thank you!
                 </p>
             </div>
+
             <!-- All of the Faculty -->
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Faculty Popups</title>
-                <link rel="stylesheet" href="styles.css"> <!-- Ganti dengan path CSS Anda -->
-            </head>
-            <body>
-            
             <div class="faculty-buttons">
                 <button class="faculty-button" data-faculty="Applied Chemistry">Applied Chemistry</button>
                 <button class="faculty-button" data-faculty="Business Management">Business Management</button>
@@ -123,16 +114,16 @@
             </div>
             
             <!-- Popup for Faculty -->
-            <div id="collegePopup" class="popup">
-                <div class="popup-content">
-                    <span id="collegeClose" class="close-btn">&times;</span>
-                    <h2 id="facultyTitle"></h2>
+            <div id="collegePopup" class="college-popup">
+                <div class="college-popup-content">
+                    <span id="college-close" class="college-close">&times;</span>
+                    <h2 id="facultyTitle">Faculty Title</h2>
                     <img id="facultyImage" src="" alt="Faculty Image">
-                    <p id="facultyDescription"></p>
-                    <iframe id="facultyVideo" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                    <p id="facultyDescription">Description goes here</p>
+                    <iframe id="facultyVideo" src="" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
-            <script src="scripts.js"></script>
+            <script src="scripts-faculty.js"></script>
         </div>
     </div>
     <!-- COLLEGE Content Close -->

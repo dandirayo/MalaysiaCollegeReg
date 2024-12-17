@@ -458,7 +458,7 @@ body {
     text-align: left;
 }
 
-/* button faculty? */
+/*faculty */
 .faculty-textmid {
     text-align: center;
     padding: 5vh;
@@ -534,8 +534,8 @@ body {
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
 }
 
-  /* COLLEGE POPUP!------------- */
-  .college-popup {
+  /* COLLEGE POPUP */
+.college-popup {
     display: none;
     position: fixed;
     top: 0;
@@ -543,85 +543,52 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-  }
-  
-  .college-popup-content {
+    z-index: 1000;
+}
+
+.college-popup-content {
     background-color: #fff;
     margin: 10% auto;
     padding: 20px;
     border-radius: 10px;
     width: 80%;
     max-width: 700px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-  }
-  
-  .college-close {
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .college-close:hover {
-    color: black;
-  }
-  
-  .college-popup-content img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .college-popup-content iframe {
-    width: 100%;
-    max-width: 560px;
-    height: 315px;
-    margin-bottom: 10px;
-  }
-
-  /* Style untuk Popup */
-.college-popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 600px;
-    background-color: white;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    padding: 20px;
-    z-index: 1000;
-    display: none;
-}
-
-.college-popup-content {
-    position: relative;
-    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .college-close {
     position: absolute;
     top: 10px;
     right: 15px;
-    font-size: 24px;
+    font-size: 28px;
+    color: #aaa;
     cursor: pointer;
 }
 
-.popup-image {
-    width: 100%;
-    height: auto;
-    margin: 10px 0;
+.college-close:hover {
+    color: #000; /* Warna hitam saat hover */
 }
 
-.popup-video {
+/* Gambar di Popup */
+.college-popup-content img {
+    width: 100%;
+    max-width: 500px; /* Batasi ukuran maksimum gambar */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Video di Popup */
+.college-popup-content iframe {
     width: 100%;
     height: 315px;
-    margin: 10px 0;
+    border-radius: 8px;
+    margin-top: 10px;
 }
 
-.blurred-background {
+/* Efek Blur Background saat Popup Aktif */
+body.blurred-background {
     filter: blur(5px);
     overflow: hidden;
 }
@@ -636,6 +603,7 @@ body.blurred-background::before {
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
+
 
   
 /* OUR SERVICE */
@@ -685,7 +653,7 @@ body.blurred-background::before {
     justify-content: space-between;
     background-color: #262163;
     padding: 20px; 
-    
+
     
 }
 
