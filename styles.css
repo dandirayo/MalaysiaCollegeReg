@@ -1,8 +1,3 @@
-/* align-items: center; vertical */
-/* justify-content: center; horizontal */
-/* .ho-container:not(.the-form) */
-/* space-between (rata kanan kiri) */
-
 /* #FBA834 Orange*/
 /* #262163 Blue  */
 
@@ -247,7 +242,6 @@ body {
 }
 
 /* BOXES */
-
 .box-mid {
     display: flex;
     align-items: center;
