@@ -154,25 +154,30 @@ body {
 }
 
 .text-right p {
-    margin-top: 1vh;
     font-size: 1.2rem;
-    line-height: 1.6;
 }
 
 .event1,.event2, .event3{
     text-align: center;
 }
 
-.blue-text {
-    color: #FBAE42;
+.blue {
+    color: #262163;
 }
 
 /* Event Section */
+
+.event-expo{
+    padding: 1vh;
+    padding-left: 0;
+    padding-bottom: auto;
+}
+
 .event-flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* gap: 20px; */
+     gap: 1.5vh; 
     margin-top: 20px;
 }
 
@@ -213,7 +218,7 @@ body {
 /* Why Choose Us? */
 .why-container {
     text-align: center;
-    padding: 5vh;
+    padding: 2vh;
     background-color: #262163;
 }
 
@@ -223,8 +228,6 @@ body {
     justify-content: center;
     gap: 2vh;
 }
-
-
 
 .whychooseus h1{
     color: white;
@@ -257,8 +260,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 22vh;
-    height: 18vh;
+    width: 28vh;
+    height: 24vh;
     padding: 2vh;
     background-color: white;
     border-radius: 10px;
@@ -290,7 +293,7 @@ body {
 .box1:hover, .box2:hover, .box3:hover {
     transform: scale(1.1); 
     background-color: #f0f0f0;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 .box1 img, .box2 img, .box3 img {
@@ -352,8 +355,6 @@ body {
 }
 
 /* COLLEGE */
- /* flex: 1; */
-/* flex-direction: column; */
 .college-container {
     display: flex;
     justify-content: space-between;
