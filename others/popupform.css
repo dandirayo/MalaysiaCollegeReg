@@ -1,0 +1,137 @@
+.popup-form {
+    display: none; /* Tersembunyi secara default */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+}
+
+
+.popup-form-content {
+    background-color: #262163;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    color: white;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.popup-form-content .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.popup-form-content h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.popup-form-content label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.popup-form-content input,
+.popup-form-content select,
+.popup-form-content button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.popup-form-content button {
+    background-color: #FBAE42;
+    color: #262163;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup-form-content button:hover {
+    background-color: white;
+    color: #FBAE42;
+}
+
+
+/* Form for Consultation */
+.consultation {
+    flex: 1;
+    background-color: #262163;
+    /* padding: 2rem; */
+    /* border-radius: 10px; */
+}
+
+.form-register {
+    max-width: 80vh;
+    /* margin: 0 auto; */
+    /* align-items: left; */
+}
+
+.form-register h1 {
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.green-text {
+    font-weight: bold;
+    color: greenyellow;
+}
+
+.form-register label {
+    color: white;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-register input,
+.form-register select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-register button[type="submit"] {
+    display: block;
+    margin: 0 auto; 
+    padding: 0.8rem;
+    background-color: #FBAE42;
+    color: #262163;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 40vh; 
+}
+
+.form-register button[type="submit"]:hover {
+    background-color: white;
+}
