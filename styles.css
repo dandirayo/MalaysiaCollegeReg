@@ -391,13 +391,125 @@ body {
     transform: scale(1.1);
 }
 
-.our-services {
+/* Ask away button */
+.ask-away-container {
+    text-align: center;
+    /* margin: 2vh; */
+    color: white;
+    background-color: #262163;
+    padding: 1.2vh;
+}
+
+.ask-away-container p {
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    font-style: bold;
+    margin-bottom: 1.5vh;
+}
+
+.ask-away-btn {
+    background-color: #FBAE42;
+    color: #262163;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 2vh;
+}
+
+.ask-away-btn:hover {
+    background-color: white;
+    color: #FBAE42;
+}
+
+.popup-form {
+    display: none; /* Tersembunyi secara default */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+}
+
+
+.popup-form-content {
+    background-color: #262163;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    color: white;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.popup-form-content .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.popup-form-content h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.popup-form-content label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.popup-form-content input,
+.popup-form-content select,
+.popup-form-content button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.popup-form-content button {
+    background-color: #FBAE42;
+    color: #262163;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup-form-content button:hover {
+    background-color: white;
+    color: #FBAE42;
+}
+
+.consul-about {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #262163;
+    background-color: #f1f1f1;
     padding: 2rem;
     gap: 2rem;
+    
 }
 
 /* Form for Consultation */
@@ -460,46 +572,49 @@ body {
     background-color: white;
 }
 
-/* ABOUT */
-.about-container{
-    background-color: #262163;
-    padding: 4vh;
+.about-container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #262163; */
+    padding: 1vh 1vh;
+    color: white;
+}
+
+.upper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Membuat responsif */
+    gap: 2rem;
 }
 
 .about-video {
-    margin-left: 3vh;
+    flex: 1; /* Bagi ruang secara proporsional */
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5vh; 
     overflow: hidden;
-    width: 100%;
-    max-width: 100vh;
-    max-height: 55vh;
-    margin: auto;
     border-radius: 10px;
 }
 
 .video-container {
-    margin-left: 3vh;
     position: relative;
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    max-width: 480px;
+    aspect-ratio: 16/9; /* Buat video tetap proporsional */
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .video-element {
-    margin-left: 3vh;
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .video-thumbnail {
-    margin-left: 3vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -507,96 +622,109 @@ body {
     height: 100%;
     object-fit: cover;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
+.video-thumbnail img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
 
 .about-text {
-    font-size: 1.6em;
-    justify-content: right;
-    margin-left: 20px;
-    padding: 20px;
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    color: white;
-    border: 5px red ;
+    flex: 1;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.about-text h1 {
+    font-size: 2rem;
+    color: #FBA834;
+    margin-bottom: 1rem;
+    font-style: bold;
+}
+.bluetxt{
+    color: #262163;
 }
 
 .about-text p {
-    margin-top: 2vh;
-    font-size: large;
+    margin-bottom: 1rem;
+    color: #262163;
 }
 
-.about-text p:nth-of-type(1) {
+.about-text .blue-text {
+    color: lightblue;
     font-weight: bold;
 }
 
+/* Social Media */
 .about-socmed {
-    padding: 4vh 2vh; /* added padding top and bottom */
-    color: #262163;
+    padding: 4vh 2vh;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .big-text {
+    gap: 1rem;
+}
+
+.big-text {
+    color: #262163;
     font-weight: bold;
-    font-size: 2em;
-    margin-bottom: 2vh; /* added margin bottom */
-  }
-  
-  .social-media {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.small-text {
+    color: #262163;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.social-media {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 2vh;
-    margin-top: 2vh; /* added margin top */
-  }
-  
-  .social-media a {
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.social-media h2{
+    color: #262163;
+}
+
+.social-media a {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
     color: inherit;
-    margin: 1vh; /* added margin around each social media item */
-  }
-  
-  .social-media img {
-    width: 5vh;
-    height: 5vh;
-    margin-bottom: 0.5vh;
-  }
-  
-  .a-text {
-    font-size: 1.2em;
-    margin-top: 0;
-  }
-
-.about-thanks {
-    display: flex;
-    justify-content: center;
-    font-size: large;
-    padding: 20px;
-    /* border: 2px solid black; */
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    transition: transform 0.3s ease;
 }
 
-.social-icons{
-    display: flex;
-    gap: 2vh;
-    justify-content: space-between ;
+.social-media a:hover {
+    transform: scale(1.1);
+}
+
+.social-media img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.a-text {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
 }
 
 /* FOOTER */
-
 .footer-container {
     display: flex;
     align-items: center;
@@ -607,6 +735,6 @@ body {
 }
 
 .p-footer {
-    color: #ccc;
+    color: #ffffff;
     font-size: 16px;
 }
