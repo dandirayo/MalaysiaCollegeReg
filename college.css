@@ -1,4 +1,26 @@
 /* COLLEGE */
+
+/* ABOUT UTP*/
+.about-utp {
+    margin-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.about-utp li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.upper-container {
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px;
+    border-radius: 20px;
+}
+
 .college-container {
     display: flex;
     justify-content: space-between;

@@ -400,16 +400,18 @@ body {
     gap: 2rem;
 }
 
+/* Form for Consultation */
 .consultation {
     flex: 1;
     background-color: #262163;
-    padding: 2rem;
-    border-radius: 10px;
+    /* padding: 2rem; */
+    /* border-radius: 10px; */
 }
 
 .form-register {
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 80vh;
+    /* margin: 0 auto; */
+    /* align-items: left; */
 }
 
 .form-register h1 {
@@ -441,7 +443,8 @@ body {
 }
 
 .form-register button[type="submit"] {
-    width: 100%;
+    display: block;
+    margin: 0 auto; 
     padding: 0.8rem;
     background-color: #FBAE42;
     color: #262163;
@@ -450,36 +453,87 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    max-width: 40vh; 
 }
 
 .form-register button[type="submit"]:hover {
     background-color: white;
 }
 
-.img-consul {
-    flex: 1;
+/* ABOUT */
+.about-container{
+    background-color: #262163;
+    padding: 4vh;
+}
+
+.about-video {
+    margin-left: 3vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh; 
+    overflow: hidden;
+    width: 100%;
+    max-width: 100vh;
+    max-height: 55vh;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.video-container {
+    margin-left: 3vh;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-element {
+    margin-left: 3vh;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.video-thumbnail {
+    margin-left: 3vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img-consul img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    max-width: 400px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+
+.about-text {
+    font-size: 1.6em;
+    justify-content: right;
+    margin-left: 20px;
+    padding: 20px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    color: white;
+    border: 5px red ;
 }
 
-.img-consul img:hover {
-    transform: scale(1.05);
+.about-text p {
+    margin-top: 2vh;
+    font-size: large;
 }
 
-/* ABOUT */
-.about-container{
-    background-color: #262163;
-    padding: 4vh;
+.about-text p:nth-of-type(1) {
+    font-weight: bold;
 }
 
 .about-socmed {
@@ -540,98 +594,6 @@ body {
     gap: 2vh;
     justify-content: space-between ;
 }
-
-
-/* ABOUT UTP*/
-.about-utp {
-    margin-top: 20px;
-    padding-left: 20px;
-    text-align: left;
-}
-
-.about-utp li {
-    margin-bottom: 10px;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
-}
-
-.upper-container {
-    display: flex;
-    justify-content: center;
-    box-shadow: 5px;
-    border-radius: 20px;
-}
-
-.about-text {
-    font-size: 1.6em;
-    justify-content: right;
-    margin-left: 20px;
-    padding: 20px;
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    color: white;
-    border: 5px red ;
-}
-
-.about-text p {
-    margin-top: 2vh;
-    font-size: large;
-}
-
-.about-text p:nth-of-type(1) {
-    font-weight: bold;
-}
-
-.about-video {
-    margin-left: 3vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5vh; 
-    overflow: hidden;
-    width: 100%;
-    max-width: 100vh;
-    max-height: 55vh;
-    margin: auto;
-    border-radius: 10px;
-}
-
-.video-container {
-    margin-left: 3vh;
-    position: relative;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.video-element {
-    margin-left: 3vh;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-.video-thumbnail {
-    margin-left: 3vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    border-radius: 10px;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 /* FOOTER */
 
