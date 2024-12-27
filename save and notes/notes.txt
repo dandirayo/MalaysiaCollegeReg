@@ -1,0 +1,9 @@
+
+#AllFlexWarp
+
+@media (max-width: 768px)
+1) Tulisan TopAlumniGlobal Hilang
+2) Social Media Bawah
+
+UTP belum Responsive.
+
