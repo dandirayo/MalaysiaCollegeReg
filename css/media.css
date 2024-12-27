@@ -7,10 +7,15 @@
     }
 }
 
+/* Toggle Notification Phone Mode */
 @media (max-width: 768px) {
     /* Navigation Toggle */
     .toggle-button {
         display: block; /* Show toggle button */
+    }
+
+    .top-text{
+        display: none;
     }
 
     .me-container {
@@ -38,30 +43,30 @@
     .imgc-container:not(.the-form) {
         flex-direction: column;
         text-align: center;
-        gap: 0; /* Menghapus gap yang berlebih */
-        padding-bottom: 0; /* Hilangkan padding tambahan */
+        gap: 0; 
+        padding-bottom: 0;
     }
 
     .image-college {
-        order: -1; /* Geser gambar ke atas */
+        order: -1; 
         display: block;
         width: 100%;
-        margin-bottom: 0; /* Hilangkan margin bawah */
+        margin-bottom: 0; 
     }
 
     .image-college img {
-        display: none; /* Gambar menghilang di tampilan HP */
+        display: none; 
     }
 
     .content-right {
-        order: 1; /* Konten teks tetap di bawah */
+        order: 1; 
         text-align: center;
-        margin-top: 0; /* Hilangkan jarak ekstra */
+        margin-top: 0; 
     }
 
     .text-right h1 {
         font-size: 2rem;
-        margin: 0; /* Hilangkan margin ekstra */
+        margin: 0; 
     }
 
     .text-right h2 {
@@ -96,12 +101,12 @@
 @media (max-width: 768px) {
     /* Mid Box Responsif */
     .box-mid {
-        flex-direction: column; /* Elemen ditumpuk secara vertikal */
-        gap: 2vh; /* Spasi antar box */
+        flex-direction: column; 
+        gap: 2vh; 
     }
 
     .box1, .box2, .box3 {
-        width: auto; /* Lebar box menyesuaikan layar */
+        width: auto; 
         height: auto;
         
     }
@@ -112,13 +117,13 @@
     }
 
     .box1 p, .box2 p, .box3 p {
-        font-size: 1em; /* Teks lebih besar di HP */
+        font-size: 1em; 
     }
 
     /* PopUp Responsif */
     .popup-content {
-        width: 90%; /* Lebar popup lebih kecil */
-        margin: 30% auto; /* Posisi popup di tengah */
+        width: 90%; 
+        margin: 30% auto; 
         padding: 15px;
     }
 
@@ -131,14 +136,72 @@
     }
 }
 
+/* 6 Act Photos*/
+@media (max-width: 768px) {
+    .img-activity {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 1.5vh; /* Adjust gap between images */
+    }
+
+    .img-activity img {
+        aspect-ratio: 4/3; /* Adjust aspect ratio for better fit */
+        border-radius: 8px; /* Optional: Slightly smaller border-radius */
+    }
+}
+
 /* Responsive Adjustment */
 @media (max-width: 768px) {
     .video-container {
-        max-width: 100%; /* Full-width untuk perangkat kecil */
+        max-width: 100%; 
     }
 
     .video-thumbnail img {
-        width: 60px; /* Thumbnail lebih kecil untuk perangkat kecil */
+        width: 60px; 
         height: 60px;
     }
 }
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .all-about {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .about-video {
+        width: 100%;
+    }
+
+    .video-container {
+        max-width: 100%;
+    }
+
+    .about-text {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .social-media {
+        gap: 1rem;
+    }
+
+    .social-media img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .big-text {
+        font-size: 1.2rem;
+    }
+}
+
+
+
