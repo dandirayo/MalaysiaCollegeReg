@@ -130,3 +130,15 @@
         font-size: 1rem;
     }
 }
+
+/* Responsive Adjustment */
+@media (max-width: 768px) {
+    .video-container {
+        max-width: 100%; /* Full-width untuk perangkat kecil */
+    }
+
+    .video-thumbnail img {
+        width: 60px; /* Thumbnail lebih kecil untuk perangkat kecil */
+        height: 60px;
+    }
+}
