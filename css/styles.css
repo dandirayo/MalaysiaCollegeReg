@@ -389,15 +389,7 @@ body {
     transform: scale(1.1);
 }
 
-.consul-about {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f1f1f1;
-    padding: 2rem;
-    gap: 2rem;
-    
-}
+
 
 /* Ask away button */
 .ask-away-container {
@@ -433,23 +425,32 @@ body {
     color: #FBAE42;
 }
 
-.about-container {
-    display: flex;
-    flex-direction: column;
-    padding: 1vh 1vh;
-    color: white;
-}
-
-.upper-container {
+.all-about {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* responsif */
+    background-color: #f1f1f1;
+    padding: 1rem;
+    gap: 2rem;
+    
+}
+
+.about-container {
+    display: flex;
+    /* flex-direction: column; */
+    padding: 1vh 1vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    /* Responsive */
     gap: 2rem;
 }
 
+/* About Video */
 .about-video {
-    flex: 1; /* Bagi ruang secara proporsional */
+    flex: 1; 
     position: relative;
     display: flex;
     justify-content: center;
