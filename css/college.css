@@ -1,60 +1,61 @@
 /* COLLEGE */
+
+/*CollegeContent*/
 .college-container {
     display: flex;
     justify-content: space-between;
-    
-}
-.about-utp {
-    margin-top: 20px;
-    padding-left: 20px;
-    text-align: left;
-}
-
-.about-utp li {
-    margin-bottom: 10px;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
-}
-
-.upper-container {
-    display: flex;
-    justify-content: center;
     box-shadow: 5px;
     border-radius: 20px;
 }
 
-.left-up{
-    display: flex;
-    justify-content: center;
-     text-decoration: none;
-    color: #262163;
-}
-
-.col-left{
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    padding: 2vh;
-    margin-left: 2vh;
-}
-
-.col-logo1{
-    justify-content: center;
-    width: 92vh;
-/*    height: 42vh;*/
-    max-height: 42vh;
-    margin-bottom: 5vh;
-}
-
-.utp-college{
-    text-decoration: none;
-    color: #333;
+/* Container utama */
+.utp-college {
+    display: flex; /* Gunakan Flexbox */
+    flex-direction: row; /* Elemen disusun secara horizontal */
+    justify-content: space-between; /* Spasi antara elemen kiri dan kanan */
+    align-items: flex-start; /* Pastikan elemen rata atas */
     text-align: center;
+    gap: 2rem; /* Jarak antar elemen kiri dan kanan */
     margin: 4vh;
+    flex-wrap: wrap; /* Agar tetap responsif di layar kecil */
 }
 
-.utp-video1{
+/* Bagian kiri (gambar dan heading) */
+.left-up {
+    display: flex;
+    flex-direction: column; /* Elemen disusun vertikal */
+    align-items: flex-start; /* Rata kiri */
+    flex: 1; /* Berikan ruang fleksibel */
+    min-width: 300px; /* Ukuran minimal untuk bagian kiri */
+}
+
+.col-logo1 {
+    width: 100%;
+    max-width: 400px; /* Batasi lebar maksimum logo */
+    height: auto;
+    margin: 2vh;
+}
+
+/* Bagian kanan (teks) */
+.right-up {
+    flex: 2; /* Lebih banyak ruang untuk teks */
+    padding-left: 2rem; /* Berikan jarak dari kiri */
+}
+
+.about-utp {
+    text-align: left;
+}
+
+.about-utp p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+
+.utp-video{
     display: flex;
     padding: 6vh;
 }

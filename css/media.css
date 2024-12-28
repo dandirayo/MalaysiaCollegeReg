@@ -290,3 +290,27 @@
         margin: 0 auto;
     }
 }
+
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .utp-college {
+        flex-direction: column; /* Elemen disusun vertikal */
+        align-items: center; /* Semua elemen rata tengah */
+        text-align: center;
+    }
+
+    .left-up, .right-up {
+        text-align: center;
+        padding: 0;
+    }
+
+    .about-utp p {
+        text-align: justify; /* Teks lebih rapi di layar kecil */
+    }
+
+    .col-logo1 {
+        max-width: 200px; /* Perkecil logo di layar kecil */
+        margin: 0 auto;
+    }
+}
