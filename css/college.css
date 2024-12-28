@@ -27,9 +27,7 @@
 .left-up{
     display: flex;
     justify-content: center;
-}
-.left-utp h1{
-    text-decoration: none;
+     text-decoration: none;
     color: #262163;
 }
 
