@@ -7,11 +7,11 @@
     }
 }
 
-/* Toggle Notification Phone Mode */
+/* Toggle Button (Hamburger Icon) */
 @media (max-width: 768px) {
     /* Navigation Toggle */
     .toggle-button {
-        display: block; /* Show toggle button */
+        display: block; 
     }
 
     .top-text{
@@ -19,7 +19,7 @@
     }
 
     .me-container {
-        display: none; /* Hide menu by default */
+        display: none; 
         position: absolute;
         top: 60px;
         left: 0;
@@ -30,7 +30,7 @@
     }
 
     .me-container.active {
-        display: block; /* Show menu when active */
+        display: block; 
     }
 
     .li-menu {
@@ -38,8 +38,10 @@
         text-align: center;
         margin: 10px 0;
     }
+}
 
-    /* Layout Home Container */
+@media (max-width: 768px){
+    /*Layout Home */
     .imgc-container:not(.the-form) {
         flex-direction: column;
         text-align: center;
@@ -97,7 +99,8 @@
     }
 }
 
-/* BOX */
+
+/* BOXES(whychooseus) */
 @media (max-width: 768px) {
     /* Mid Box Responsif */
     .box-mid {
@@ -108,7 +111,6 @@
     .box1, .box2, .box3 {
         width: auto; 
         height: auto;
-        
     }
 
     .box1 img, .box2 img, .box3 img {
@@ -120,7 +122,7 @@
         font-size: 1em; 
     }
 
-    /* PopUp Responsif */
+    /* PopUp whychooseus Responsif */
     .popup-content {
         width: 90%; 
         margin: 30% auto; 
@@ -139,17 +141,17 @@
 /* 6 Act Photos*/
 @media (max-width: 768px) {
     .img-activity {
-        grid-template-columns: 1fr; /* Single column layout */
-        gap: 1.5vh; /* Adjust gap between images */
+        grid-template-columns: 1fr; 
+        gap: 1.5vh; 
     }
 
     .img-activity img {
-        aspect-ratio: 4/3; /* Adjust aspect ratio for better fit */
-        border-radius: 8px; /* Optional: Slightly smaller border-radius */
+        aspect-ratio: 4/3; 
+        border-radius: 8px; 
     }
 }
 
-/* Responsive Adjustment */
+/* Video About */
 @media (max-width: 768px) {
     .video-container {
         max-width: 100%; 
@@ -161,8 +163,7 @@
     }
 }
 
-
-/* Responsive Adjustments */
+/* All About and Social Media*/
 @media (max-width: 768px) {
     .all-about {
         flex-direction: column;
@@ -203,62 +204,8 @@
     }
 }
 
-
-/* College Intro */
-/* Responsif untuk tampilan kecil */
+/* COLLEGE */
 @media (max-width: 768px) {
-    .college-container {
-        display: flex;
-        flex-direction: column; /* Elemen disusun secara vertikal */
-        align-items: center; /* Semua elemen rata tengah */
-        gap: 2rem;
-        padding: 0 1rem; /* Berikan padding untuk spasi */
-        overflow-x: hidden; /* Hilangkan scroll horizontal */
-    }
-
-    .first-college {
-        text-align: center; /* Semua teks rata tengah */
-        margin-bottom: 2rem;
-        padding: 0 1rem; /* Tambahkan padding untuk spasi */
-    }
-
-    .about-utp {
-        text-align: left;
-        padding: 0 1rem; /* Pastikan tidak melebihi layar */
-    }
-
-    .col-logo1 {
-        width: 100%;
-        max-width: 300px; /* Batasi lebar maksimal */
-        height: auto;
-        margin: 0 auto; /* Rata tengah */
-    }
-
-    .utp-video1 {
-        display: flex;
-        flex-direction: column; /* Video berjajar vertikal */
-        align-items: center; /* Video rata tengah */
-        gap: 1.5rem;
-        width: 100%;
-        padding: 0 1rem; /* Tambahkan padding untuk spasi */
-    }
-
-    .college-video {
-        width: 100%;
-        max-width: 600px; /* Batasi lebar maksimal */
-        margin: 0 auto; /* Pastikan rata tengah */
-    }
-
-    .intro-container {
-        width: 100%;
-        height: auto;
-        max-width: 600px; /* Batasi ukuran untuk tampilan kecil */
-        margin: 0 auto; /* Rata tengah */
-    }
-}
-
-/* Responsif untuk tampilan sedang */
-@media (min-width: 769px) and (max-width: 1024px) {
     .college-container {
         display: flex;
         flex-wrap: wrap;
@@ -267,36 +214,10 @@
         padding: 1rem;
     }
 
-    .col-logo1 {
-        width: 50%; /* Gambar logo lebih kecil */
-        height: auto;
-        margin: 0 auto;
-    }
 
-    .utp-video1 {
-        flex-wrap: wrap; /* Video berjajar secara fleksibel */
-        gap: 1rem;
-        padding: 0 1rem;
-    }
-
-    .college-video {
-        max-width: 45%; /* Video lebih kecil untuk tampilan sedang */
-        margin: 0 auto;
-    }
-
-    .intro-container {
-        width: 100%;
-        max-width: 720px; /* Batasi ukuran video */
-        margin: 0 auto;
-    }
-}
-
-
-/* Responsif untuk layar kecil */
-@media (max-width: 768px) {
     .utp-college {
-        flex-direction: column; /* Elemen disusun vertikal */
-        align-items: center; /* Semua elemen rata tengah */
+        flex-direction: column; 
+        align-items: center; 
         text-align: center;
     }
 
@@ -305,12 +226,25 @@
         padding: 0;
     }
 
+    .first-college {
+        text-align: center; 
+        margin-bottom: 2rem;
+        padding: 0 1rem; 
+    }
+
+    .about-utp {
+        text-align: left;
+        padding: 0 1rem; 
+    }
+
     .about-utp p {
-        text-align: justify; /* Teks lebih rapi di layar kecil */
+        text-align: justify; 
     }
 
     .col-logo1 {
-        max-width: 200px; /* Perkecil logo di layar kecil */
-        margin: 0 auto;
+        width: 100%;
+        max-width: 300px; 
+        height: auto;
+        margin: 0 auto; 
     }
 }
