@@ -24,7 +24,6 @@
     border-radius: 20px;
 }
 
-
 .left-up{
     display: flex;
     justify-content: center;
@@ -38,26 +37,28 @@
     display: flex;
     align-items: center; 
     justify-content: center;
-    padding: 20px;
+    padding: 2vh;
     margin-left: 2vh;
 }
 
 .col-logo1{
     justify-content: center;
-    width: 82vh;
-    height: 32vh;
-    max-height: 32vh;
+    width: 92vh;
+/*    height: 42vh;*/
+    max-height: 42vh;
     margin-bottom: 5vh;
 }
 
-.first-college{
+.utp-college{
     text-decoration: none;
     color: #333;
     text-align: center;
+    margin: 4vh;
 }
 
 .utp-video1{
     display: flex;
+    padding: 6vh;
 }
 
 .college-video {
