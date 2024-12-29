@@ -210,21 +210,21 @@ body {
     z-index: 1;
 }
 
-/* Why Choose Us? */
-.why-container {
+/* Our Services */
+.services-container {
     text-align: center;
     padding: 2vh;
     background-color: #262163;
 }
 
-.whychooseus{
+.ourservices{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2vh;
 }
 
-.whychooseus h1{
+.ourservices h1{
     color: white;
 }
 
@@ -239,7 +239,7 @@ body {
     font-weight: bold;
 }
 
-/* whychooseus Boxes */
+/* ourservices Boxes */
 .box-mid {
     display: flex;
     align-items: center;
@@ -250,7 +250,7 @@ body {
     font-size: 1.1em;
 }
 
-.box1, .box2, .box3 {
+.box1, .box2, .box3, .box4, .box5 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -266,46 +266,36 @@ body {
     font-size: 1.2rem;
 }
 
-/* li */
-.box1 p {
-    font-size: 1rem; 
-    line-height: 1.3; 
-    text-align: center; 
-    margin: 5px 0; 
-    white-space: normal; 
-    text-align: left !important;
-}
-
+.box1 p,
 .box2 p,
-.box3 p {
+.box3 p,
+.box4 p,
+.box5 p {
     font-size: 1rem; 
     line-height: 1.3; 
     text-align: center; 
     margin: 5px 0; 
     white-space: normal; 
     word-wrap: break-word;
+    font-weight: bold;
+    color: #262163;
+    font-size: 0.8em;
 }
 
-.box1:hover, .box2:hover, .box3:hover {
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover {
     transform: scale(1.1); 
     background-color: #f0f0f0;
 }
 
-.box1 img, .box2 img, .box3 img {
+.box1 img, .box2 img, .box3 img, .box4 img, .box5 img {
     width: 68%;
     height: 68%;
     object-fit: contain;
 }
 
-.box1 p, .box2 p, .box3 p {
-    font-weight: bold;
-    color: #262163;
-    font-size: 0.8em;
-    text-align: center;
-}
 
 /* PopUp 3 Mid Boxes*/
-.popup {
+.popupboxes {
     display: none;
     position: fixed;
     z-index: 1;
@@ -315,8 +305,7 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); 
 }
-
-.popup-content {
+.popup-boxes {
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
@@ -325,18 +314,11 @@ body {
     max-width: 600px;
     border-radius: 10px;
 }
-
-.popup-content h2 {
+.popup-boxes h2 {
     text-align: center;
 }
-
-.popup-content p, 
-.popup-content ol {
+.popup-boxes p {
     padding: 2.5vh;
-}
-
-#popup-content1 p {
-    text-align: left; 
 }
 
 .close-btn {

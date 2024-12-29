@@ -32,12 +32,7 @@
     .me-container.active {
         display: block; 
     }
-
-    /* .a-menu:hover {
-        display: block;
-        font-style: bold;
-    } */
-    
+  
     .li-menu {
         display: block;
         text-align: center;
@@ -110,7 +105,7 @@
 }
 
 
-/* BOXES(whychooseus) */
+/* BOXES(ourservices) */
 @media (max-width: 768px) {
     /* Mid Box Responsif */
     .box-mid {
@@ -118,17 +113,17 @@
         gap: 2vh; 
     }
 
-    .box1, .box2, .box3 {
+    .box1, .box2, .box3, .box4, .box5 {
         width: auto; 
         height: auto;
     }
 
-    .box1 img, .box2 img, .box3 img {
+    .box1 img, .box2 img, .box3 img, .box4 img, .box5 img {
         max-width: 70%;
         max-height: 70%;
     }
 
-    .box1 p, .box2 p, .box3 p {
+    .box1 p, .box2 p, .box3 p, .box4 p, .box5 p {
         font-size: 1em; 
     }
 
