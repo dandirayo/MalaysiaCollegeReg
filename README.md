@@ -1,2 +1,2 @@
 # MalaysiaCollegeReg
- PHP and MySQL
+Simple Website for TopAlumniGlobal
