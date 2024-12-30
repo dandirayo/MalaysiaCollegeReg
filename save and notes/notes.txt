@@ -1,4 +1,3 @@
-
 #AllFlexWarp
 
 @media (max-width: 768px)
@@ -10,4 +9,3 @@ UTP belum Responsive.
 Our Mission
 Ensure Successful Applicantx
 Assist and Provide Admission
-

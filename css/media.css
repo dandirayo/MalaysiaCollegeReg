@@ -252,3 +252,16 @@
         margin: 0 auto; 
     }
 }
+
+/* Faculty-Boxes */
+@media (max-width: 768px) {
+    .faculty-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 kotak per baris */
+    }
+}
+
+@media (max-width: 480px) {
+    .faculty-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 kotak per baris */
+    }
+}

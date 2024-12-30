@@ -165,5 +165,33 @@ UTP-> about utp (Video x,y,z) -> fakultas(Video x)
 </ol> -->
 
 
+Adjusted File Structure
+
+[HTML Files]
+index.html: 
+Includes scripts and styles for homepage.
+
+college.html: 
+Includes scripts and styles specifically for the college page.
+
+[CSS Files]
+styles.css: 
+Global styles that apply to both index.html and college.html.
+
+modal.css: 
+Styles related to modals and popups, shared by both pages.
+
+index.css: 
+Styles specific to index.html.
+
+college.css: 
+Styles specific to college.html.
+
+<JS Files>
+shared.js: Contains shared utility functions (e.g., togglePopup, addNavToggle).
+index.js: Handles JavaScript specific to index.html.
+college.js: Handles JavaScript specific to college.html.
+modal.js: Manages modal-specific functionality for both pages.
+
 
 
