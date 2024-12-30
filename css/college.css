@@ -1,53 +1,61 @@
 /* COLLEGE */
 
-/*CollegeContent*/
+/* College Container */
 .college-container {
     display: flex;
-    justify-content: space-between;
-    box-shadow: 5px;
-    border-radius: 20px;
+    justify-content: center; /* Memusatkan konten */
+    align-items: flex-start;
+    width: 90%; /* Sesuaikan lebar */
+    margin: 0 auto; /* Pusatkan ke tengah halaman */
+    flex-wrap: wrap; /* Responsif saat layar lebih kecil */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff; /* Warna latar belakang */
 }
 
-/* Container utama */
+/* Utama untuk UTP College */
 .utp-college {
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between; 
-    align-items: flex-start; 
-    text-align: center;
-    gap: 2rem; 
-    margin: 4vh;
-    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap; /* Supaya responsif */
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem; /* Jarak antar bagian */
 }
 
-/* Bagian kiri (gambar dan heading) */
+/* Bagian Kiri */
 .left-up {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    flex: 1; 
-
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
 }
-
-.left-up h2{
-    color: black;
-}
-
 
 .col-logo1 {
     width: 100%;
-    max-width: 400px; 
+    max-width: 300px; /* Batas maksimum gambar */
     height: auto;
-    margin: 2vh;
+    margin-bottom: 1rem;
 }
 
-/* Bagian kanan (teks) */
+.left-up h1 {
+    font-size: 1.8rem;
+    color: #262163;
+    margin-bottom: 1rem;
+}
+
+.left-up h2 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+/* Bagian Kanan */
 .right-up {
-    flex: 2; 
-    padding-left: 2rem; 
-}
-
-.about-utp {
+    flex: 2;
+    padding-left: 2rem;
     text-align: left;
 }
 
@@ -55,7 +63,7 @@
     margin-bottom: 1rem;
     font-size: 1rem;
     line-height: 1.6;
-    color: #555;
+    color: #000000;
 }
 
 /*Faculty*/
@@ -65,7 +73,7 @@
     padding: 2vh;
 }
 
-.facultytitle h1, h2 {
+.facultytitle h1, h3 {
     color: white;
     text-align: center;
 }
@@ -74,51 +82,57 @@
 /* Faculty-Boxes */
 .faculty-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 kotak per baris */
-    margin: 0 auto; /* Pusatkan container */
-    width: 90%; /* Atur lebar container */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1rem; 
+    margin: 5vh auto;
+    width: 90%;
 }
 
 .all-faculty {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: space-between; 
-    border: 1px solid #ccc;
+    align-items: center; 
+    border: 0.5px solid #ccc;
     padding: 2vh;
-    /* margin: 10px; */
     text-align: center;
-    /* box-sizing: border-box; */
     height: 100%;
+    box-sizing: border-box;
 }
 
 .all-faculty img {
     max-width: 100%;
-    height: auto; 
+    height: auto;
+    margin-bottom: 1rem;
 }
 
 .all-faculty h3 {
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
+    text-align: center; 
+    color: #262163;
 }
 
 .all-faculty p {
     font-size: 0.9rem;
-    margin-bottom: 10px;
+    margin-bottom: auto;
+    text-align: center; /* Teks deskripsi tengah */
+    line-height: 1.5; /* Memberikan spasi antar baris */
 }
 
 .brochure {
-    padding: 10px 15px;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
-    font-size: 0.9rem;
-    margin-top: auto; /* Mendorong tombol ke bawah */
+    background-color: #FBAE42;
+    color: #262163;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-weight: bold;
+    margin-top: auto; /* Mendorong tombol ke bawah */
 }
 
-.brochure1:hover {
-    background-color: #0056b3; /* Warna hover tombol */
+.brochure:hover {
+    background-color: #ffffff;
+    font-weight: bold;
 }
-
 

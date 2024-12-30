@@ -211,45 +211,24 @@
 
 /* COLLEGE */
 @media (max-width: 768px) {
-    .college-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
-        padding: 1rem;
-    }
-
     .utp-college {
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center;
+        flex-direction: column; /* Atur ke kolom */
+        gap: 2rem;
     }
 
-    .left-up, .right-up {
-        text-align: center;
-        padding: 0;
+    .left-up,
+    .right-up {
+        flex: unset; /* Hilangkan fleksibilitas */
+        width: 100%; /* Full width */
     }
 
-    .first-college {
-        text-align: center; 
-        margin-bottom: 2rem;
-        padding: 0 1rem; 
-    }
-
-    .about-utp {
-        text-align: left;
-        padding: 0 1rem; 
+    .right-up {
+        padding-left: 0; /* Hilangkan padding */
+        text-align: center; /* Teks rata tengah */
     }
 
     .about-utp p {
-        text-align: justify; 
-    }
-
-    .col-logo1 {
-        width: 100%;
-        max-width: 300px; 
-        height: auto;
-        margin: 0 auto; 
+        text-align: center; /* Teks rata tengah */
     }
 }
 
