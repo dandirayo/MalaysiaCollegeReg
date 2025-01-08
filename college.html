@@ -175,6 +175,12 @@
                 <button class="brochure">Brochure</button>
             </a>
         </div>
+        <script>
+            // Tambahkan target="_blank" ke semua elemen <a>
+            document.querySelectorAll('.faculty-container a').forEach(link => {
+                link.setAttribute('target', '_blank');
+            });
+        </script>
     </div>
 
     <div class="connect-utp">
