@@ -1,4 +1,4 @@
-<!DOCTYPE html>1qwsaz
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,15 +37,17 @@
             &#9776; <!-- Hamburger Icon -->
         </div>
 
+        <!-- Rights Bar -->
         <!-- Register Button -->
         <a href="https://formfacade.com/sm/eRTlpTzhE" class="regnow-but">Register Now</a>
-        <script>
-            document.querySelectorAll('.regnow-but a').forEach(link => {
-            console.log(link);
-            link.setAttribute('target', '_blank');
-            });
-        </script>
     </nav>
+    <!-- JavaScript to open link in a new tab -->
+    <script>
+        document.querySelectorAll('.regnow-but').forEach(link => {
+            console.log(link); // Debugging: Check if the element is being selected
+            link.setAttribute('target', '_blank'); // Add target="_blank" to open in a new tab
+        });
+    </script>
     <!-- Navigation Bar Close -->
 
     <!-- HOME Content -->
@@ -146,9 +148,10 @@
         <div id="popup-boxes3" class="popupboxes">
             <div class="popup-boxes">
                 <span class="close-btn">&times;</span>
+                <img src="" alt="">
                 <h2>Accommodation</h2>
                 <p>"Top Alumni Global offers comprehensive support in finding and securing suitable accommodations near Malaysian universities, ensuring students have a comfortable and convenient living environment during their studies."</p>
-            </div>
+                <a href="accomodation.html" class="b-accommodation">See Accommodation</a>
         </div>
 
         <!-- PopUp Box4 -->

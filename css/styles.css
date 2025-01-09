@@ -106,6 +106,8 @@ body {
     border-radius: 5px;
     transition: background-color 0.3s ease;
     font-weight: bold;
+    margin-right: 2vh;
+    border: 5px #FBA834;
 }
 
 .regnow-but:hover,
@@ -329,6 +331,23 @@ body {
     color: #555;
     cursor: pointer;
 }
+
+.b-accommodation{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FBAE42;
+    color: #262163;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.b-accommodation:hover{
+    background-color: #262163;
+    color: #FBAE42;
+}
+
 
 /* 6 Images Hover */
 .activity-text{
