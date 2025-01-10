@@ -296,7 +296,7 @@ body {
 }
 
 
-/* PopUp 3 Mid Boxes*/
+/* PopUp 5 Mid Boxes*/
 .popupboxes {
     display: none;
     position: fixed;
@@ -388,6 +388,8 @@ body {
 .img-activity img:hover {
     transform: scale(1.1);
 }
+
+
 
 /* Ask away button */
 .ask-away-container {

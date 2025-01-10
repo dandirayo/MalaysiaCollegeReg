@@ -244,3 +244,21 @@
         grid-template-columns: repeat(1, 1fr); /* 1 kotak per baris */
     }
 }
+
+
+/* ACCO */
+@media (max-width: 768px) {
+    .main-acco {
+        flex-direction: column; /* Susun vertikal */
+        align-items: center;
+    }
+
+    .box-acco {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom di layar kecil */
+        width: 100%; /* Lebar penuh */
+    }
+
+    .slider-container {
+        width: 100%; /* Lebar penuh untuk slider */
+    }
+}
