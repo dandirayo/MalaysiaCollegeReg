@@ -15,7 +15,6 @@
     gap: 3vw; 
     padding: 20px;
     margin: 0 auto;
-    /* max-width: 1400px;  */
 }
 
 /* Box Section: Grid for 2 rows and 3 columns */
@@ -40,10 +39,6 @@
     transition: transform 0.3s ease, background-color 0.3s ease;
     font-size: 1.2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.boxa1, .boxa2, .boxa3, .boxa4, .boxa5 h1{
-    
 }
 
 .boxa1:hover, .boxa2:hover, .boxa3:hover, .boxa4:hover, .boxa5:hover {

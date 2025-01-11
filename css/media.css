@@ -87,7 +87,6 @@
         margin: 0;
     }
 
-    /* Event Section */
     .event-flex {
         flex-direction: column;
         gap: 15px;
@@ -97,13 +96,11 @@
         max-width: 80%;
     }
 
-    /* Modal */
     .modal-content {
         max-width: 95%;
         max-height: 70vh;
     }
 }
-
 
 /* BOXES(ourservices) */
 @media (max-width: 768px) {
@@ -127,7 +124,6 @@
         font-size: 1em; 
     }
 
-    /* PopUp whychooseus Responsif */
     .popup-content {
         width: 90%; 
         margin: 30% auto; 
@@ -209,56 +205,60 @@
     }
 }
 
+/* ---------------------------------- */
 /* COLLEGE */
 @media (max-width: 768px) {
     .utp-college {
-        flex-direction: column; /* Atur ke kolom */
+        flex-direction: column; 
         gap: 2rem;
     }
 
     .left-up,
     .right-up {
-        flex: unset; /* Hilangkan fleksibilitas */
-        width: 100%; /* Full width */
+        flex: unset;
+        width: 100%;
     }
 
     .right-up {
-        padding-left: 0; /* Hilangkan padding */
-        text-align: center; /* Teks rata tengah */
+        padding-left: 0; 
+        text-align: center;
     }
 
     .about-utp p {
-        text-align: center; /* Teks rata tengah */
+        text-align: center;
     }
 }
 
 /* Faculty-Boxes */
 @media (max-width: 768px) {
     .faculty-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 kotak per baris */
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .all-faculty {
+        padding: 1rem;
+    }
+
+    .all-faculty img {
+        max-width: 100%;
+        height: auto;
     }
 }
-
-@media (max-width: 480px) {
-    .faculty-container {
-        grid-template-columns: repeat(1, 1fr); /* 1 kotak per baris */
-    }
-}
-
 
 /* ACCO */
 @media (max-width: 768px) {
     .main-acco {
-        flex-direction: column; /* Susun vertikal */
+        flex-direction: column;
         align-items: center;
     }
 
     .box-acco {
-        grid-template-columns: repeat(2, 1fr); /* 2 kolom di layar kecil */
-        width: 100%; /* Lebar penuh */
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
     }
 
     .slider-container {
-        width: 100%; /* Lebar penuh untuk slider */
+        width: 100%;
     }
 }

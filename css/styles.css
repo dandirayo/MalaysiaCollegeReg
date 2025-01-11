@@ -1,16 +1,15 @@
 /* #FBA834 Orange*/
 /* #262163 Blue  */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 a {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: inherit;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
     background-color: white;
@@ -68,8 +67,8 @@ body {
 }
 
 .li-menu a:hover {
-    background-color: #ffffff;
-    color: #262163; 
+    /* background-color: #ffffff; */
+    /* color: #262163;  */
     font-weight: bold;
     transform: scale(1.05); 
 }
@@ -124,7 +123,6 @@ body {
     align-items: center;
     margin-top: 0;
     padding: 0;
-    border: 3px red;
 }
 
 /* BoyImage(Left) */
@@ -133,9 +131,7 @@ body {
     max-width: 1000px; 
     height: auto; 
     display: block;
-    /* margin: 0 auto;  */
     margin-left: auto;
-    border: 3px red;
 }
 
 /* Text-Right */
@@ -162,6 +158,12 @@ body {
 
 .event1,.event2, .event3{
     text-align: center;
+}
+
+.event1 p,.event2 p, .event3 p{
+    margin-top: 2vh;
+    text-align: center;
+    font-style: bold;
 }
 
 .blue {
@@ -223,8 +225,6 @@ body {
 }
 
 .ourservices{
-    /* display: flex; */
-    /* align-items: center; */
     justify-content: center;
     gap: 2vh;
 
@@ -234,7 +234,6 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    
 }
 
 .ourservices h1{
@@ -260,7 +259,6 @@ body {
     margin: 15px;
     margin-top: 0;
     gap: 5vh; 
-    /* font-size: 1.6em; */
     padding: 5vh;
 }
 
@@ -293,7 +291,7 @@ body {
     word-wrap: break-word;
     font-weight: bold;
     color: #262163;
-    font-size: 0.8em;
+    font-size: 1.2em;
 }
 
 .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover {
@@ -413,7 +411,6 @@ body {
 /* Ask away button */
 .ask-away-container {
     text-align: center;
-    /* margin: 2vh; */
     color: white;
     background-color: #262163;
     padding: 3vh;
@@ -455,8 +452,6 @@ body {
     border-radius: 20px;
     padding: 2%;
 }
-
-
 
 /* About Video */
 .about-video {

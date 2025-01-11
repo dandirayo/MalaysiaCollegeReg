@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoElement = document.getElementById('aboutVideo');
     const playThumbnail = document.getElementById('playThumbnail');
 
-    // Fungsi untuk memulai video
+    //Function play video
     function playVideo() {
         videoElement.play(); // Memulai video
         playThumbnail.style.display = 'none'; // Sembunyikan thumbnail
