@@ -1,5 +1,4 @@
 /* COLLEGE */
-/* College Container */
 .college-container {
     display: flex;
     justify-content: center; 
@@ -13,7 +12,7 @@
     background-color: #fff; 
 }
 
-/* Utama untuk UTP College */
+/* Utama UTP College */
 .utp-college {
     display: flex;
     flex-wrap: wrap; 
@@ -51,8 +50,8 @@
     font-style: italic;
 }
 
-/* Bagian Kanan */
-.right-up {
+/* text-utp */
+.text-utp {
     flex: 2;
     padding-left: 2rem;
     text-align: left;
@@ -65,7 +64,7 @@
     color: #000000;
 }
 
-/*Faculty*/
+/*FACULTY*/
 .facultytitle{
     background-color: #262163;
     margin: 5vh;
@@ -84,7 +83,7 @@
     grid-template-columns: repeat(4, 1fr); 
     gap: 1rem; 
     margin: 5vh auto;
-    width: 90%;
+    width: 90%; 
 }
 
 .all-faculty {
@@ -97,13 +96,13 @@
     padding: 2vh;
     text-align: center;
     height: 100%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .all-faculty img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 2vh;
 }
 
 .all-faculty h3 {
@@ -122,19 +121,20 @@
 
 .brochure {
     background-color: #FBAE42; 
-    color: #262163; 
-    text-decoration: none; 
-    padding: 10px 20px; 
-    border-radius: 5px; 
+    color: #262163;  
+    padding: 12px 24px; 
+    border-radius: 20px; 
     transition: background-color 0.3s ease; 
     font-weight: bold; 
+    margin-top: 2vh;
     display: inline-block; 
 }
 
 .brochure:hover {
-    background-color: #ffffff; /* Warna saat hover */
-    color: #262163; /* Warna teks tetap */
-    font-weight: bold; /* Tetap tebal */
-    cursor: pointer; /* Tambahkan pointer pada hover */
+    cursor: pointer; 
+    background-color: #ffffff; 
+    color: #262163; 
+    font-weight: bold; 
+    
 }
 

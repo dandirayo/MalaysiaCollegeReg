@@ -38,10 +38,12 @@
         text-align: center;
         margin: 10px 0;
         flex-wrap: wrap;
+        display: inline-block; 
     }
 
     .li-menu a:hover {
         font-weight: bold;
+        display: inline-block; 
     }
 }
 
@@ -230,19 +232,17 @@
 }
 
 /* Faculty-Boxes */
+
 @media (max-width: 768px) {
     .faculty-container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+        display: grid; 
+        grid-template-columns: 1fr !important; 
+        gap: 1.5rem; 
     }
 
     .all-faculty {
-        padding: 1rem;
-    }
-
-    .all-faculty img {
-        max-width: 100%;
-        height: auto;
+        margin: 0 auto; /* Pastikan elemen ada di tengah */
+        width: 100%; /* Elemen mengambil penuh lebar */
     }
 }
 

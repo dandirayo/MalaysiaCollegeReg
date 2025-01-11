@@ -1,4 +1,4 @@
-/* Main ACCO */
+/* Main Acco */
 .main-acco {
     display: flex;
     justify-content: space-between; 
@@ -7,17 +7,7 @@
     margin: 0 auto;
 }
 
-/* Main Acco */
-.main-acco {
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start; 
-    gap: 3vw; 
-    padding: 20px;
-    margin: 0 auto;
-}
-
-/* Box Section: Grid for 2 rows and 3 columns */
+/* Box Section(Grid for 2 rows and 3 columns) */
 .box-acco {
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
