@@ -1,3 +1,4 @@
+
 /* Main Acco */
 .main-acco {
     display: flex;
@@ -5,47 +6,103 @@
     align-items: flex-start; 
     gap: 3vh; 
     margin: 0 auto;
+    padding: 5vh;
 }
 
-/* Box Section(Grid for 2 rows and 3 columns) */
-.box-acco {
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(2, auto); 
-    gap: 2vh; 
-    width: 50%; 
-}
-
-/* Box Style */
-.boxa1, .boxa2, .boxa3, .boxa4, .boxa5 {
+.txt-acco{
     display: flex;
     flex-direction: column;
+    /* padding: 2vh; */
+    margin: 2%;
+}
+
+.txt-acco h1{
+    color: #262163;
+    padding-bottom: 2vh;
+    font-size: 5rem;
+}
+
+.txt-acco p{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 1.4rem;
+}
+
+.txt-acco li{
+    padding: 0.8vh;
+    font-size: 1.4rem;
+}
+
+.midacco-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    margin-bottom: 10vh;
+}
+
+.midacco-container{
+    display:flex
+}
+
+/* Box Container with Grid Layout */
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
     justify-content: center;
     align-items: center;
-    padding: 2vh;
-    background-color: white;
+}
+
+
+/* Box Style */
+.box-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #FBA834;
     border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    font-size: 1.2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-.boxa1:hover, .boxa2:hover, .boxa3:hover, .boxa4:hover, .boxa5:hover {
-    transform: scale(1.05);
-    background-color: #f8f8f8;
+/* Hover Effect */
+.box-item:hover {
+    background-color: aliceblue; 
+    transform: scale(1.05); 
 }
 
-/* Image inside Boxes */
-.boxa1 img, .boxa2 img, .boxa3 img, .boxa4 img, .boxa5 img {
+/* Image Style */
+.box-item img {
     width: 60%;
     height: auto;
+    margin-bottom: 15px;
     object-fit: contain;
 }
 
+/* Heading Style */
+.box-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold; 
+    margin-bottom: 10px;
+    color: #262163;
+}
+
+/* Paragraph Style */
+.box-item p {
+    font-size: 1rem;
+    color: #444; 
+    margin: 0;
+    line-height: 1.5; 
+}
+
+
 .slider-container {
-    max-width: 20%;
-    margin: 6vh;
+    max-width: 25%;
+    margin: 2vh;
     position: relative;
     
 }
