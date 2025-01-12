@@ -232,7 +232,6 @@
 }
 
 /* Faculty-Boxes */
-
 @media (max-width: 768px) {
     .faculty-container {
         display: grid; 
