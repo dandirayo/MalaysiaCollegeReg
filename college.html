@@ -52,6 +52,15 @@
                 <img src="images/college/UTP Logo.png" class="col-logo1">
                 <h1>Universiti Teknologi Petronas Malaysia</h1>
                 <h2><i>"Unlocking True Potential""#UTPinMe"</i></h2>
+                <a href="pdf/GeneralDeck.pdf" download>
+                    <button class="fullutp">Full Information about UTP</button>
+                </a>
+            <script>
+                // Tambahkan target="_blank" ke semua elemen <a>
+                document.querySelectorAll('.left-up a').forEach(link => {
+                    link.setAttribute('target', '_blank');
+                });
+                </script>
             </div>
             <div class="text-utp">
                 <div class="about-utp">
@@ -102,8 +111,9 @@
             <h3>Chemical Engineering</h3>
             <img src="images/faculty/ChE.png" alt="f-ac">
             <p>Chemical engineering focuses on transforming raw materials into useful products like fuel, plastics, and fertilizers while improving industrial processes. It addresses industry challenges through resource assessment, cost analysis, and sustainability, preparing engineers with essential skills for the future.</p>
-            <a href="pdf/brochure/UTPUG_ChemE_2022.pdf" download>
-                <button class="brochure">Brochure</button>
+            <a class="2button">
+                <button href="pdf/brochure/UTPUG_ChemE_2022.pdf" download class="brochure">Brochure</button>
+                <button href="pdf/requirement/" download class="brochure">Requirements</button>
             </a>
         </div>
         <div class="all-faculty">
