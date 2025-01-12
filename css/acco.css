@@ -9,6 +9,12 @@
     padding: 5vh;
 }
 
+.mind-txt{
+    text-align: center;
+    color: #262163;
+    margin-bottom: 3vh;
+}
+
 .txt-acco{
     display: flex;
     flex-direction: column;
@@ -19,18 +25,18 @@
 .txt-acco h1{
     color: #262163;
     padding-bottom: 2vh;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .txt-acco p{
     padding-top: 2vh;
     padding-bottom: 2vh;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .txt-acco li{
     padding: 0.8vh;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .midacco-container{
@@ -47,13 +53,12 @@
 /* Box Container with Grid Layout */
 .box-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    gap: 20px; /* Jarak antar box */
     padding: 20px;
     justify-content: center;
     align-items: center;
 }
-
 
 /* Box Style */
 .box-item {
@@ -61,12 +66,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    background-color: #FBA834;
+    background-color: white;
     border-radius: 10px;
     text-align: center;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 100%; /* Box memenuhi kolom grid */
+    height: 200px; /* Ketinggian seragam */
+    box-sizing: border-box; /* Menghitung padding ke dalam box */
 }
 
 /* Hover Effect */
@@ -77,27 +84,29 @@
 
 /* Image Style */
 .box-item img {
-    width: 60%;
+    width: 40%; /* Ukuran gambar proporsional */
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     object-fit: contain;
 }
 
 /* Heading Style */
 .box-item h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold; 
     margin-bottom: 10px;
     color: #262163;
+    margin: 1.2vh;
 }
 
 /* Paragraph Style */
-.box-item p {
+/* .box-item p {
     font-size: 1rem;
     color: #444; 
     margin: 0;
     line-height: 1.5; 
-}
+} */
+
 
 
 .slider-container {

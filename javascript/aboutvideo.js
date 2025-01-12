@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //Function play video
     function playVideo() {
         videoElement.play(); // Memulai video
-        playThumbnail.style.display = 'none'; // Sembunyikan thumbnail
+        playThumbnail.style.display = 'none';
     }
 
     // Event listener untuk thumbnail
@@ -13,6 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event listener untuk mengembalikan thumbnail jika video selesai
     videoElement.addEventListener('ended', () => {
-        playThumbnail.style.display = 'flex'; // Tampilkan kembali thumbnail
+        playThumbnail.style.display = 'flex';
     });
 });
