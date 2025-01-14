@@ -245,19 +245,55 @@
     }
 }
 
-/* ACCO */
+/* Responsive ACCO */
 @media (max-width: 768px) {
     .main-acco {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch; 
+        gap: 2vh; 
+        padding: 2vh; 
     }
 
-    .box-acco {
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
+    .txt-acco h1 {
+        font-size: 1.8rem; /* Ukuran font lebih kecil */
+        line-height: 1.1; /* Menyesuaikan jarak antar baris */
+    }
+
+    .txt-acco p, .txt-acco li {
+        font-size: 0.9rem; /* Ukuran teks lebih kecil */
+        text-align: justify; /* Teks rata kiri-kanan */
+        margin: 0 auto; /* Memberikan jarak margin */
+        line-height: 1.5; /* Menambahkan spasi antar baris */
+    }
+
+    .box-container {
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 15px; 
+        width: 100%; 
+    }
+
+    .box-item {
+        display: flex;
+        flex-direction: column;
+        height: auto; 
+        padding: 15px; 
     }
 
     .slider-container {
-        width: 100%;
+        max-width: 100%; 
+        margin: 2vh auto; 
+    }
+
+    .slides img {
+        aspect-ratio: unset; 
+    }
+
+    .mind-txt h1 {
+        font-size: 2rem; 
+    }
+
+    .mind-txt {
+        margin-bottom: 2vh; 
+        padding: 0 5%; 
     }
 }
