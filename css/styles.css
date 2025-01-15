@@ -532,10 +532,10 @@ body {
 
 /* About Title */
 .about-h1{
-    font-size: 3rem;
+    font-size: 2.4rem;
     color: #FBA834;
     font-style: bold;
-    margin: 3vh;
+    margin: 2vh;
     flex-direction: column;
 }
 
