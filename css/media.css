@@ -255,21 +255,21 @@
     }
 
     .txt-acco h1 {
-        font-size: 1.8rem; /* Ukuran font lebih kecil */
-        line-height: 1.1; /* Menyesuaikan jarak antar baris */
+        font-size: 1.8rem; 
+        line-height: 1.1; 
     }
 
     .txt-acco p, .txt-acco li {
-        font-size: 0.9rem; /* Ukuran teks lebih kecil */
-        text-align: justify; /* Teks rata kiri-kanan */
-        margin: 0 auto; /* Memberikan jarak margin */
-        line-height: 1.5; /* Menambahkan spasi antar baris */
+        font-size: 0.9rem; 
+        /* text-align: justify;  */
+        margin: 0 auto; 
+        line-height: 1.5; 
     }
 
     .box-container {
-        grid-template-columns: repeat(1, 1fr); 
-        gap: 15px; 
-        width: 100%; 
+        display: grid; 
+        grid-template-columns: 1fr !important; 
+        gap: 1.5rem; 
     }
 
     .box-item {
@@ -280,6 +280,7 @@
     }
 
     .slider-container {
+        display: block;
         max-width: 100%; 
         margin: 2vh auto; 
     }
@@ -296,4 +297,44 @@
         margin-bottom: 2vh; 
         padding: 0 5%; 
     }
+
 }
+
+@media (max-width: 768px) {
+    .slider-container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        width: 100% !important; 
+        max-width: 100% !important; 
+        padding: 1rem; 
+    }
+
+    .slides img {
+        width: 90%; 
+        max-height: auto; 
+        object-fit: contain; 
+    }
+
+    .thumbnails {
+        display: flex;
+        flex-direction: row !important; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 1rem; 
+        margin-top: 1rem; 
+    }
+
+    .thumbnails img {
+        width: 70px; 
+        height: auto;
+        border-radius: 5px;
+    }
+
+    button.prev, button.next {
+        display: block; 
+        background: rgba(0, 0, 0, 0.6);
+        font-size: 1.2rem; 
+    }
+}
+
