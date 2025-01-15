@@ -95,7 +95,26 @@ body {
 }
 
 /* Register Now Button*/
-.regnow-but{
+.email{
+    display: inline-block;
+    background-color: #FBAE42;
+    color: #262163;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    margin-right: 2vh;
+    border: 5px #FBA834;
+}
+
+.email:hover {
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+/* .regnow-but{
     display: inline-block;
     background-color: #FBAE42;
     color: #262163;
@@ -113,7 +132,7 @@ body {
 .button-form:hover {
     background-color: #ffffff;
     font-weight: bold;
-}
+} */
 
 /* HOME */
 .imgc-container:not(.the-form) {
@@ -513,10 +532,10 @@ body {
 
 /* About Title */
 .about-h1{
-    font-size: 1.8rem;
+    font-size: 3rem;
     color: #FBA834;
     font-style: bold;
-    margin-top: 1vh;
+    margin: 3vh;
     flex-direction: column;
 }
 

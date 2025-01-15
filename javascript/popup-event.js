@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     eventImages.forEach(image => {
         image.addEventListener('click', () => {
             const src = image.getAttribute('data-src');
-            popupImage.src = src; // Set gambar di dalam popup
-            popup.style.display = 'flex'; // Tampilkan popup
+            popupImage.src = src; 
+            popup.style.display = 'flex'; 
         });
     });
 

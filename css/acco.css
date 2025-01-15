@@ -24,13 +24,13 @@
 
 .txt-acco h1 {
     color: #262163;
-    font-size: 2.5rem; /* Ukuran default lebih kecil */
+    font-size: 2.5rem; 
     padding-bottom: 2vh;
-    text-align: left; /* Teks rata tengah */
-    max-width: 90%; /* Batas maksimal lebar teks */
-    margin: 0 auto; /* Agar teks rata tengah */
-    word-break: break-word; /* Memastikan kata panjang tidak melebihi batas */
-    line-height: 1.2; /* Jarak antar baris */
+    text-align: left;
+    max-width: 90%; 
+    margin: 0 auto; 
+    word-break: break-word; 
+    line-height: 1.2; 
 }
 
 .txt-acco p{
