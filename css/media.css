@@ -46,6 +46,11 @@
         display: inline-block; 
     }
 
+    .ul-menu{
+        display: flex;
+        flex-direction: column;
+    }
+
     .email{
         font-size: 1.2rem;
         margin: auto;
