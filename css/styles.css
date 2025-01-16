@@ -383,6 +383,10 @@ body {
     margin: 0;
     padding: 0;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
 }
 
 .activity-text{
@@ -425,6 +429,29 @@ body {
 /* Zoom Effect on Hover */
 .img-activity img:hover {
     transform: scale(1.1);
+}
+
+.all-act button{
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    background-color: #FBAE42;
+    color: #262163;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 2vh;
+    left: 50%;
+    right: 50%;
+}
+
+.all-act button:hover{
+    background-color: #262163;
+    color: #ffffff;
 }
 
 /* Ask away button */
@@ -523,7 +550,7 @@ body {
 /* About Text */
 .about-text {
     flex: 1;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     font-size: 1rem;
     line-height: 1.5;
     display: flex;

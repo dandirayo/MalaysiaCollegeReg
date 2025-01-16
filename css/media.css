@@ -301,7 +301,7 @@
         display: flex;
         flex-direction: column;
         height: auto; 
-        padding: 15px; 
+        padding: 10px; 
     }
 
     .slider-container {
@@ -319,7 +319,7 @@
     }
 
     .mind-txt {
-        margin-bottom: 2vh; 
+        margin-bottom: 1vh; 
         padding: 0 5%; 
     }
 
