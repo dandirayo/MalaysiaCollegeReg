@@ -24,7 +24,7 @@
                 <h1 class="top-text">TopAlumniGlobal</h1>
             </a>
         </div>
-        
+
         <!-- Mid Bar -->
         <div class="me-container" id="menu">
             <ul class="ul-menu">
@@ -41,31 +41,39 @@
         </div>
 
         <!-- Rights Bar -->
+        <!-- <a href="https://formfacade.com/sm/eRTlpTzhE" class="regnow-but">Register Now</a> -->
         <a href="index.html" class="email">topalumniglobal@gmail.com</a>
     </nav>
+    <script src="javascript/scripts.js"></script>
     <!-- Navigation Bar Close -->
-
     <div class="all-act">
         <div class="activity-text">
             <h1><span class="orangetxt">Our Activity in </span>Universiti Technologi Pertronas</h1>
         </div>
         <!-- 6 Act Photos -->
         <div class="img-activity">
-            <img src="images/photo/1.jpg" alt="act1">
-            <img src="images/photo/2.JPG" alt="act2">
-            <img src="images/photo/3.JPG" alt="act3">
-            <img src="images/photo/4.jpg" alt="act4">
-            <img src="images/photo/5.jpeg" alt="act5">
-            <img src="images/photo/6.jpeg" alt="act6">
+            <img  src="images/photo/1.jpg" class="img-popup" data-src="images/photo/1.jpg" alt="act1">
+            <img  src="images/photo/2.jpg" class="img-popup" data-src="images/photo/2.jpg" alt="act2">
+            <img  src="images/photo/3.jpg" class="img-popup" data-src="images/photo/3.jpg" alt="act3">
+            <img  src="images/photo/4.jpg" class="img-popup" data-src="images/photo/4.jpg" alt="act4">
+            <img  src="images/photo/5.jpg" class="img-popup" data-src="images/photo/5.jpg" alt="act5">
+            <img  src="images/photo/6.jpg" class="img-popup" data-src="images/photo/6.jpg" alt="act6">
+            <img  src="images/photo/7.jpg" class="img-popup" data-src="images/photo/7.jpg" alt="act7">
+            <img  src="images/photo/8.jpg" class="img-popup" data-src="images/photo/8.jpg" alt="act8">
+            <img  src="images/photo/9.jpg" class="img-popup" data-src="images/photo/9.jpg" alt="act9">
         </div>
-        
-     </div>
+        <!-- Modal Popup(Event) -->
+        <div id="eventPopup" class="modalevent">
+            <span class="close" onclick="closeEventPopup()">&times;</span>
+            <img id="popupImage" class="modalimgevent" alt="Popup Image">
+        </div>
+        <script src="javascript/popup-event.js"></script>
+    </div>
+    
+     <!-- Footer -->
+    <div class="footer-container">
+        <p class="p-footer">2024. TopAlumniGlobal. All rights reserved.</p>
+    </div>
+    <!-- Footer Close -->
+    <script src="javascript/scripts.js"></script>
 </body>
-
-<!-- Footer -->
-<div class="footer-container">
-    <p class="p-footer">2024. TopAlumniGlobal. All rights reserved.</p>
-</div>
-<!-- Footer Close -->
- 
-</html>

@@ -1,6 +1,6 @@
 // Membuka Popup Gambar Event
 document.addEventListener('DOMContentLoaded', () => {
-    const eventImages = document.querySelectorAll('.event-img');
+    const eventImages = document.querySelectorAll('.img-popup',);
     const popup = document.getElementById('eventPopup');
     const popupImage = document.getElementById('popupImage');
 
