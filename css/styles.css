@@ -69,7 +69,6 @@ body {
 .li-menu a:hover {
     /* background-color: #ffffff; */
     /* color: #262163;  */
-    font-weight: bold;
     transform: scale(1.05); 
 }
 
@@ -86,7 +85,7 @@ body {
 
 .a-menu:hover {
     color: #FBA834;
-    /* font-weight: bold; */
+    font-weight: bold;
 }
 
 /* Toggle Button */
@@ -133,10 +132,12 @@ body {
 }
 
 .regnow-but:hover,
+*/
+
 .button-form:hover {
     background-color: #ffffff;
     font-weight: bold;
-} */
+} 
 
 /* HOME */
 .imgc-container:not(.the-form) {
@@ -433,6 +434,11 @@ body {
 /* Zoom Effect on Hover */
 .img-activity img:hover {
     transform: scale(1.1);
+}
+
+.bot-txt{
+    padding: 10vh;
+    text-align: center;
 }
 
 .all-act button{
