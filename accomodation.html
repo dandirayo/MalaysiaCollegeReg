@@ -15,8 +15,8 @@
 </head>
 
 <body>
-       <!-- Navigation Bar -->
-       <nav class="nav-container">
+    <!-- Navigation Bar -->
+    <nav class="nav-container">
         <!-- Left bar -->
         <div class="lo-container">
             <a href="index.html">
@@ -101,12 +101,12 @@
         <div class="slider-container">
             <div class="slider">
                 <div class="slides">
-                    <img src="images/acco/V1 (v3-52023).jpg" alt="Poster 1">
-                    <img src="images/acco/V2 (v3-52023).jpg" alt="Poster 2">
-                    <img src="images/acco/V3 (v3-52023).jpg" alt="Poster 3">
-                    <img src="images/acco/V4 (v3-52023).jpg" alt="Poster 4">
-                    <img src="images/acco/V5 (v3-52023).jpg" alt="Poster 5">
-                    <img src="images/acco/V6 (v3-52023).jpg" alt="Poster 6">
+                    <img src="images/acco/V1 (v3-52023).jpg" alt="Poster 1" target="_blank">
+                    <img src="images/acco/V2 (v3-52023).jpg" alt="Poster 2" target="_blank">
+                    <img src="images/acco/V3 (v3-52023).jpg" alt="Poster 3" target="_blank">
+                    <img src="images/acco/V4 (v3-52023).jpg" alt="Poster 4" target="_blank">
+                    <img src="images/acco/V5 (v3-52023).jpg" alt="Poster 5" target="_blank">
+                    <img src="images/acco/V6 (v3-52023).jpg" alt="Poster 6" target="_blank">
                 </div>
                 <button class="prev">&#10094;</button>
                 <button class="next">&#10095;</button>
@@ -120,6 +120,16 @@
                 <img src="images/acco/V6 (v3-52023).jpg" alt="Poster 6">
             </div>
             <script src="javascript/slider.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                const images = document.querySelectorAll('.slides img');
+                images.forEach(img => {
+                    img.addEventListener('click', () => {
+                        window.open(img.src, '_blank');
+                    });
+                });
+            });
+            </script>
         </div>
     </div>
     
