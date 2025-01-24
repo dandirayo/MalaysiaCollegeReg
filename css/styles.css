@@ -207,6 +207,8 @@ body {
     align-items: center;
      gap: 1.5vh; 
     margin-top: 20px;
+    font-weight: bold;
+    color: #262163;    
 }
 
 .event-flex img {
@@ -215,6 +217,7 @@ body {
     height: auto;
     object-fit: cover;
     transition: transform 0.3s ease;
+    border-radius: 20px;
 }
 
 .event-flex img:hover {
@@ -494,7 +497,7 @@ body {
 
 .ask-away-btn:hover {
     background-color: white;
-    color: #FBAE42;
+    /* color: #FBAE42; */
 }
 
 /* ABOUT */
