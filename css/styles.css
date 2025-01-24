@@ -54,7 +54,7 @@ body {
 }
 
 .li-menu {
-    position: relative;
+    /* position: relative; */
     margin-right: 15px;
 }
 
@@ -80,9 +80,13 @@ body {
     transition: color 0.3s;
 }
 
+.a-menu.active{
+    color: #FBA834;
+}
+
 .a-menu:hover {
     color: #FBA834;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 /* Toggle Button */
