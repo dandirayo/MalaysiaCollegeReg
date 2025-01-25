@@ -10,14 +10,14 @@ document.addEventListener("DOMContentLoaded", function() {
     // Fungsi untuk menghandle klik pada tautan
     document.querySelectorAll('a').forEach(function(link) {
         link.addEventListener('click', function(e) {
-            e.preventDefault(); // Mencegah tautan berfungsi normal
-            let destination = this.href; // Mendapatkan URL tujuan
+            e.preventDefault(); 
+            let destination = this.href; 
 
-            document.body.classList.add('fade-out'); // Menambahkan kelas fade-out
+            document.body.classList.add('fade-out'); 
 
             setTimeout(function() {
-                window.location = destination; // Pindah ke halaman tujuan setelah animasi
-            }, 500); // Delay sama dengan durasi fade-out
+                window.location = destination; 
+            }, 500); 
         });
     });
 });
