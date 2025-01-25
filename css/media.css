@@ -50,9 +50,15 @@
         flex-direction: column;
     }
 
+    .a-menu.active{
+        color: white;
+        background: none;
+        font-style: bold;
+    }
+
     .email{
         font-size: 0.8rem;
-        margin: auto;
+        margin: 1.8vh 3%;
     }
 }
 
@@ -281,6 +287,10 @@
     .txt-acco h1 {
         font-size: 1.8rem; 
         line-height: 1.1; 
+    }
+
+    .list-acco{
+        margin-left: 0.8rem;
     }
 
     .txt-acco p, .txt-acco li {

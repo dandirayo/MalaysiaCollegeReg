@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 a {
-    /* text-decoration: none; */
     color: inherit;
 }
 body {
@@ -74,18 +73,20 @@ body {
 
 .a-menu {
     color: white;
-    text-decoration: none;
+    /* text-decoration: none; */
     padding: 5px 10px;
     transition: color 0.3s;
+
 }
 
 .a-menu.active{
-    color: #FBA834;
+    color: #262163;
+    background-color: #f1f1f1;    
 }
 
 .a-menu:hover {
     color: #FBA834;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 /* Toggle Button */
@@ -442,6 +443,7 @@ body {
 .bot-txt{
     padding: 10vh;
     text-align: center;
+    color: #262163;
 }
 
 .all-act button{
