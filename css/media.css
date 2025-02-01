@@ -7,9 +7,29 @@
     }
 }
 
-/* Toggle Button (Hamburger Icon) */
+@media(max-width: 1300px) {
+    .lo-container h1{
+        display: none;
+    }
+
+}
+
+@media(max-width: 1150px) {
+
+    .ul-menu{
+        text-align: center;
+    }
+    .email{
+        display: none;
+    }
+
+}
+
 @media (max-width: 768px) {
     /* Navigation Toggle */
+    .email{
+        display: block;
+    }
     .toggle-button {
         display: block; 
     }
@@ -27,6 +47,7 @@
         width: 100%;
         z-index: 9;
         padding: 1.2vh;
+        
     }
 
     .me-container.active {
@@ -39,6 +60,7 @@
         margin: 10px 0;
         flex-wrap: wrap;
         display: inline-block; 
+
     }
 
     .li-menu a:hover {
@@ -63,7 +85,6 @@
 }
 
 @media (max-width: 768px){
-    /*Layout Home */
     .imgc-container:not(.the-form) {
         flex-direction: column;
         text-align: center;
@@ -121,7 +142,6 @@
 
 /* BOXES(ourservices) */
 @media (max-width: 768px) {
-    /* Mid Box Responsif */
     .box-mid {
         flex-direction: column; 
         gap: 2vh; 
@@ -270,8 +290,8 @@
     }
 
     .all-faculty {
-        margin: 0 auto; /* Pastikan elemen ada di tengah */
-        width: 100%; /* Elemen mengambil penuh lebar */
+        margin: 0 auto; 
+        width: 100%;
     }
 }
 
