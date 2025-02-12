@@ -416,6 +416,14 @@ body {
     font-weight: bold !important;
 }
 
+.duo-univ{
+    display: flex;
+}
+
+.duo-univ h2{
+    display: flex;
+}
+
 /* 6 Act Photos */
 .img-activity {
     display: grid;
@@ -442,6 +450,35 @@ body {
 
 /* Zoom Effect on Hover */
 .img-activity img:hover {
+    transform: scale(1.1);
+}
+
+/* 6 Act Photos */
+.img-activity2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2.2vh; 
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/* Images 6 Grid */
+.img-activity2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    aspect-ratio: 6/4; 
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom Effect on Hover */
+.img-activity2 img:hover {
     transform: scale(1.1);
 }
 
