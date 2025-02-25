@@ -2,6 +2,11 @@ RewriteEngine On
 
 # Aturan untuk root domain (/)
 RewriteRule ^$ index.html [L]
+RewriteRule ^$ utp.html [L]
+RewriteRule ^$ ukm.html [L]
+RewriteRule ^$ accomodation.html [L]
+RewriteRule ^$ gallery.html [L]
+
 
 # Aturan untuk menyembunyikan ekstensi .html
 RewriteCond %{REQUEST_FILENAME} !-d
