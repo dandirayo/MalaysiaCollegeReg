@@ -1,0 +1,28 @@
+/* 6 Act Photos */
+.img-activity3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 2.2vh; 
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/* Images 6 Grid */
+.img-activity3 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    aspect-ratio: 1/1; 
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom Effect on Hover */
+.img-activity3 img:hover {
+    transform: scale(1.1);
+}
