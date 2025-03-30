@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
 document.addEventListener('DOMContentLoaded', function() {
     const dropdown = document.querySelector('.dropdown');
     const dropdownContent = document.querySelector('.dropdown-content');

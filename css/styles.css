@@ -14,7 +14,7 @@ body {
     background-color: white;
 }
 
-/* Navigation BAR */
+/* Navigation */
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -57,13 +57,12 @@ body {
 }
 
 .ul-menu ul {
-    list-style-type: none !important; /* Ensures no bullet points are shown */
+    list-style-type: none !important;
     padding: 0;
     margin: 0;
 }
 
 .li-menu {
-    /* position: relative; */
     margin-right: 15px;
 }
 
@@ -83,7 +82,6 @@ body {
 
 .a-menu {
     color: white;
-    /* text-decoration: none; */
     padding: 5px 10px;
     transition: color 0.3s;
 }
@@ -95,10 +93,8 @@ body {
 
 .a-menu:hover {
     color: #FBA834;
-    /* font-weight: bold; */
 }
 
-/* Dropdown Styles */
 .dropdown {
     position: relative; 
 }
@@ -141,7 +137,7 @@ body {
     z-index: 10; 
 }
 
-/* Register Now Button*/
+/* Email Us*/
 .email{
     display: inline-block;
     background-color: #FBAE42;
@@ -161,32 +157,6 @@ body {
     font-weight: bold;
 }
 
-.button-form {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #FBAE42;
-    color: #262163;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    font-weight: bold;
-}
-
-.button-form:hover{
-    background-color: #ffffff;
-    color: #262163;
-    font-weight: bold;
-}
-
-/* HOME */
-.imgc-container:not(.the-form) {
-    display: flex;
-    /* width: 100%; */
-    position: relative;
-    align-items: center;
-    margin-top: 0;
-    padding: 0;
-}
 
 /* BoyImage(Left) */
 .boy-college img {
@@ -242,20 +212,6 @@ body {
     color: #ffffff;
 }
 
-.event1,.event2, .event3{
-    text-align: center;
-}
-
-.event1 p,.event2 p, .event3 p{
-    margin-top: 2vh;
-    text-align: center;
-    font-style: bold;
-}
-
-.blue {
-    color: #262163;
-}
-
 /* Event Section */
 .event-expo{
     padding: 1vh;
@@ -288,14 +244,45 @@ body {
     transform: scale(1.1);
 }
 
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
+.event1,.event2, .event3{
+    text-align: center;
+}
+
+.event1 p,.event2 p, .event3 p{
+    margin-top: 2vh;
+    text-align: center;
+    font-style: bold;
+}
+
+.blue {
+    color: #262163;
+}
+
+
+/* OurServices */
+.button-form {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FBAE42;
+    color: #262163;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
     font-weight: bold;
-    cursor: pointer;
+}
+
+.button-form:hover{
+    background-color: #ffffff;
+    color: #262163;
+    font-weight: bold;
+}
+
+.imgc-container:not(.the-form) {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 0;
+    padding: 0;
 }
 
 .close {
@@ -342,7 +329,7 @@ body {
     font-weight: bold;
 }
 
-/* ourservices Boxes */
+/* "ourservices" Boxes */
 .box-mid {
     display: flex;
     align-items: center;
@@ -396,7 +383,6 @@ body {
     object-fit: contain;
 }
 
-
 /* PopUp 5 Mid Boxes*/
 .popupboxes {
     display: none;
@@ -449,7 +435,7 @@ body {
     color: #FBAE42;
 }
 
-/* OUR-ACT */
+/* Activities */
 .all-act{
     background-color: #ffffff;
     margin: 0;
@@ -483,13 +469,12 @@ body {
     display: flex;
 }
 
-.utp-gal h2, .ukm-gal h2{
+.utp-act h2, .ukm-act h2{
     align-items: center;
     justify-content: center;
 }
 
-
-/* 6 Act Photos */
+/* UTP Act Photos (3) */
 .img-activity {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -502,7 +487,7 @@ body {
     border-radius: 20px;
 }
 
-/* Images 6 Grid */
+/* Images 3 Items */
 .img-activity img {
     width: 100%;
     height: auto;
@@ -518,7 +503,7 @@ body {
     transform: scale(1.1);
 }
 
-/* 6 Act Photos */
+/* UTP Act Photos (3) */
 .img-activity2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -531,7 +516,7 @@ body {
     border-radius: 20px;
 }
 
-/* Images 6 Grid */
+/* Images 3 Items */
 .img-activity2 img {
     width: 100%;
     height: auto;
@@ -547,16 +532,43 @@ body {
     transform: scale(1.1);
 }
 
+/* 8 Testimony */
+.img-testimon {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 2.2vh; 
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.img-testimon img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    aspect-ratio: 1/1; 
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.img-testimon img:hover {
+    transform: scale(1.1);
+}
+
 .bot-txt{
     padding: 10vh;
     text-align: center;
     color: #262163;
 }
 
+/* See Full Galleries */
 .all-act button{
     justify-content: center;
     align-items: center;
-    /* position: absolute; */
     background-color: #FBAE42;
     color: #262163;
     border: none;
@@ -576,7 +588,7 @@ body {
     color: #ffffff;
 }
 
-/* Ask away button */
+/* Whatsapp */
 .ask-away-container {
     text-align: center;
     color: white;
@@ -606,10 +618,9 @@ body {
 
 .ask-away-btn:hover {
     background-color: white;
-    /* color: #FBAE42; */
 }
 
-/* ABOUT */
+/* About TopAlumni Global */
 .all-about {
     display: flex;
     justify-content: space-between;
