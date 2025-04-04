@@ -779,11 +779,12 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #262163;
+    /* max-width: fit-content; */
 }
 
 .top-add{
     display: flex;
-    margin: 5vh;
+    margin: 2vh;
 }
 
 .top-add a{
@@ -797,10 +798,10 @@ body {
 }
 
 .top-add img{
-    max-width: 100px;
+    max-width: 60px;
 }
 
-.p-footer {
+.reserved {
     color: #ffffff;
     font-size: 16px;
 }

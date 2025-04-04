@@ -144,6 +144,11 @@
 
 /* BOXES(ourservices) */
 @media (max-width: 768px) {
+    .ourservices{
+        display: flex;
+        flex-direction: column;
+    }
+
     .box-mid {
         flex-direction: column; 
         gap: 2vh; 
@@ -404,3 +409,12 @@
     }
 }
 
+@media (max-width: 768px) {
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        /* width: 90%; */
+        padding: 3vh;
+    }
+
+}
